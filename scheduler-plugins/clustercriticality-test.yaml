@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: clustercriticality-test
+  labels:
+    app: reviews
+    version: v1
+spec:
+  schedulerName: clustercriticality-scheduler
+  containers:
+  - name: nginx
+    image: nginx:latest
+    resources:
+      requests:
+        cpu: "100m"
+        memory: "128Mi"
+        ephemeral-storage: "100Mi"

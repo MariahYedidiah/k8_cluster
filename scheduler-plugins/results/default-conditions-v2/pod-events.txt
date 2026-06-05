@@ -1,0 +1,593 @@
+Name:             affinity-test
+Namespace:        sched-tests
+Priority:         0
+Service Account:  default
+Node:             playground-cluster-worker2/172.21.0.4
+Start Time:       Thu, 04 Jun 2026 19:20:48 +0530
+Labels:           app=affinity-test
+                  topology.kubernetes.io/zone=zone-a
+Annotations:      <none>
+Status:           Running
+IP:               10.244.3.159
+IPs:
+  IP:  10.244.3.159
+Containers:
+  pause:
+    Container ID:   containerd://b785b88b76f6e488058799cd3c0a09bb3c29727d50e2de54feeb0b605028ffb9
+    Image:          registry.k8s.io/pause:3.10
+    Image ID:       sha256:873ed75102791e5b0b8a7fcd41606c92fcec98d56d05ead4ac5131650004c136
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Thu, 04 Jun 2026 19:20:49 +0530
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-5hk8d (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-5hk8d:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:             cpu-heavy
+Namespace:        sched-tests
+Priority:         0
+Service Account:  default
+Node:             playground-cluster-worker3/172.21.0.7
+Start Time:       Thu, 04 Jun 2026 19:20:48 +0530
+Labels:           app=condition-test
+                  topology.kubernetes.io/zone=zone-a
+Annotations:      <none>
+Status:           Running
+IP:               10.244.4.72
+IPs:
+  IP:  10.244.4.72
+Containers:
+  pause:
+    Container ID:   containerd://f02986ca64900fb80444b1170f2469e7f3d07b043cca53878c78433f6b66700a
+    Image:          registry.k8s.io/pause:3.10
+    Image ID:       sha256:873ed75102791e5b0b8a7fcd41606c92fcec98d56d05ead4ac5131650004c136
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Thu, 04 Jun 2026 19:20:49 +0530
+    Ready:          True
+    Restart Count:  0
+    Requests:
+      cpu:        900m
+      memory:     64Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-mkqk5 (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-mkqk5:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:             memory-heavy
+Namespace:        sched-tests
+Priority:         0
+Service Account:  default
+Node:             playground-cluster-worker5/172.21.0.3
+Start Time:       Thu, 04 Jun 2026 19:20:48 +0530
+Labels:           app=condition-test
+                  topology.kubernetes.io/zone=zone-b
+Annotations:      <none>
+Status:           Running
+IP:               10.244.5.70
+IPs:
+  IP:  10.244.5.70
+Containers:
+  pause:
+    Container ID:   containerd://92629fe84f0ca0b19d0f9ce273c297b569dda8fe4a36d183edeca4645c57fa6b
+    Image:          registry.k8s.io/pause:3.10
+    Image ID:       sha256:873ed75102791e5b0b8a7fcd41606c92fcec98d56d05ead4ac5131650004c136
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Thu, 04 Jun 2026 19:20:49 +0530
+    Ready:          True
+    Restart Count:  0
+    Requests:
+      cpu:        100m
+      memory:     900Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-vw29h (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-vw29h:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:             qos-besteffort
+Namespace:        sched-tests
+Priority:         0
+Service Account:  default
+Node:             playground-cluster-worker4/172.21.0.8
+Start Time:       Thu, 04 Jun 2026 19:20:48 +0530
+Labels:           app=condition-test
+                  topology.kubernetes.io/zone=zone-b
+Annotations:      <none>
+Status:           Running
+IP:               10.244.1.78
+IPs:
+  IP:  10.244.1.78
+Containers:
+  pause:
+    Container ID:   containerd://4a8acb8c2d64bd9e823f82fe9987f1afda3d346ce62cb49cba17a34ecad5848a
+    Image:          registry.k8s.io/pause:3.10
+    Image ID:       sha256:873ed75102791e5b0b8a7fcd41606c92fcec98d56d05ead4ac5131650004c136
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Thu, 04 Jun 2026 19:20:49 +0530
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-cp2rn (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-cp2rn:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:             qos-guaranteed
+Namespace:        sched-tests
+Priority:         0
+Service Account:  default
+Node:             playground-cluster-worker2/172.21.0.4
+Start Time:       Thu, 04 Jun 2026 19:20:48 +0530
+Labels:           app=condition-test
+                  topology.kubernetes.io/zone=zone-a
+Annotations:      <none>
+Status:           Running
+IP:               10.244.3.158
+IPs:
+  IP:  10.244.3.158
+Containers:
+  pause:
+    Container ID:   containerd://70f7eb88b7ffb147a824add8fe74eee4b34cd56ab6cb0cd1519eb61b9f23e6d0
+    Image:          registry.k8s.io/pause:3.10
+    Image ID:       sha256:873ed75102791e5b0b8a7fcd41606c92fcec98d56d05ead4ac5131650004c136
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Thu, 04 Jun 2026 19:20:49 +0530
+    Ready:          True
+    Restart Count:  0
+    Limits:
+      cpu:     200m
+      memory:  128Mi
+    Requests:
+      cpu:        200m
+      memory:     128Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-h4cmh (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-h4cmh:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Guaranteed
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:             taint-tolerant
+Namespace:        sched-tests
+Priority:         0
+Service Account:  default
+Node:             playground-cluster-worker4/172.21.0.8
+Start Time:       Thu, 04 Jun 2026 19:20:48 +0530
+Labels:           app=taint-test
+                  topology.kubernetes.io/zone=zone-b
+Annotations:      <none>
+Status:           Running
+IP:               10.244.1.80
+IPs:
+  IP:  10.244.1.80
+Containers:
+  pause:
+    Container ID:   containerd://3843048826283ec512293ef7a769e07285a90f3305f9fbb3cef3f83637ba0bc5
+    Image:          registry.k8s.io/pause:3.10
+    Image ID:       sha256:873ed75102791e5b0b8a7fcd41606c92fcec98d56d05ead4ac5131650004c136
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Thu, 04 Jun 2026 19:20:49 +0530
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-2pb4z (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-2pb4z:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+                             special=avoid:PreferNoSchedule
+
+
+Name:             topology-test-68cfdf8596-25584
+Namespace:        sched-tests
+Priority:         0
+Service Account:  default
+Node:             playground-cluster-worker2/172.21.0.4
+Start Time:       Thu, 04 Jun 2026 19:20:48 +0530
+Labels:           app=topology-test
+                  pod-template-hash=68cfdf8596
+                  topology.kubernetes.io/zone=zone-a
+Annotations:      <none>
+Status:           Running
+IP:               10.244.3.160
+IPs:
+  IP:           10.244.3.160
+Controlled By:  ReplicaSet/topology-test-68cfdf8596
+Containers:
+  pause:
+    Container ID:   containerd://8210474f53303c171b3c2cb9d2889c15280510996a62ee536cb096451a468a07
+    Image:          registry.k8s.io/pause:3.10
+    Image ID:       sha256:873ed75102791e5b0b8a7fcd41606c92fcec98d56d05ead4ac5131650004c136
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Thu, 04 Jun 2026 19:20:49 +0530
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-9prms (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-9prms:
+    Type:                     Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:   3607
+    ConfigMapName:            kube-root-ca.crt
+    Optional:                 false
+    DownwardAPI:              true
+QoS Class:                    BestEffort
+Node-Selectors:               <none>
+Tolerations:                  node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                              node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Topology Spread Constraints:  topology.kubernetes.io/zone:ScheduleAnyway when max skew 1 is exceeded for selector app=topology-test
+
+
+Name:             topology-test-68cfdf8596-558zw
+Namespace:        sched-tests
+Priority:         0
+Service Account:  default
+Node:             playground-cluster-worker3/172.21.0.7
+Start Time:       Thu, 04 Jun 2026 19:20:48 +0530
+Labels:           app=topology-test
+                  pod-template-hash=68cfdf8596
+                  topology.kubernetes.io/zone=zone-a
+Annotations:      <none>
+Status:           Running
+IP:               10.244.4.73
+IPs:
+  IP:           10.244.4.73
+Controlled By:  ReplicaSet/topology-test-68cfdf8596
+Containers:
+  pause:
+    Container ID:   containerd://03427e032b0f6d4d44084a4879f9ff18a28416f3bd151d2029b71abc0427dbfb
+    Image:          registry.k8s.io/pause:3.10
+    Image ID:       sha256:873ed75102791e5b0b8a7fcd41606c92fcec98d56d05ead4ac5131650004c136
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Thu, 04 Jun 2026 19:20:49 +0530
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-t4cxc (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-t4cxc:
+    Type:                     Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:   3607
+    ConfigMapName:            kube-root-ca.crt
+    Optional:                 false
+    DownwardAPI:              true
+QoS Class:                    BestEffort
+Node-Selectors:               <none>
+Tolerations:                  node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                              node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Topology Spread Constraints:  topology.kubernetes.io/zone:ScheduleAnyway when max skew 1 is exceeded for selector app=topology-test
+
+
+Name:             topology-test-68cfdf8596-6422z
+Namespace:        sched-tests
+Priority:         0
+Service Account:  default
+Node:             playground-cluster-worker4/172.21.0.8
+Start Time:       Thu, 04 Jun 2026 19:20:48 +0530
+Labels:           app=topology-test
+                  pod-template-hash=68cfdf8596
+                  topology.kubernetes.io/zone=zone-b
+Annotations:      <none>
+Status:           Running
+IP:               10.244.1.82
+IPs:
+  IP:           10.244.1.82
+Controlled By:  ReplicaSet/topology-test-68cfdf8596
+Containers:
+  pause:
+    Container ID:   containerd://fcd80d187ebb38b462d8a542445399c111b0bd8f00b89a31d098886334da171e
+    Image:          registry.k8s.io/pause:3.10
+    Image ID:       sha256:873ed75102791e5b0b8a7fcd41606c92fcec98d56d05ead4ac5131650004c136
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Thu, 04 Jun 2026 19:20:49 +0530
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-c5c5n (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-c5c5n:
+    Type:                     Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:   3607
+    ConfigMapName:            kube-root-ca.crt
+    Optional:                 false
+    DownwardAPI:              true
+QoS Class:                    BestEffort
+Node-Selectors:               <none>
+Tolerations:                  node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                              node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Topology Spread Constraints:  topology.kubernetes.io/zone:ScheduleAnyway when max skew 1 is exceeded for selector app=topology-test
+
+
+Name:             topology-test-68cfdf8596-74278
+Namespace:        sched-tests
+Priority:         0
+Service Account:  default
+Node:             playground-cluster-worker2/172.21.0.4
+Start Time:       Thu, 04 Jun 2026 19:20:48 +0530
+Labels:           app=topology-test
+                  pod-template-hash=68cfdf8596
+                  topology.kubernetes.io/zone=zone-a
+Annotations:      <none>
+Status:           Running
+IP:               10.244.3.161
+IPs:
+  IP:           10.244.3.161
+Controlled By:  ReplicaSet/topology-test-68cfdf8596
+Containers:
+  pause:
+    Container ID:   containerd://59bc2c822af983c85a51142b14571190ec1df3af3317aee7deb3740bc9fcd58c
+    Image:          registry.k8s.io/pause:3.10
+    Image ID:       sha256:873ed75102791e5b0b8a7fcd41606c92fcec98d56d05ead4ac5131650004c136
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Thu, 04 Jun 2026 19:20:49 +0530
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-4b6sj (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-4b6sj:
+    Type:                     Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:   3607
+    ConfigMapName:            kube-root-ca.crt
+    Optional:                 false
+    DownwardAPI:              true
+QoS Class:                    BestEffort
+Node-Selectors:               <none>
+Tolerations:                  node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                              node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Topology Spread Constraints:  topology.kubernetes.io/zone:ScheduleAnyway when max skew 1 is exceeded for selector app=topology-test
+
+
+Name:             topology-test-68cfdf8596-hw6wp
+Namespace:        sched-tests
+Priority:         0
+Service Account:  default
+Node:             playground-cluster-worker4/172.21.0.8
+Start Time:       Thu, 04 Jun 2026 19:20:48 +0530
+Labels:           app=topology-test
+                  pod-template-hash=68cfdf8596
+                  topology.kubernetes.io/zone=zone-b
+Annotations:      <none>
+Status:           Running
+IP:               10.244.1.79
+IPs:
+  IP:           10.244.1.79
+Controlled By:  ReplicaSet/topology-test-68cfdf8596
+Containers:
+  pause:
+    Container ID:   containerd://3299f9f28afdfe81e9ed3653b8fd9e1eade369f497e12fd909a27e553df25b2b
+    Image:          registry.k8s.io/pause:3.10
+    Image ID:       sha256:873ed75102791e5b0b8a7fcd41606c92fcec98d56d05ead4ac5131650004c136
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Thu, 04 Jun 2026 19:20:49 +0530
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-7n2j8 (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-7n2j8:
+    Type:                     Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:   3607
+    ConfigMapName:            kube-root-ca.crt
+    Optional:                 false
+    DownwardAPI:              true
+QoS Class:                    BestEffort
+Node-Selectors:               <none>
+Tolerations:                  node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                              node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Topology Spread Constraints:  topology.kubernetes.io/zone:ScheduleAnyway when max skew 1 is exceeded for selector app=topology-test
+
+
+Name:             topology-test-68cfdf8596-qgxqc
+Namespace:        sched-tests
+Priority:         0
+Service Account:  default
+Node:             playground-cluster-worker4/172.21.0.8
+Start Time:       Thu, 04 Jun 2026 19:20:48 +0530
+Labels:           app=topology-test
+                  pod-template-hash=68cfdf8596
+                  topology.kubernetes.io/zone=zone-b
+Annotations:      <none>
+Status:           Running
+IP:               10.244.1.81
+IPs:
+  IP:           10.244.1.81
+Controlled By:  ReplicaSet/topology-test-68cfdf8596
+Containers:
+  pause:
+    Container ID:   containerd://03934c539355926e72343f1c61bd2f2700cde3fe8706a951d5c6597fb3c0df0c
+    Image:          registry.k8s.io/pause:3.10
+    Image ID:       sha256:873ed75102791e5b0b8a7fcd41606c92fcec98d56d05ead4ac5131650004c136
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Thu, 04 Jun 2026 19:20:49 +0530
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-jz9qd (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-jz9qd:
+    Type:                     Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:   3607
+    ConfigMapName:            kube-root-ca.crt
+    Optional:                 false
+    DownwardAPI:              true
+QoS Class:                    BestEffort
+Node-Selectors:               <none>
+Tolerations:                  node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                              node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Topology Spread Constraints:  topology.kubernetes.io/zone:ScheduleAnyway when max skew 1 is exceeded for selector app=topology-test

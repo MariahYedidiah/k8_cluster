@@ -1,0 +1,1533 @@
+Name:             hm-cpu-76f86687fb-2frlr
+Namespace:        hybrid-eval
+Priority:         0
+Service Account:  default
+Node:             playground-cluster-worker4/172.21.0.5
+Start Time:       Fri, 05 Jun 2026 16:19:15 +0530
+Labels:           app=hm-cpu
+                  pod-template-hash=76f86687fb
+                  topology.kubernetes.io/zone=zone-b
+Annotations:      <none>
+Status:           Running
+IP:               10.244.1.82
+IPs:
+  IP:           10.244.1.82
+Controlled By:  ReplicaSet/hm-cpu-76f86687fb
+Containers:
+  pause:
+    Container ID:   containerd://049e9ad135739e6f534f8c6ab0bfa1b6b001bab1f447c688082975f5180d2e20
+    Image:          registry.k8s.io/pause:3.10
+    Image ID:       sha256:873ed75102791e5b0b8a7fcd41606c92fcec98d56d05ead4ac5131650004c136
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Fri, 05 Jun 2026 16:19:16 +0530
+    Ready:          True
+    Restart Count:  0
+    Requests:
+      cpu:        700m
+      memory:     64Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-f9wfm (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-f9wfm:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:             hm-cpu-76f86687fb-chrtm
+Namespace:        hybrid-eval
+Priority:         0
+Service Account:  default
+Node:             playground-cluster-worker2/172.21.0.2
+Start Time:       Fri, 05 Jun 2026 16:19:16 +0530
+Labels:           app=hm-cpu
+                  pod-template-hash=76f86687fb
+                  topology.kubernetes.io/zone=zone-a
+Annotations:      <none>
+Status:           Running
+IP:               10.244.3.37
+IPs:
+  IP:           10.244.3.37
+Controlled By:  ReplicaSet/hm-cpu-76f86687fb
+Containers:
+  pause:
+    Container ID:   containerd://85c21964900eb232e48c7bfee3b77e580ea841095869727854eb021f5c8647ec
+    Image:          registry.k8s.io/pause:3.10
+    Image ID:       sha256:873ed75102791e5b0b8a7fcd41606c92fcec98d56d05ead4ac5131650004c136
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Fri, 05 Jun 2026 16:19:16 +0530
+    Ready:          True
+    Restart Count:  0
+    Requests:
+      cpu:        700m
+      memory:     64Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-4pnvm (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-4pnvm:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:             hm-cpu-76f86687fb-hfd7h
+Namespace:        hybrid-eval
+Priority:         0
+Service Account:  default
+Node:             playground-cluster-worker3/172.21.0.3
+Start Time:       Fri, 05 Jun 2026 16:19:15 +0530
+Labels:           app=hm-cpu
+                  pod-template-hash=76f86687fb
+                  topology.kubernetes.io/zone=zone-a
+Annotations:      <none>
+Status:           Running
+IP:               10.244.4.114
+IPs:
+  IP:           10.244.4.114
+Controlled By:  ReplicaSet/hm-cpu-76f86687fb
+Containers:
+  pause:
+    Container ID:   containerd://b9cf1b769cd50197517bc1787b5f255c2d4d1580636313b1b396b39758797cc3
+    Image:          registry.k8s.io/pause:3.10
+    Image ID:       sha256:873ed75102791e5b0b8a7fcd41606c92fcec98d56d05ead4ac5131650004c136
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Fri, 05 Jun 2026 16:19:16 +0530
+    Ready:          True
+    Restart Count:  0
+    Requests:
+      cpu:        700m
+      memory:     64Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-5m6k2 (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-5m6k2:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:             hm-cpu-76f86687fb-rxzb6
+Namespace:        hybrid-eval
+Priority:         0
+Service Account:  default
+Node:             playground-cluster-worker5/172.21.0.8
+Start Time:       Fri, 05 Jun 2026 16:19:15 +0530
+Labels:           app=hm-cpu
+                  pod-template-hash=76f86687fb
+                  topology.kubernetes.io/zone=zone-b
+Annotations:      <none>
+Status:           Running
+IP:               10.244.5.52
+IPs:
+  IP:           10.244.5.52
+Controlled By:  ReplicaSet/hm-cpu-76f86687fb
+Containers:
+  pause:
+    Container ID:   containerd://c86d91952a5a31976f6b34656a8c3a5d5f5d885152004eb891fbe3210ade0ee8
+    Image:          registry.k8s.io/pause:3.10
+    Image ID:       sha256:873ed75102791e5b0b8a7fcd41606c92fcec98d56d05ead4ac5131650004c136
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Fri, 05 Jun 2026 16:19:16 +0530
+    Ready:          True
+    Restart Count:  0
+    Requests:
+      cpu:        700m
+      memory:     64Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-r6p42 (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-r6p42:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:             hm-details-96bbbc89f-bgrlw
+Namespace:        hybrid-eval
+Priority:         0
+Service Account:  default
+Node:             playground-cluster-worker2/172.21.0.2
+Start Time:       Fri, 05 Jun 2026 16:19:15 +0530
+Labels:           app=details
+                  pod-template-hash=96bbbc89f
+                  topology.kubernetes.io/zone=zone-a
+                  version=v1
+Annotations:      <none>
+Status:           Running
+IP:               10.244.3.32
+IPs:
+  IP:           10.244.3.32
+Controlled By:  ReplicaSet/hm-details-96bbbc89f
+Containers:
+  pause:
+    Container ID:   containerd://0a0b3aa9e7165044bc001bc729489f3fcc6cdc6344e35df407e5aece35bd7f37
+    Image:          registry.k8s.io/pause:3.10
+    Image ID:       sha256:873ed75102791e5b0b8a7fcd41606c92fcec98d56d05ead4ac5131650004c136
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Fri, 05 Jun 2026 16:19:16 +0530
+    Ready:          True
+    Restart Count:  0
+    Requests:
+      cpu:        100m
+      memory:     64Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-hjv5c (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-hjv5c:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:             hm-details-96bbbc89f-rgqps
+Namespace:        hybrid-eval
+Priority:         0
+Service Account:  default
+Node:             playground-cluster-worker5/172.21.0.8
+Start Time:       Fri, 05 Jun 2026 16:19:15 +0530
+Labels:           app=details
+                  pod-template-hash=96bbbc89f
+                  topology.kubernetes.io/zone=zone-b
+                  version=v1
+Annotations:      <none>
+Status:           Running
+IP:               10.244.5.50
+IPs:
+  IP:           10.244.5.50
+Controlled By:  ReplicaSet/hm-details-96bbbc89f
+Containers:
+  pause:
+    Container ID:   containerd://dd3f9ed8c96dffc6655b442e5aa194d65ab7eb8fd1feac36951bea1f53e2bb44
+    Image:          registry.k8s.io/pause:3.10
+    Image ID:       sha256:873ed75102791e5b0b8a7fcd41606c92fcec98d56d05ead4ac5131650004c136
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Fri, 05 Jun 2026 16:19:16 +0530
+    Ready:          True
+    Restart Count:  0
+    Requests:
+      cpu:        100m
+      memory:     64Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-rcrrt (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-rcrrt:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:                      hm-layer-698f6c7d8b-69msz
+Namespace:                 hybrid-eval
+Priority:                  0
+Service Account:           default
+Node:                      playground-cluster-worker4/172.21.0.5
+Start Time:                Fri, 05 Jun 2026 16:18:42 +0530
+Labels:                    app=hm-layer
+                           pod-template-hash=698f6c7d8b
+                           topology.kubernetes.io/zone=zone-b
+Annotations:               <none>
+Status:                    Terminating (lasts <invalid>)
+Termination Grace Period:  30s
+IP:                        10.244.1.77
+IPs:
+  IP:           10.244.1.77
+Controlled By:  ReplicaSet/hm-layer-698f6c7d8b
+Containers:
+  cached:
+    Container ID:  containerd://35b3cad81f34a5f81693121e5f2e18118569222516c392e7e667860217c2c90c
+    Image:         localhost:5000/netmarks-collector:v1
+    Image ID:      localhost:5000/netmarks-collector@sha256:e9716b5981ace94bb41895f02850b2c14ea992095c07c67bbad7ee90bab55930
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      sleep
+      3600
+    State:          Running
+      Started:      Fri, 05 Jun 2026 16:18:43 +0530
+    Ready:          True
+    Restart Count:  0
+    Requests:
+      cpu:        100m
+      memory:     128Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-znx6w (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-znx6w:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:                      hm-layer-698f6c7d8b-88z4c
+Namespace:                 hybrid-eval
+Priority:                  0
+Service Account:           default
+Node:                      playground-cluster-worker3/172.21.0.3
+Start Time:                Fri, 05 Jun 2026 16:18:42 +0530
+Labels:                    app=hm-layer
+                           pod-template-hash=698f6c7d8b
+                           topology.kubernetes.io/zone=zone-a
+Annotations:               <none>
+Status:                    Terminating (lasts <invalid>)
+Termination Grace Period:  30s
+IP:                        10.244.4.106
+IPs:
+  IP:           10.244.4.106
+Controlled By:  ReplicaSet/hm-layer-698f6c7d8b
+Containers:
+  cached:
+    Container ID:  containerd://9b9fdc615b3a7f2665b9460c965237ce9101b0b421090c6012c197c7183a104f
+    Image:         localhost:5000/netmarks-collector:v1
+    Image ID:      localhost:5000/netmarks-collector@sha256:e9716b5981ace94bb41895f02850b2c14ea992095c07c67bbad7ee90bab55930
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      sleep
+      3600
+    State:          Running
+      Started:      Fri, 05 Jun 2026 16:18:43 +0530
+    Ready:          True
+    Restart Count:  0
+    Requests:
+      cpu:        100m
+      memory:     128Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-qqfk7 (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-qqfk7:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:                      hm-layer-698f6c7d8b-g5dz9
+Namespace:                 hybrid-eval
+Priority:                  0
+Service Account:           default
+Node:                      playground-cluster-worker5/172.21.0.8
+Start Time:                Fri, 05 Jun 2026 16:18:42 +0530
+Labels:                    app=hm-layer
+                           pod-template-hash=698f6c7d8b
+                           topology.kubernetes.io/zone=zone-b
+Annotations:               <none>
+Status:                    Terminating (lasts <invalid>)
+Termination Grace Period:  30s
+IP:                        10.244.5.41
+IPs:
+  IP:           10.244.5.41
+Controlled By:  ReplicaSet/hm-layer-698f6c7d8b
+Containers:
+  cached:
+    Container ID:  containerd://c23f1b78684bbfca98c0581ffff301bb5c08f8de5ccdceb63af4474b9618ee81
+    Image:         localhost:5000/netmarks-collector:v1
+    Image ID:      localhost:5000/netmarks-collector@sha256:8f9e7302c0616286429c29f4bf7eccb4764dae6672c387e6a6ecfb1dc73feb21
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      sleep
+      3600
+    State:          Running
+      Started:      Fri, 05 Jun 2026 16:18:43 +0530
+    Ready:          True
+    Restart Count:  0
+    Requests:
+      cpu:        100m
+      memory:     128Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-p7mpx (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-p7mpx:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:                      hm-layer-698f6c7d8b-mj58d
+Namespace:                 hybrid-eval
+Priority:                  0
+Service Account:           default
+Node:                      playground-cluster-worker2/172.21.0.2
+Start Time:                Fri, 05 Jun 2026 16:18:42 +0530
+Labels:                    app=hm-layer
+                           pod-template-hash=698f6c7d8b
+                           topology.kubernetes.io/zone=zone-a
+Annotations:               <none>
+Status:                    Terminating (lasts <invalid>)
+Termination Grace Period:  30s
+IP:                        10.244.3.25
+IPs:
+  IP:           10.244.3.25
+Controlled By:  ReplicaSet/hm-layer-698f6c7d8b
+Containers:
+  cached:
+    Container ID:  containerd://1325299b703af37d14b50ae867e188cd061ed8b728bbb24936c05fb0b12fc18d
+    Image:         localhost:5000/netmarks-collector:v1
+    Image ID:      localhost:5000/netmarks-collector@sha256:8f9e7302c0616286429c29f4bf7eccb4764dae6672c387e6a6ecfb1dc73feb21
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      sleep
+      3600
+    State:          Running
+      Started:      Fri, 05 Jun 2026 16:18:43 +0530
+    Ready:          True
+    Restart Count:  0
+    Requests:
+      cpu:        100m
+      memory:     128Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-jq4ht (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-jq4ht:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:             hm-layer-7b54b6b95b-8cbbp
+Namespace:        hybrid-eval
+Priority:         0
+Service Account:  default
+Node:             playground-cluster-worker5/172.21.0.8
+Start Time:       Fri, 05 Jun 2026 16:19:15 +0530
+Labels:           app=hm-layer
+                  pod-template-hash=7b54b6b95b
+                  topology.kubernetes.io/zone=zone-b
+Annotations:      <none>
+Status:           Running
+IP:               10.244.5.48
+IPs:
+  IP:           10.244.5.48
+Controlled By:  ReplicaSet/hm-layer-7b54b6b95b
+Containers:
+  cached:
+    Container ID:  containerd://e44318a798377ec53cd2181a892c6952d4c44260329d8bf15d207901a45960c8
+    Image:         localhost:5000/netmarks-collector:v1
+    Image ID:      localhost:5000/netmarks-collector@sha256:8f9e7302c0616286429c29f4bf7eccb4764dae6672c387e6a6ecfb1dc73feb21
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      sleep
+      3600
+    State:          Running
+      Started:      Fri, 05 Jun 2026 16:19:16 +0530
+    Ready:          True
+    Restart Count:  0
+    Requests:
+      cpu:        100m
+      memory:     128Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-9v4pg (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-9v4pg:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:             hm-layer-7b54b6b95b-hzsn9
+Namespace:        hybrid-eval
+Priority:         0
+Service Account:  default
+Node:             playground-cluster-worker2/172.21.0.2
+Start Time:       Fri, 05 Jun 2026 16:19:15 +0530
+Labels:           app=hm-layer
+                  pod-template-hash=7b54b6b95b
+                  topology.kubernetes.io/zone=zone-a
+Annotations:      <none>
+Status:           Running
+IP:               10.244.3.30
+IPs:
+  IP:           10.244.3.30
+Controlled By:  ReplicaSet/hm-layer-7b54b6b95b
+Containers:
+  cached:
+    Container ID:  containerd://0d31e49c345948ece12547f8eb4adf2af496bc675832e056d326c9bc4950b5ef
+    Image:         localhost:5000/netmarks-collector:v1
+    Image ID:      localhost:5000/netmarks-collector@sha256:8f9e7302c0616286429c29f4bf7eccb4764dae6672c387e6a6ecfb1dc73feb21
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      sleep
+      3600
+    State:          Running
+      Started:      Fri, 05 Jun 2026 16:19:16 +0530
+    Ready:          True
+    Restart Count:  0
+    Requests:
+      cpu:        100m
+      memory:     128Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-cxlv9 (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-cxlv9:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:             hm-layer-7b54b6b95b-kl64r
+Namespace:        hybrid-eval
+Priority:         0
+Service Account:  default
+Node:             playground-cluster-worker4/172.21.0.5
+Start Time:       Fri, 05 Jun 2026 16:19:15 +0530
+Labels:           app=hm-layer
+                  pod-template-hash=7b54b6b95b
+                  topology.kubernetes.io/zone=zone-b
+Annotations:      <none>
+Status:           Running
+IP:               10.244.1.79
+IPs:
+  IP:           10.244.1.79
+Controlled By:  ReplicaSet/hm-layer-7b54b6b95b
+Containers:
+  cached:
+    Container ID:  containerd://2ea6f142977a52d65dd08b6be51171109584780308e0a03a61237660acf6b6ec
+    Image:         localhost:5000/netmarks-collector:v1
+    Image ID:      localhost:5000/netmarks-collector@sha256:e9716b5981ace94bb41895f02850b2c14ea992095c07c67bbad7ee90bab55930
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      sleep
+      3600
+    State:          Running
+      Started:      Fri, 05 Jun 2026 16:19:16 +0530
+    Ready:          True
+    Restart Count:  0
+    Requests:
+      cpu:        100m
+      memory:     128Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-9hvsb (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-9hvsb:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:             hm-layer-7b54b6b95b-s5gh2
+Namespace:        hybrid-eval
+Priority:         0
+Service Account:  default
+Node:             playground-cluster-worker3/172.21.0.3
+Start Time:       Fri, 05 Jun 2026 16:19:15 +0530
+Labels:           app=hm-layer
+                  pod-template-hash=7b54b6b95b
+                  topology.kubernetes.io/zone=zone-a
+Annotations:      <none>
+Status:           Running
+IP:               10.244.4.111
+IPs:
+  IP:           10.244.4.111
+Controlled By:  ReplicaSet/hm-layer-7b54b6b95b
+Containers:
+  cached:
+    Container ID:  containerd://24e77ad6914f378adbf75f0c961ae8ff1b95bde7d5b5c379e53c6c9df4b4cc0e
+    Image:         localhost:5000/netmarks-collector:v1
+    Image ID:      localhost:5000/netmarks-collector@sha256:e9716b5981ace94bb41895f02850b2c14ea992095c07c67bbad7ee90bab55930
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      sleep
+      3600
+    State:          Running
+      Started:      Fri, 05 Jun 2026 16:19:16 +0530
+    Ready:          True
+    Restart Count:  0
+    Requests:
+      cpu:        100m
+      memory:     128Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-mfbph (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-mfbph:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:             hm-productpage-5bf74c7586-6f52n
+Namespace:        hybrid-eval
+Priority:         0
+Service Account:  default
+Node:             playground-cluster-worker2/172.21.0.2
+Start Time:       Fri, 05 Jun 2026 16:19:15 +0530
+Labels:           app=productpage
+                  pod-template-hash=5bf74c7586
+                  topology.kubernetes.io/zone=zone-a
+                  version=v1
+Annotations:      <none>
+Status:           Running
+IP:               10.244.3.34
+IPs:
+  IP:           10.244.3.34
+Controlled By:  ReplicaSet/hm-productpage-5bf74c7586
+Containers:
+  pause:
+    Container ID:   containerd://31e9b16d67831a5883bfabb6fdbfa7145665e0cd048863beaf2e3835fc838d61
+    Image:          registry.k8s.io/pause:3.10
+    Image ID:       sha256:873ed75102791e5b0b8a7fcd41606c92fcec98d56d05ead4ac5131650004c136
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Fri, 05 Jun 2026 16:19:16 +0530
+    Ready:          True
+    Restart Count:  0
+    Requests:
+      cpu:        300m
+      memory:     256Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-jkzpb (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-jkzpb:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:             hm-productpage-5bf74c7586-mzzgj
+Namespace:        hybrid-eval
+Priority:         0
+Service Account:  default
+Node:             playground-cluster-worker3/172.21.0.3
+Start Time:       Fri, 05 Jun 2026 16:19:15 +0530
+Labels:           app=productpage
+                  pod-template-hash=5bf74c7586
+                  topology.kubernetes.io/zone=zone-a
+                  version=v1
+Annotations:      <none>
+Status:           Running
+IP:               10.244.4.113
+IPs:
+  IP:           10.244.4.113
+Controlled By:  ReplicaSet/hm-productpage-5bf74c7586
+Containers:
+  pause:
+    Container ID:   containerd://6f41ef9125861cbf4d489deb041fe2016372b5c1d181109cd46cf5cd5870f1f7
+    Image:          registry.k8s.io/pause:3.10
+    Image ID:       sha256:873ed75102791e5b0b8a7fcd41606c92fcec98d56d05ead4ac5131650004c136
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Fri, 05 Jun 2026 16:19:16 +0530
+    Ready:          True
+    Restart Count:  0
+    Requests:
+      cpu:        300m
+      memory:     256Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-rbn55 (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-rbn55:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:             hm-productpage-5bf74c7586-n2r25
+Namespace:        hybrid-eval
+Priority:         0
+Service Account:  default
+Node:             playground-cluster-worker5/172.21.0.8
+Start Time:       Fri, 05 Jun 2026 16:19:15 +0530
+Labels:           app=productpage
+                  pod-template-hash=5bf74c7586
+                  topology.kubernetes.io/zone=zone-b
+                  version=v1
+Annotations:      <none>
+Status:           Running
+IP:               10.244.5.51
+IPs:
+  IP:           10.244.5.51
+Controlled By:  ReplicaSet/hm-productpage-5bf74c7586
+Containers:
+  pause:
+    Container ID:   containerd://9ff8f9a5af3f75735ae0e119147ed583d17748e0582f93b91830b4dbd3c678e6
+    Image:          registry.k8s.io/pause:3.10
+    Image ID:       sha256:873ed75102791e5b0b8a7fcd41606c92fcec98d56d05ead4ac5131650004c136
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Fri, 05 Jun 2026 16:19:16 +0530
+    Ready:          True
+    Restart Count:  0
+    Requests:
+      cpu:        300m
+      memory:     256Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-bhgqb (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-bhgqb:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:             hm-productpage-5bf74c7586-x9cvx
+Namespace:        hybrid-eval
+Priority:         0
+Service Account:  default
+Node:             playground-cluster-worker4/172.21.0.5
+Start Time:       Fri, 05 Jun 2026 16:19:15 +0530
+Labels:           app=productpage
+                  pod-template-hash=5bf74c7586
+                  topology.kubernetes.io/zone=zone-b
+                  version=v1
+Annotations:      <none>
+Status:           Running
+IP:               10.244.1.81
+IPs:
+  IP:           10.244.1.81
+Controlled By:  ReplicaSet/hm-productpage-5bf74c7586
+Containers:
+  pause:
+    Container ID:   containerd://ea8377924757746859541494230884c459d79666cf18795b82bbf8f95b62a124
+    Image:          registry.k8s.io/pause:3.10
+    Image ID:       sha256:873ed75102791e5b0b8a7fcd41606c92fcec98d56d05ead4ac5131650004c136
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Fri, 05 Jun 2026 16:19:16 +0530
+    Ready:          True
+    Restart Count:  0
+    Requests:
+      cpu:        300m
+      memory:     256Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-g2qm7 (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-g2qm7:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:             hm-ratings-7d746cbb9f-qcmnb
+Namespace:        hybrid-eval
+Priority:         0
+Service Account:  default
+Node:             playground-cluster-worker2/172.21.0.2
+Start Time:       Fri, 05 Jun 2026 16:19:15 +0530
+Labels:           app=ratings
+                  pod-template-hash=7d746cbb9f
+                  topology.kubernetes.io/zone=zone-a
+                  version=v1
+Annotations:      <none>
+Status:           Running
+IP:               10.244.3.31
+IPs:
+  IP:           10.244.3.31
+Controlled By:  ReplicaSet/hm-ratings-7d746cbb9f
+Containers:
+  pause:
+    Container ID:   containerd://6f42498bc06d504eb24dd44a580b90981a4d75e2c9d632263c74898fdeefca94
+    Image:          registry.k8s.io/pause:3.10
+    Image ID:       sha256:873ed75102791e5b0b8a7fcd41606c92fcec98d56d05ead4ac5131650004c136
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Fri, 05 Jun 2026 16:19:16 +0530
+    Ready:          True
+    Restart Count:  0
+    Requests:
+      cpu:        100m
+      memory:     64Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-6msf7 (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-6msf7:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:             hm-ratings-7d746cbb9f-xnf8k
+Namespace:        hybrid-eval
+Priority:         0
+Service Account:  default
+Node:             playground-cluster-worker5/172.21.0.8
+Start Time:       Fri, 05 Jun 2026 16:19:15 +0530
+Labels:           app=ratings
+                  pod-template-hash=7d746cbb9f
+                  topology.kubernetes.io/zone=zone-b
+                  version=v1
+Annotations:      <none>
+Status:           Running
+IP:               10.244.5.49
+IPs:
+  IP:           10.244.5.49
+Controlled By:  ReplicaSet/hm-ratings-7d746cbb9f
+Containers:
+  pause:
+    Container ID:   containerd://78002c349d81586d7c9f97d7600c352aafda5dd23b609dcbc72ce70d0a56ba14
+    Image:          registry.k8s.io/pause:3.10
+    Image ID:       sha256:873ed75102791e5b0b8a7fcd41606c92fcec98d56d05ead4ac5131650004c136
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Fri, 05 Jun 2026 16:19:16 +0530
+    Ready:          True
+    Restart Count:  0
+    Requests:
+      cpu:        100m
+      memory:     64Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-pqfcc (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-pqfcc:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:             hm-reviews-864765dc57-d87dr
+Namespace:        hybrid-eval
+Priority:         0
+Service Account:  default
+Node:             playground-cluster-worker3/172.21.0.3
+Start Time:       Fri, 05 Jun 2026 16:19:15 +0530
+Labels:           app=reviews
+                  pod-template-hash=864765dc57
+                  topology.kubernetes.io/zone=zone-a
+                  version=v1
+Annotations:      <none>
+Status:           Running
+IP:               10.244.4.112
+IPs:
+  IP:           10.244.4.112
+Controlled By:  ReplicaSet/hm-reviews-864765dc57
+Containers:
+  pause:
+    Container ID:   containerd://a36b14c5229efd24247a003136d5d9ecef8bcd00e6b54900a6fcd1a51a1e0fcb
+    Image:          registry.k8s.io/pause:3.10
+    Image ID:       sha256:873ed75102791e5b0b8a7fcd41606c92fcec98d56d05ead4ac5131650004c136
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Fri, 05 Jun 2026 16:19:16 +0530
+    Ready:          True
+    Restart Count:  0
+    Requests:
+      cpu:        150m
+      memory:     96Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-fw6nz (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-fw6nz:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:             hm-reviews-864765dc57-dxb5h
+Namespace:        hybrid-eval
+Priority:         0
+Service Account:  default
+Node:             playground-cluster-worker2/172.21.0.2
+Start Time:       Fri, 05 Jun 2026 16:19:15 +0530
+Labels:           app=reviews
+                  pod-template-hash=864765dc57
+                  topology.kubernetes.io/zone=zone-a
+                  version=v1
+Annotations:      <none>
+Status:           Running
+IP:               10.244.3.33
+IPs:
+  IP:           10.244.3.33
+Controlled By:  ReplicaSet/hm-reviews-864765dc57
+Containers:
+  pause:
+    Container ID:   containerd://6b3bd3eb58ffa951ada58fa730d406a539f2bd97150bb707439681d9771a083d
+    Image:          registry.k8s.io/pause:3.10
+    Image ID:       sha256:873ed75102791e5b0b8a7fcd41606c92fcec98d56d05ead4ac5131650004c136
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Fri, 05 Jun 2026 16:19:16 +0530
+    Ready:          True
+    Restart Count:  0
+    Requests:
+      cpu:        150m
+      memory:     96Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-2v8mq (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-2v8mq:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:             hm-reviews-864765dc57-qz46s
+Namespace:        hybrid-eval
+Priority:         0
+Service Account:  default
+Node:             playground-cluster-worker4/172.21.0.5
+Start Time:       Fri, 05 Jun 2026 16:19:15 +0530
+Labels:           app=reviews
+                  pod-template-hash=864765dc57
+                  topology.kubernetes.io/zone=zone-b
+                  version=v1
+Annotations:      <none>
+Status:           Running
+IP:               10.244.1.80
+IPs:
+  IP:           10.244.1.80
+Controlled By:  ReplicaSet/hm-reviews-864765dc57
+Containers:
+  pause:
+    Container ID:   containerd://d9b590fced9ac734a1e8d0201a7b879dfadbc2c0cfac1f86ff2cc0aee13d6282
+    Image:          registry.k8s.io/pause:3.10
+    Image ID:       sha256:873ed75102791e5b0b8a7fcd41606c92fcec98d56d05ead4ac5131650004c136
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Fri, 05 Jun 2026 16:19:16 +0530
+    Ready:          True
+    Restart Count:  0
+    Requests:
+      cpu:        150m
+      memory:     96Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-wj6xq (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-wj6xq:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:             hm-topology-5ccf57948-2vvmg
+Namespace:        hybrid-eval
+Priority:         0
+Service Account:  default
+Node:             playground-cluster-worker2/172.21.0.2
+Start Time:       Fri, 05 Jun 2026 16:19:15 +0530
+Labels:           app=hm-topology
+                  pod-template-hash=5ccf57948
+                  topology.kubernetes.io/zone=zone-a
+Annotations:      <none>
+Status:           Running
+IP:               10.244.3.35
+IPs:
+  IP:           10.244.3.35
+Controlled By:  ReplicaSet/hm-topology-5ccf57948
+Containers:
+  pause:
+    Container ID:   containerd://c8b1710c457280f3d1c698dd9c6b80dffc07a8087416217e2cd96239e4d84917
+    Image:          registry.k8s.io/pause:3.10
+    Image ID:       sha256:873ed75102791e5b0b8a7fcd41606c92fcec98d56d05ead4ac5131650004c136
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Fri, 05 Jun 2026 16:19:16 +0530
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-n8kjt (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-n8kjt:
+    Type:                     Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:   3607
+    ConfigMapName:            kube-root-ca.crt
+    Optional:                 false
+    DownwardAPI:              true
+QoS Class:                    BestEffort
+Node-Selectors:               <none>
+Tolerations:                  node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                              node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Topology Spread Constraints:  topology.kubernetes.io/zone:ScheduleAnyway when max skew 1 is exceeded for selector app=hm-topology
+
+
+Name:             hm-topology-5ccf57948-h5b72
+Namespace:        hybrid-eval
+Priority:         0
+Service Account:  default
+Node:             playground-cluster-worker4/172.21.0.5
+Start Time:       Fri, 05 Jun 2026 16:19:15 +0530
+Labels:           app=hm-topology
+                  pod-template-hash=5ccf57948
+                  topology.kubernetes.io/zone=zone-b
+Annotations:      <none>
+Status:           Running
+IP:               10.244.1.83
+IPs:
+  IP:           10.244.1.83
+Controlled By:  ReplicaSet/hm-topology-5ccf57948
+Containers:
+  pause:
+    Container ID:   containerd://c78fa68d9a4f268aaa50bda2e77578d72372435fb2493fac54ae7a993077924f
+    Image:          registry.k8s.io/pause:3.10
+    Image ID:       sha256:873ed75102791e5b0b8a7fcd41606c92fcec98d56d05ead4ac5131650004c136
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Fri, 05 Jun 2026 16:19:16 +0530
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-lpztp (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-lpztp:
+    Type:                     Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:   3607
+    ConfigMapName:            kube-root-ca.crt
+    Optional:                 false
+    DownwardAPI:              true
+QoS Class:                    BestEffort
+Node-Selectors:               <none>
+Tolerations:                  node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                              node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Topology Spread Constraints:  topology.kubernetes.io/zone:ScheduleAnyway when max skew 1 is exceeded for selector app=hm-topology
+
+
+Name:             hm-topology-5ccf57948-kk2pm
+Namespace:        hybrid-eval
+Priority:         0
+Service Account:  default
+Node:             playground-cluster-worker5/172.21.0.8
+Start Time:       Fri, 05 Jun 2026 16:19:16 +0530
+Labels:           app=hm-topology
+                  pod-template-hash=5ccf57948
+                  topology.kubernetes.io/zone=zone-b
+Annotations:      <none>
+Status:           Running
+IP:               10.244.5.53
+IPs:
+  IP:           10.244.5.53
+Controlled By:  ReplicaSet/hm-topology-5ccf57948
+Containers:
+  pause:
+    Container ID:   containerd://439650cbaac1bf5da3c5812b3418dd4ae59251c8f4bde298406db41a01de4520
+    Image:          registry.k8s.io/pause:3.10
+    Image ID:       sha256:873ed75102791e5b0b8a7fcd41606c92fcec98d56d05ead4ac5131650004c136
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Fri, 05 Jun 2026 16:19:16 +0530
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-228rc (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-228rc:
+    Type:                     Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:   3607
+    ConfigMapName:            kube-root-ca.crt
+    Optional:                 false
+    DownwardAPI:              true
+QoS Class:                    BestEffort
+Node-Selectors:               <none>
+Tolerations:                  node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                              node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Topology Spread Constraints:  topology.kubernetes.io/zone:ScheduleAnyway when max skew 1 is exceeded for selector app=hm-topology
+
+
+Name:             hm-topology-5ccf57948-mlz28
+Namespace:        hybrid-eval
+Priority:         0
+Service Account:  default
+Node:             playground-cluster-worker2/172.21.0.2
+Start Time:       Fri, 05 Jun 2026 16:19:15 +0530
+Labels:           app=hm-topology
+                  pod-template-hash=5ccf57948
+                  topology.kubernetes.io/zone=zone-a
+Annotations:      <none>
+Status:           Running
+IP:               10.244.3.36
+IPs:
+  IP:           10.244.3.36
+Controlled By:  ReplicaSet/hm-topology-5ccf57948
+Containers:
+  pause:
+    Container ID:   containerd://ab76c61c7949a8e2390dbe4a8ff7ffc5ee5411ec428e9b9d9e5a8b5f655915c0
+    Image:          registry.k8s.io/pause:3.10
+    Image ID:       sha256:873ed75102791e5b0b8a7fcd41606c92fcec98d56d05ead4ac5131650004c136
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Fri, 05 Jun 2026 16:19:16 +0530
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-6qwsd (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-6qwsd:
+    Type:                     Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:   3607
+    ConfigMapName:            kube-root-ca.crt
+    Optional:                 false
+    DownwardAPI:              true
+QoS Class:                    BestEffort
+Node-Selectors:               <none>
+Tolerations:                  node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                              node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Topology Spread Constraints:  topology.kubernetes.io/zone:ScheduleAnyway when max skew 1 is exceeded for selector app=hm-topology
+
+
+Name:             hm-topology-5ccf57948-pjh8x
+Namespace:        hybrid-eval
+Priority:         0
+Service Account:  default
+Node:             playground-cluster-worker5/172.21.0.8
+Start Time:       Fri, 05 Jun 2026 16:19:16 +0530
+Labels:           app=hm-topology
+                  pod-template-hash=5ccf57948
+                  topology.kubernetes.io/zone=zone-b
+Annotations:      <none>
+Status:           Running
+IP:               10.244.5.54
+IPs:
+  IP:           10.244.5.54
+Controlled By:  ReplicaSet/hm-topology-5ccf57948
+Containers:
+  pause:
+    Container ID:   containerd://47554922691a676835390f43f93c216dac27e584f8a01087ab13459a71928a14
+    Image:          registry.k8s.io/pause:3.10
+    Image ID:       sha256:873ed75102791e5b0b8a7fcd41606c92fcec98d56d05ead4ac5131650004c136
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Fri, 05 Jun 2026 16:19:16 +0530
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-vq47j (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-vq47j:
+    Type:                     Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:   3607
+    ConfigMapName:            kube-root-ca.crt
+    Optional:                 false
+    DownwardAPI:              true
+QoS Class:                    BestEffort
+Node-Selectors:               <none>
+Tolerations:                  node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                              node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Topology Spread Constraints:  topology.kubernetes.io/zone:ScheduleAnyway when max skew 1 is exceeded for selector app=hm-topology
+
+
+Name:             hm-topology-5ccf57948-shwpt
+Namespace:        hybrid-eval
+Priority:         0
+Service Account:  default
+Node:             playground-cluster-worker2/172.21.0.2
+Start Time:       Fri, 05 Jun 2026 16:19:16 +0530
+Labels:           app=hm-topology
+                  pod-template-hash=5ccf57948
+                  topology.kubernetes.io/zone=zone-a
+Annotations:      <none>
+Status:           Running
+IP:               10.244.3.38
+IPs:
+  IP:           10.244.3.38
+Controlled By:  ReplicaSet/hm-topology-5ccf57948
+Containers:
+  pause:
+    Container ID:   containerd://86d4f2a40f317b0fd398f372b6625369cff45df8f578d17324316cf1ca2908b2
+    Image:          registry.k8s.io/pause:3.10
+    Image ID:       sha256:873ed75102791e5b0b8a7fcd41606c92fcec98d56d05ead4ac5131650004c136
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Fri, 05 Jun 2026 16:19:16 +0530
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-52lzx (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-52lzx:
+    Type:                     Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:   3607
+    ConfigMapName:            kube-root-ca.crt
+    Optional:                 false
+    DownwardAPI:              true
+QoS Class:                    BestEffort
+Node-Selectors:               <none>
+Tolerations:                  node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                              node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Topology Spread Constraints:  topology.kubernetes.io/zone:ScheduleAnyway when max skew 1 is exceeded for selector app=hm-topology

@@ -1,0 +1,55 @@
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: netmarks-collector
+  namespace: kube-system
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: netmarks-collector
+  namespace: kube-system
+rules:
+- apiGroups: [""]
+  resources: ["configmaps"]
+  verbs: ["get", "create", "update", "patch"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: netmarks-collector
+  namespace: kube-system
+subjects:
+- kind: ServiceAccount
+  name: netmarks-collector
+  namespace: kube-system
+roleRef:
+  kind: Role
+  name: netmarks-collector
+  apiGroup: rbac.authorization.k8s.io
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: netmarks-collector
+  namespace: kube-system
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: netmarks-collector
+  template:
+    metadata:
+      labels:
+        app: netmarks-collector
+    spec:
+      serviceAccountName: netmarks-collector
+      containers:
+      - name: collector
+        image: localhost:5000/netmarks-collector:v1
+        imagePullPolicy: Always
+        env:
+        - name: PROM_URL
+          value: "http://prometheus.istio-system.svc.cluster.local:9090"
+        - name: INTERVAL
+          value: "20"

@@ -1,0 +1,217 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: w9-layer
+  namespace: mixed-eval
+spec:
+  replicas: 6
+  selector:
+    matchLabels:
+      app: w9-layer
+  template:
+    metadata:
+      labels:
+        app: w9-layer
+    spec:
+      schedulerName: clusterhybrid-scheduler
+      containers:
+      - name: cached
+        image: localhost:5000/netmarks-collector:v1
+        imagePullPolicy: IfNotPresent
+        command: ["sleep","3600"]
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "128Mi"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: w9-productpage
+  namespace: mixed-eval
+spec:
+  replicas: 6
+  selector:
+    matchLabels:
+      app: productpage
+      version: v1
+  template:
+    metadata:
+      labels:
+        app: productpage
+        version: v1
+    spec:
+      schedulerName: clusterhybrid-scheduler
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.10
+        resources:
+          requests:
+            cpu: "250m"
+            memory: "256Mi"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: w9-reviews
+  namespace: mixed-eval
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: reviews
+      version: v1
+  template:
+    metadata:
+      labels:
+        app: reviews
+        version: v1
+    spec:
+      schedulerName: clusterhybrid-scheduler
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.10
+        resources:
+          requests:
+            cpu: "150m"
+            memory: "128Mi"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: w9-cpu
+  namespace: mixed-eval
+spec:
+  replicas: 6
+  selector:
+    matchLabels:
+      app: w9-cpu
+  template:
+    metadata:
+      labels:
+        app: w9-cpu
+    spec:
+      schedulerName: clusterhybrid-scheduler
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.10
+        resources:
+          requests:
+            cpu: "700m"
+            memory: "64Mi"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: w9-memory
+  namespace: mixed-eval
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: w9-memory
+  template:
+    metadata:
+      labels:
+        app: w9-memory
+    spec:
+      schedulerName: clusterhybrid-scheduler
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.10
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "900Mi"
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: w9-affinity
+  namespace: mixed-eval
+spec:
+  schedulerName: clusterhybrid-scheduler
+  affinity:
+    nodeAffinity:
+      preferredDuringSchedulingIgnoredDuringExecution:
+      - weight: 100
+        preference:
+          matchExpressions:
+          - key: affinity-target
+            operator: In
+            values: ["yes"]
+  containers:
+  - name: pause
+    image: registry.k8s.io/pause:3.10
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: w9-antiaffinity
+  namespace: mixed-eval
+spec:
+  replicas: 6
+  selector:
+    matchLabels:
+      app: w9-antiaffinity
+  template:
+    metadata:
+      labels:
+        app: w9-antiaffinity
+    spec:
+      schedulerName: clusterhybrid-scheduler
+      affinity:
+        podAntiAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+          - weight: 100
+            podAffinityTerm:
+              labelSelector:
+                matchLabels:
+                  app: w9-antiaffinity
+              topologyKey: kubernetes.io/hostname
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.10
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: w9-toleration
+  namespace: mixed-eval
+spec:
+  schedulerName: clusterhybrid-scheduler
+  tolerations:
+  - key: "special"
+    operator: "Equal"
+    value: "avoid"
+    effect: "PreferNoSchedule"
+  containers:
+  - name: pause
+    image: registry.k8s.io/pause:3.10
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: w9-topology
+  namespace: mixed-eval
+spec:
+  replicas: 8
+  selector:
+    matchLabels:
+      app: w9-topology
+  template:
+    metadata:
+      labels:
+        app: w9-topology
+    spec:
+      schedulerName: clusterhybrid-scheduler
+      topologySpreadConstraints:
+      - maxSkew: 1
+        topologyKey: topology.kubernetes.io/zone
+        whenUnsatisfiable: ScheduleAnyway
+        labelSelector:
+          matchLabels:
+            app: w9-topology
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.10

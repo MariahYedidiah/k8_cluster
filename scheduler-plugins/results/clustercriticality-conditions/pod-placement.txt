@@ -1,0 +1,6 @@
+NAME             READY   STATUS    RESTARTS   AGE   IP            NODE                         NOMINATED NODE   READINESS GATES
+cc-best-effort   1/1     Running   0          72s   10.244.1.57   playground-cluster-worker4   <none>           <none>
+cc-cpu-high      1/1     Running   0          72s   10.244.5.51   playground-cluster-worker5   <none>           <none>
+cc-guaranteed    1/1     Running   0          72s   10.244.4.44   playground-cluster-worker3   <none>           <none>
+cc-mem-high      1/1     Running   0          72s   10.244.5.52   playground-cluster-worker5   <none>           <none>
+cc-topology      1/1     Running   0          72s   10.244.4.45   playground-cluster-worker3   <none>           <none>

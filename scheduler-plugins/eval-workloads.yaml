@@ -1,0 +1,194 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: balanced-nginx
+  namespace: sched-eval
+spec:
+  replicas: 12
+  selector:
+    matchLabels:
+      app: balanced-nginx
+  template:
+    metadata:
+      labels:
+        app: balanced-nginx
+        version: v1
+    spec:
+      schedulerName: SCHEDULER_NAME
+      containers:
+      - name: nginx
+        image: localhost:5000/nginx:latest
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "128Mi"
+            ephemeral-storage: "128Mi"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cpu-heavy
+  namespace: sched-eval
+spec:
+  replicas: 6
+  selector:
+    matchLabels:
+      app: cpu-heavy
+  template:
+    metadata:
+      labels:
+        app: cpu-heavy
+        version: v1
+    spec:
+      schedulerName: SCHEDULER_NAME
+      containers:
+      - name: stress
+        image: localhost:5000/stress:latest
+        command: ["stress"]
+        args: ["--cpu", "1", "--timeout", "3600"]
+        resources:
+          requests:
+            cpu: "700m"
+            memory: "128Mi"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: memory-heavy
+  namespace: sched-eval
+spec:
+  replicas: 6
+  selector:
+    matchLabels:
+      app: memory-heavy
+  template:
+    metadata:
+      labels:
+        app: memory-heavy
+        version: v1
+    spec:
+      schedulerName: SCHEDULER_NAME
+      containers:
+      - name: stress
+        image: localhost:5000/stress:latest
+        command: ["stress"]
+        args: ["--vm", "1", "--vm-bytes", "350M", "--timeout", "3600"]
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "512Mi"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: storage-heavy
+  namespace: sched-eval
+spec:
+  replicas: 6
+  selector:
+    matchLabels:
+      app: storage-heavy
+  template:
+    metadata:
+      labels:
+        app: storage-heavy
+        version: v1
+    spec:
+      schedulerName: SCHEDULER_NAME
+      containers:
+      - name: writer
+        image: localhost:5000/python:3.11-slim
+        command: ["sh", "-c"]
+        args: ["dd if=/dev/zero of=/tmp/blob bs=1M count=256 && sleep 3600"]
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "128Mi"
+            ephemeral-storage: "512Mi"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: topology-spread
+  namespace: sched-eval
+spec:
+  replicas: 12
+  selector:
+    matchLabels:
+      app: topology-spread
+  template:
+    metadata:
+      labels:
+        app: topology-spread
+        version: v1
+    spec:
+      schedulerName: SCHEDULER_NAME
+      topologySpreadConstraints:
+      - maxSkew: 1
+        topologyKey: topology.kubernetes.io/zone
+        whenUnsatisfiable: ScheduleAnyway
+        labelSelector:
+          matchLabels:
+            app: topology-spread
+      containers:
+      - name: nginx
+        image: localhost:5000/nginx:latest
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "128Mi"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: taint-sensitive
+  namespace: sched-eval
+spec:
+  replicas: 6
+  selector:
+    matchLabels:
+      app: taint-sensitive
+  template:
+    metadata:
+      labels:
+        app: taint-sensitive
+        version: v1
+    spec:
+      schedulerName: SCHEDULER_NAME
+      containers:
+      - name: nginx
+        image: localhost:5000/nginx:latest
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "128Mi"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: taint-tolerant
+  namespace: sched-eval
+spec:
+  replicas: 6
+  selector:
+    matchLabels:
+      app: taint-tolerant
+  template:
+    metadata:
+      labels:
+        app: taint-tolerant
+        version: v1
+    spec:
+      schedulerName: SCHEDULER_NAME
+      tolerations:
+      - key: special
+        operator: Equal
+        value: "true"
+        effect: PreferNoSchedule
+      containers:
+      - name: nginx
+        image: localhost:5000/nginx:latest
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "128Mi"

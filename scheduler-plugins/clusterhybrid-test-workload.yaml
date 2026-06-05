@@ -1,0 +1,50 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: clusterhybrid-nginx-1
+  labels:
+    app: reviews
+spec:
+  schedulerName: clusterhybrid-scheduler
+  containers:
+  - name: nginx
+    image: nginx:latest
+    resources:
+      requests:
+        cpu: "100m"
+        memory: "128Mi"
+        ephemeral-storage: "100Mi"
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: clusterhybrid-nginx-2
+  labels:
+    app: reviews
+spec:
+  schedulerName: clusterhybrid-scheduler
+  containers:
+  - name: nginx
+    image: nginx:latest
+    resources:
+      requests:
+        cpu: "200m"
+        memory: "256Mi"
+        ephemeral-storage: "100Mi"
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: clusterhybrid-redis-1
+  labels:
+    app: ratings
+spec:
+  schedulerName: clusterhybrid-scheduler
+  containers:
+  - name: redis
+    image: redis:latest
+    resources:
+      requests:
+        cpu: "100m"
+        memory: "128Mi"
+        ephemeral-storage: "100Mi"

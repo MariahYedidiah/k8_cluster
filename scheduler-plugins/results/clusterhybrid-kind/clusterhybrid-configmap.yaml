@@ -1,0 +1,16 @@
+apiVersion: v1
+data:
+  config.yaml: "apiVersion: kubescheduler.config.k8s.io/v1\nkind: KubeSchedulerConfiguration\nleaderElection:\n
+    \ leaderElect: false\n\nprofiles:\n- schedulerName: clusterhybrid-scheduler\n
+    \ plugins:\n    score:\n      enabled:\n      \n      - name: ClusterHybrid\n
+    \       weight: 100\n"
+kind: ConfigMap
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","data":{"config.yaml":"apiVersion: kubescheduler.config.k8s.io/v1\nkind: KubeSchedulerConfiguration\nleaderElection:\n  leaderElect: false\n\nprofiles:\n- schedulerName: clusterhybrid-scheduler\n  plugins:\n    score:\n      enabled:\n      \n      - name: ClusterHybrid\n        weight: 100\n"},"kind":"ConfigMap","metadata":{"annotations":{},"name":"clusterhybrid-scheduler-config","namespace":"kube-system"}}
+  creationTimestamp: "2026-06-02T06:09:23Z"
+  name: clusterhybrid-scheduler-config
+  namespace: kube-system
+  resourceVersion: "712689"
+  uid: 22651982-6709-4677-a7d8-51e80472b835

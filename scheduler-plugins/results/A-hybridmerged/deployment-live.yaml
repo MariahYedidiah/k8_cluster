@@ -1,0 +1,82 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    deployment.kubernetes.io/revision: "3"
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{},"name":"hybridmerged-scheduler","namespace":"kube-system"},"spec":{"replicas":1,"selector":{"matchLabels":{"app":"hybridmerged-scheduler"}},"template":{"metadata":{"labels":{"app":"hybridmerged-scheduler"}},"spec":{"containers":[{"args":["--config=/etc/kubernetes/config/config.yaml"],"command":["/bin/kube-scheduler"],"image":"localhost:5000/scheduler-plugins/kube-scheduler:netmarks-final-v1","imagePullPolicy":"IfNotPresent","name":"kube-scheduler","volumeMounts":[{"mountPath":"/etc/kubernetes/config","name":"config-volume"}]}],"nodeSelector":{"node-role.kubernetes.io/control-plane":""},"serviceAccountName":"hybridmerged-scheduler","tolerations":[{"effect":"NoSchedule","key":"node-role.kubernetes.io/control-plane","operator":"Exists"}],"volumes":[{"configMap":{"name":"hybridmerged-scheduler-config"},"name":"config-volume"}]}}}}
+  creationTimestamp: "2026-06-04T11:06:27Z"
+  generation: 3
+  name: hybridmerged-scheduler
+  namespace: kube-system
+  resourceVersion: "521152"
+  uid: f1f89302-ec7e-461c-956f-653cefdc94e1
+spec:
+  progressDeadlineSeconds: 600
+  replicas: 1
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      app: hybridmerged-scheduler
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: hybridmerged-scheduler
+    spec:
+      containers:
+      - args:
+        - --config=/etc/kubernetes/config/config.yaml
+        command:
+        - /bin/kube-scheduler
+        image: localhost:5000/scheduler-plugins/kube-scheduler:clean-v2
+        imagePullPolicy: IfNotPresent
+        name: kube-scheduler
+        resources: {}
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+        volumeMounts:
+        - mountPath: /etc/kubernetes/config
+          name: config-volume
+      dnsPolicy: ClusterFirst
+      nodeSelector:
+        node-role.kubernetes.io/control-plane: ""
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      serviceAccount: hybridmerged-scheduler
+      serviceAccountName: hybridmerged-scheduler
+      terminationGracePeriodSeconds: 30
+      tolerations:
+      - effect: NoSchedule
+        key: node-role.kubernetes.io/control-plane
+        operator: Exists
+      volumes:
+      - configMap:
+          defaultMode: 420
+          name: hybridmerged-scheduler-config
+        name: config-volume
+status:
+  availableReplicas: 1
+  conditions:
+  - lastTransitionTime: "2026-06-04T11:06:29Z"
+    lastUpdateTime: "2026-06-04T11:06:29Z"
+    message: Deployment has minimum availability.
+    reason: MinimumReplicasAvailable
+    status: "True"
+    type: Available
+  - lastTransitionTime: "2026-06-04T11:06:27Z"
+    lastUpdateTime: "2026-06-04T13:04:30Z"
+    message: ReplicaSet "hybridmerged-scheduler-54bdcf67bf" has successfully progressed.
+    reason: NewReplicaSetAvailable
+    status: "True"
+    type: Progressing
+  observedGeneration: 3
+  readyReplicas: 1
+  replicas: 1
+  terminatingReplicas: 0
+  updatedReplicas: 1

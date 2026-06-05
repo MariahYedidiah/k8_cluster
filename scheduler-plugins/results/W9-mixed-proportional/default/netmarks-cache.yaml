@@ -1,0 +1,31 @@
+apiVersion: v1
+data:
+  traffic.json: |-
+    {
+      "productpage-v1-v1": {
+        "details-v1-v1": 39908.0,
+        "reviews-v1-v1": 21648.0,
+        "reviews-v2-v2": 21510.0,
+        "reviews-v3-v3": 21764.0,
+        "w3-details": 28666.0,
+        "w3-reviews": 32221.0
+      },
+      "reviews-v3-v3": {
+        "ratings-v1-v1": 11916.0,
+        "w3-ratings": 7078.0
+      },
+      "reviews-v2-v2": {
+        "ratings-v1-v1": 11570.0,
+        "w3-ratings": 7073.0
+      }
+    }
+kind: ConfigMap
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","data":{"traffic.json":"{\n  \"productpage-v1-v1\": {\n    \"details-v1-v1\": 39908.0,\n    \"reviews-v1-v1\": 21648.0,\n    \"reviews-v2-v2\": 21510.0,\n    \"reviews-v3-v3\": 21764.0,\n    \"w3-details\": 28666.0,\n    \"w3-reviews\": 32221.0\n  },\n  \"reviews-v3-v3\": {\n    \"ratings-v1-v1\": 11916.0,\n    \"w3-ratings\": 7078.0\n  },\n  \"reviews-v2-v2\": {\n    \"ratings-v1-v1\": 11570.0,\n    \"w3-ratings\": 7073.0\n  }\n}"},"kind":"ConfigMap","metadata":{"annotations":{},"name":"netmarks-traffic-cache","namespace":"kube-system"}}
+  creationTimestamp: "2026-06-05T10:01:15Z"
+  name: netmarks-traffic-cache
+  namespace: kube-system
+  resourceVersion: "695476"
+  uid: 99d7d781-e4a6-4427-a714-952423816400

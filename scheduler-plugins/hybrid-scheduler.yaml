@@ -1,0 +1,109 @@
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: hybrid-scheduler
+  namespace: kube-system
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: hybrid-scheduler-extra
+rules:
+- apiGroups: [""]
+  resources: ["configmaps"]
+  verbs: ["get", "list", "watch"]
+- apiGroups: ["storage.k8s.io"]
+  resources: ["storageclasses"]
+  verbs: ["get", "list", "watch"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: hybrid-scheduler-main-binding
+subjects:
+- kind: ServiceAccount
+  name: hybrid-scheduler
+  namespace: kube-system
+roleRef:
+  kind: ClusterRole
+  name: system:kube-scheduler
+  apiGroup: rbac.authorization.k8s.io
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: hybrid-scheduler-extra-binding
+subjects:
+- kind: ServiceAccount
+  name: hybrid-scheduler
+  namespace: kube-system
+roleRef:
+  kind: ClusterRole
+  name: hybrid-scheduler-extra
+  apiGroup: rbac.authorization.k8s.io
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: hybrid-scheduler-auth-reader
+  namespace: kube-system
+subjects:
+- kind: ServiceAccount
+  name: hybrid-scheduler
+  namespace: kube-system
+roleRef:
+  kind: Role
+  name: extension-apiserver-authentication-reader
+  apiGroup: rbac.authorization.k8s.io
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: hybrid-scheduler-config
+  namespace: kube-system
+data:
+  config.yaml: |
+    apiVersion: kubescheduler.config.k8s.io/v1
+    kind: KubeSchedulerConfiguration
+    leaderElection:
+      leaderElect: false
+    profiles:
+    - schedulerName: hybrid-scheduler
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hybrid-scheduler
+  namespace: kube-system
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hybrid-scheduler
+  template:
+    metadata:
+      labels:
+        app: hybrid-scheduler
+    spec:
+      serviceAccountName: hybrid-scheduler
+      nodeSelector:
+        node-role.kubernetes.io/control-plane: ""
+      tolerations:
+      - key: "node-role.kubernetes.io/control-plane"
+        operator: "Exists"
+        effect: "NoSchedule"
+      containers:
+      - name: kube-scheduler
+        image: localhost:5000/scheduler-plugins/kube-scheduler:fixed-v1.34-v3
+        imagePullPolicy: Always
+        command:
+        - /bin/kube-scheduler
+        args:
+        - --config=/etc/kubernetes/config/config.yaml
+        volumeMounts:
+        - name: config-volume
+          mountPath: /etc/kubernetes/config
+      volumes:
+      - name: config-volume
+        configMap:
+          name: hybrid-scheduler-config

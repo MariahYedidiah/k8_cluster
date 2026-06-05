@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: anti-affinity-test
+  namespace: sched-tests
+spec:
+  replicas: 6
+  selector:
+    matchLabels:
+      app: anti-affinity-test
+  template:
+    metadata:
+      labels:
+        app: anti-affinity-test
+    spec:
+      schedulerName: hybridmerged-scheduler
+      affinity:
+        podAntiAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+          - weight: 100
+            podAffinityTerm:
+              labelSelector:
+                matchLabels:
+                  app: anti-affinity-test
+              topologyKey: kubernetes.io/hostname
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.10
+

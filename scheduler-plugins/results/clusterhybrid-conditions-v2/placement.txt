@@ -1,0 +1,13 @@
+NAME                             READY   STATUS    RESTARTS   AGE   IP             NODE                         NOMINATED NODE   READINESS GATES
+affinity-test                    1/1     Running   0          60s   10.244.3.155   playground-cluster-worker2   <none>           <none>
+cpu-heavy                        1/1     Running   0          61s   10.244.1.71    playground-cluster-worker4   <none>           <none>
+memory-heavy                     1/1     Running   0          61s   10.244.5.67    playground-cluster-worker5   <none>           <none>
+qos-besteffort                   1/1     Running   0          60s   10.244.3.154   playground-cluster-worker2   <none>           <none>
+qos-guaranteed                   1/1     Running   0          60s   10.244.4.64    playground-cluster-worker3   <none>           <none>
+taint-tolerant                   1/1     Running   0          60s   10.244.6.113   playground-cluster-worker6   <none>           <none>
+topology-test-68cfdf8596-jtsr6   1/1     Running   0          60s   10.244.4.66    playground-cluster-worker3   <none>           <none>
+topology-test-68cfdf8596-n7qf8   1/1     Running   0          60s   10.244.4.65    playground-cluster-worker3   <none>           <none>
+topology-test-68cfdf8596-r2hq9   1/1     Running   0          60s   10.244.1.72    playground-cluster-worker4   <none>           <none>
+topology-test-68cfdf8596-s54vt   1/1     Running   0          60s   10.244.4.67    playground-cluster-worker3   <none>           <none>
+topology-test-68cfdf8596-zmszj   1/1     Running   0          60s   10.244.5.68    playground-cluster-worker5   <none>           <none>
+topology-test-68cfdf8596-zvk9m   1/1     Running   0          60s   10.244.1.73    playground-cluster-worker4   <none>           <none>

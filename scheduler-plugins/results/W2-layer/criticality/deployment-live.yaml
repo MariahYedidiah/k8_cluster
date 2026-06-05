@@ -1,0 +1,84 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    deployment.kubernetes.io/revision: "15"
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{},"name":"criticality-scheduler","namespace":"kube-system"},"spec":{"replicas":1,"selector":{"matchLabels":{"app":"criticality-scheduler"}},"template":{"metadata":{"labels":{"app":"criticality-scheduler"}},"spec":{"containers":[{"args":["--config=/etc/kubernetes/config/config.yaml"],"command":["/bin/kube-scheduler"],"image":"localhost:5000/scheduler-plugins/kube-scheduler:netmarks-final-v1","imagePullPolicy":"IfNotPresent","name":"kube-scheduler","volumeMounts":[{"mountPath":"/etc/kubernetes/config","name":"config-volume"}]}],"nodeSelector":{"node-role.kubernetes.io/control-plane":""},"serviceAccountName":"criticality-scheduler","tolerations":[{"effect":"NoSchedule","key":"node-role.kubernetes.io/control-plane","operator":"Exists"}],"volumes":[{"configMap":{"name":"criticality-scheduler-config"},"name":"config-volume"}]}}}}
+  creationTimestamp: "2026-06-03T07:38:24Z"
+  generation: 15
+  name: criticality-scheduler
+  namespace: kube-system
+  resourceVersion: "594969"
+  uid: 23bc0ecc-2e70-4194-8312-4cd25fcbd240
+spec:
+  progressDeadlineSeconds: 600
+  replicas: 1
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      app: criticality-scheduler
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      annotations:
+        kubectl.kubernetes.io/restartedAt: "2026-06-03T22:59:18+05:30"
+      labels:
+        app: criticality-scheduler
+    spec:
+      containers:
+      - args:
+        - --config=/etc/kubernetes/config/config.yaml
+        command:
+        - /bin/kube-scheduler
+        image: localhost:5000/scheduler-plugins/kube-scheduler:latency-v1
+        imagePullPolicy: IfNotPresent
+        name: kube-scheduler
+        resources: {}
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+        volumeMounts:
+        - mountPath: /etc/kubernetes/config
+          name: config-volume
+      dnsPolicy: ClusterFirst
+      nodeSelector:
+        node-role.kubernetes.io/control-plane: ""
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      serviceAccount: criticality-scheduler
+      serviceAccountName: criticality-scheduler
+      terminationGracePeriodSeconds: 30
+      tolerations:
+      - effect: NoSchedule
+        key: node-role.kubernetes.io/control-plane
+        operator: Exists
+      volumes:
+      - configMap:
+          defaultMode: 420
+          name: criticality-scheduler-config
+        name: config-volume
+status:
+  availableReplicas: 1
+  conditions:
+  - lastTransitionTime: "2026-06-03T07:45:06Z"
+    lastUpdateTime: "2026-06-03T07:45:06Z"
+    message: Deployment has minimum availability.
+    reason: MinimumReplicasAvailable
+    status: "True"
+    type: Available
+  - lastTransitionTime: "2026-06-04T11:04:16Z"
+    lastUpdateTime: "2026-06-05T06:51:50Z"
+    message: ReplicaSet "criticality-scheduler-5f575b48f9" has successfully progressed.
+    reason: NewReplicaSetAvailable
+    status: "True"
+    type: Progressing
+  observedGeneration: 15
+  readyReplicas: 1
+  replicas: 1
+  terminatingReplicas: 0
+  updatedReplicas: 1

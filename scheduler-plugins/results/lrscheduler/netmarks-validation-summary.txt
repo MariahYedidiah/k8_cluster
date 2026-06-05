@@ -1,0 +1,11 @@
+NetMARKS Validation Summary
+
+The netmarks-traffic-cache ConfigMap contained service-to-service traffic from Istio/Prometheus.
+A productpage-labelled test pod was scheduled using HybridMerged.
+
+Observed scheduler scores:
+- playground-cluster-worker:  net_score=67,  final_score=88
+- playground-cluster-worker2: net_score=100, final_score=96
+
+Conclusion:
+HybridMerged successfully read the NetMARKS traffic cache and used service communication locality in node scoring.

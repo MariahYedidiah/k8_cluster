@@ -1,0 +1,4 @@
+NAME                               STATUS   ROLES           AGE    VERSION   INTERNAL-IP   EXTERNAL-IP   OS-IMAGE                         KERNEL-VERSION     CONTAINER-RUNTIME
+playground-cluster-control-plane   Ready    control-plane   6d3h   v1.34.0   172.18.0.4    <none>        Debian GNU/Linux 12 (bookworm)   7.0.0-15-generic   containerd://2.1.3
+playground-cluster-worker          Ready    <none>          6d3h   v1.34.0   172.18.0.2    <none>        Debian GNU/Linux 12 (bookworm)   7.0.0-15-generic   containerd://2.1.3
+playground-cluster-worker2         Ready    <none>          6d3h   v1.34.0   172.18.0.3    <none>        Debian GNU/Linux 12 (bookworm)   7.0.0-15-generic   containerd://2.1.3

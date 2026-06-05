@@ -1,0 +1,6 @@
+clustercriticality-scheduler-79fdfbb7b5-2gnnq              1/1     Running            0                99s
+criticality-scheduler-694dc8b57b-49k98                     1/1     Running            0                2m5s
+etcd-playground-cluster-control-plane                      1/1     Running            2 (20h ago)      2d14h
+kube-apiserver-playground-cluster-control-plane            1/1     Running            2 (20h ago)      2d14h
+kube-controller-manager-playground-cluster-control-plane   1/1     Running            39 (20h ago)     6d19h
+kube-scheduler-playground-cluster-control-plane            1/1     Running            37 (20h ago)     6d19h

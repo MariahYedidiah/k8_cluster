@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: runtime-test
+  namespace: sched-tests
+spec:
+  replicas: 12
+  selector:
+    matchLabels:
+      app: runtime-test
+  template:
+    metadata:
+      labels:
+        app: runtime-test
+    spec:
+      schedulerName: hybridmerged-scheduler
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.10
+        resources:
+          requests:
+            cpu: "300m"
+            memory: "256Mi"

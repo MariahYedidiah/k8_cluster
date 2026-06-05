@@ -1,0 +1,55 @@
+[
+    {
+        "Id": "sha256:2285ccdd1a17c5a32d753f694d4f90274526dac9809107a104a281103449199f",
+        "RepoTags": [
+            "localhost:5000/scheduler-plugins/kube-scheduler:hybridmerged-v12-runtime-topology"
+        ],
+        "RepoDigests": [
+            "localhost:5000/scheduler-plugins/kube-scheduler@sha256:2285ccdd1a17c5a32d753f694d4f90274526dac9809107a104a281103449199f"
+        ],
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-05-30T16:02:04.124478576+05:30",
+        "Config": {
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            ],
+            "Entrypoint": [
+                "/bin/kube-scheduler"
+            ],
+            "WorkingDir": "/"
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 28644559,
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:29df493baa13de438d6d2ece3a8333032e0b7b9b9d8cce4ee82194da255f61e1",
+                "sha256:9a356e9b05b2b2092b1923cf279e7ebea5facce40be9f9d0b6828caaa9eb47d5",
+                "sha256:8d2bee9f44af2d6984434880412f1eb7b26248122b56180ebdcc453ea4ef12a6",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-05-30T10:32:08.841603842Z"
+        },
+        "Descriptor": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:2285ccdd1a17c5a32d753f694d4f90274526dac9809107a104a281103449199f",
+            "size": 856
+        },
+        "Identity": {
+            "Pull": [
+                {
+                    "Repository": "localhost/scheduler-plugins/kube-scheduler"
+                }
+            ],
+            "Build": [
+                {
+                    "Ref": "tmu1racllusbgd55g36n0or8d",
+                    "CreatedAt": "2026-05-30T16:02:09.337424141+05:30"
+                }
+            ]
+        }
+    }
+]

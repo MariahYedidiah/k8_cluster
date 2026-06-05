@@ -1,0 +1,211 @@
+Name:             test-v7-nginx
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             playground-cluster-worker2/172.18.0.3
+Start Time:       Sat, 30 May 2026 03:23:14 +0530
+Labels:           app=productpage
+                  security.istio.io/tlsMode=istio
+                  service.istio.io/canonical-name=productpage
+                  service.istio.io/canonical-revision=v1
+                  version=v1
+Annotations:      istio.io/rev: default
+                  kubectl.kubernetes.io/default-container: nginx
+                  kubectl.kubernetes.io/default-logs-container: nginx
+                  prometheus.io/path: /stats/prometheus
+                  prometheus.io/port: 15020
+                  prometheus.io/scrape: true
+                  sidecar.istio.io/status:
+                    {"initContainers":["istio-init","istio-proxy"],"containers":null,"volumes":["workload-socket","credential-socket","workload-certs","istio-...
+Status:           Running
+IP:               10.244.3.43
+IPs:
+  IP:  10.244.3.43
+Init Containers:
+  istio-init:
+    Container ID:  containerd://92cecbe09e50f92535bf6fa2ed70a816356c47f2cfba88b6da9855e141b4a993
+    Image:         registry.istio.io/release/proxyv2:1.30.0
+    Image ID:      registry.istio.io/release/proxyv2@sha256:180f7cf94fbafc3d49879e48eb180b4bb274d0c8993b7328c93a2e84378d766c
+    Port:          <none>
+    Host Port:     <none>
+    Args:
+      istio-iptables
+      -p
+      15001
+      -z
+      15006
+      -u
+      1337
+      -m
+      REDIRECT
+      -i
+      *
+      -x
+      
+      -b
+      *
+      -d
+      15090,15021,15020
+      --log_output_level=default:info
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Sat, 30 May 2026 03:23:15 +0530
+      Finished:     Sat, 30 May 2026 03:23:15 +0530
+    Ready:          True
+    Restart Count:  0
+    Limits:
+      cpu:     2
+      memory:  1Gi
+    Requests:
+      cpu:        10m
+      memory:     40Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-42pd9 (ro)
+  istio-proxy:
+    Container ID:  containerd://ce13cd024893cf30b5e6035479db2aa14ef73a8a4dc32d952971a9fa5a42f5fb
+    Image:         registry.istio.io/release/proxyv2:1.30.0
+    Image ID:      registry.istio.io/release/proxyv2@sha256:180f7cf94fbafc3d49879e48eb180b4bb274d0c8993b7328c93a2e84378d766c
+    Port:          15090/TCP (http-envoy-prom)
+    Host Port:     0/TCP (http-envoy-prom)
+    Args:
+      proxy
+      sidecar
+      --domain
+      $(POD_NAMESPACE).svc.cluster.local
+      --proxyLogLevel=warning
+      --proxyComponentLogLevel=misc:error
+      --log_output_level=default:info
+    State:          Running
+      Started:      Sat, 30 May 2026 03:23:16 +0530
+    Ready:          True
+    Restart Count:  0
+    Limits:
+      cpu:     2
+      memory:  1Gi
+    Requests:
+      cpu:      10m
+      memory:   40Mi
+    Readiness:  http-get http://:15021/healthz/ready delay=0s timeout=3s period=15s #success=1 #failure=4
+    Startup:    http-get http://:15021/healthz/ready delay=0s timeout=3s period=1s #success=1 #failure=600
+    Environment:
+      PILOT_CERT_PROVIDER:           istiod
+      CA_ADDR:                       istiod.istio-system.svc:15012
+      POD_NAME:                      test-v7-nginx (v1:metadata.name)
+      POD_NAMESPACE:                 default (v1:metadata.namespace)
+      INSTANCE_IP:                    (v1:status.podIP)
+      SERVICE_ACCOUNT:                (v1:spec.serviceAccountName)
+      HOST_IP:                        (v1:status.hostIP)
+      ISTIO_CPU_LIMIT:               2 (limits.cpu)
+      PROXY_CONFIG:                  {}
+                                     
+      ISTIO_META_POD_PORTS:          [
+                                     ]
+      ISTIO_META_APP_CONTAINERS:     nginx
+      GOMEMLIMIT:                    1073741824 (limits.memory)
+      GOMAXPROCS:                    2 (limits.cpu)
+      ISTIO_META_CLUSTER_ID:         Kubernetes
+      ISTIO_META_NODE_NAME:           (v1:spec.nodeName)
+      ISTIO_META_INTERCEPTION_MODE:  REDIRECT
+      ISTIO_META_WORKLOAD_NAME:      test-v7-nginx
+      ISTIO_META_OWNER:              kubernetes://apis/v1/namespaces/default/pods/test-v7-nginx
+      ISTIO_META_MESH_ID:            cluster.local
+      TRUST_DOMAIN:                  cluster.local
+    Mounts:
+      /etc/istio/pod from istio-podinfo (rw)
+      /etc/istio/proxy from istio-envoy (rw)
+      /var/lib/istio/data from istio-data (rw)
+      /var/run/secrets/credential-uds from credential-socket (rw)
+      /var/run/secrets/istio from istiod-ca-cert (rw)
+      /var/run/secrets/istio/crl from istio-ca-crl (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-42pd9 (ro)
+      /var/run/secrets/tokens from istio-token (rw)
+      /var/run/secrets/workload-spiffe-credentials from workload-certs (rw)
+      /var/run/secrets/workload-spiffe-uds from workload-socket (rw)
+Containers:
+  nginx:
+    Container ID:   containerd://85909bbec96f0a38867f4f1dad844012fa51a1591c61584e747b4ed37226c144
+    Image:          nginx:latest
+    Image ID:       docker.io/library/nginx@sha256:5aca99593157f4ae539a5dec1092a0ad8762f8e2eb1789085a13a0f5622369f6
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Sat, 30 May 2026 03:23:19 +0530
+    Ready:          True
+    Restart Count:  0
+    Requests:
+      cpu:                100m
+      ephemeral-storage:  100Mi
+      memory:             128Mi
+    Environment:          <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-42pd9 (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  workload-socket:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  credential-socket:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  workload-certs:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  istio-envoy:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     Memory
+    SizeLimit:  <unset>
+  istio-data:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  istio-podinfo:
+    Type:  DownwardAPI (a volume populated by information about the pod)
+    Items:
+      metadata.labels -> labels
+      metadata.annotations -> annotations
+  istio-token:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  43200
+  istiod-ca-cert:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      istio-ca-root-cert
+    Optional:  false
+  istio-ca-crl:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      istio-ca-crl
+    Optional:  true
+  kube-api-access-42pd9:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age    From               Message
+  ----    ------     ----   ----               -------
+  Normal  Scheduled  3m22s  hybrid-scheduler5  Successfully assigned default/test-v7-nginx to playground-cluster-worker2
+  Normal  Pulled     3m22s  kubelet            Container image "registry.istio.io/release/proxyv2:1.30.0" already present on machine
+  Normal  Created    3m22s  kubelet            Created container: istio-init
+  Normal  Started    3m22s  kubelet            Started container istio-init
+  Normal  Pulled     3m21s  kubelet            Container image "registry.istio.io/release/proxyv2:1.30.0" already present on machine
+  Normal  Created    3m21s  kubelet            Created container: istio-proxy
+  Normal  Started    3m21s  kubelet            Started container istio-proxy
+  Normal  Pulling    3m19s  kubelet            Pulling image "nginx:latest"
+  Normal  Pulled     3m18s  kubelet            Successfully pulled image "nginx:latest" in 1.583s (1.584s including waiting). Image size: 63120520 bytes.
+  Normal  Created    3m18s  kubelet            Created container: nginx
+  Normal  Started    3m18s  kubelet            Started container nginx

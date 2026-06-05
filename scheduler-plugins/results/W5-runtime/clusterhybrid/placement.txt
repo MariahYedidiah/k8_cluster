@@ -1,0 +1,9 @@
+NAME                 READY   STATUS              RESTARTS   AGE   IP       NODE                         NOMINATED NODE   READINESS GATES
+w5-clusterhybrid-1   0/1     ContainerCreating   0          1s    <none>   playground-cluster-worker5   <none>           <none>
+w5-clusterhybrid-2   0/1     ContainerCreating   0          1s    <none>   playground-cluster-worker4   <none>           <none>
+w5-clusterhybrid-3   0/1     ContainerCreating   0          1s    <none>   playground-cluster-worker4   <none>           <none>
+w5-clusterhybrid-4   0/1     ContainerCreating   0          1s    <none>   playground-cluster-worker4   <none>           <none>
+w5-clusterhybrid-5   0/1     ContainerCreating   0          1s    <none>   playground-cluster-worker4   <none>           <none>
+w5-clusterhybrid-6   0/1     ContainerCreating   0          1s    <none>   playground-cluster-worker4   <none>           <none>
+w5-clusterhybrid-7   0/1     ContainerCreating   0          1s    <none>   playground-cluster-worker4   <none>           <none>
+w5-clusterhybrid-8   0/1     ContainerCreating   0          1s    <none>   playground-cluster-worker4   <none>           <none>

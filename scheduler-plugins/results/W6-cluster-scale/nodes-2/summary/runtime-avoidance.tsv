@@ -1,0 +1,6 @@
+scheduler	overloaded_node_pods	low_load_node_pods	total_scheduled_pods
+default	0	6	6
+criticality	0	6	6
+clustercriticality	0	6	6
+clusterhybrid	0	6	6
+hybridmerged	0	6	6

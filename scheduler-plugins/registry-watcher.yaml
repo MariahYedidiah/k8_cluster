@@ -1,0 +1,61 @@
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: registry-watcher
+  namespace: kube-system
+
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: registry-watcher
+  namespace: kube-system
+
+rules:
+- apiGroups: [""]
+  resources: ["configmaps"]
+  verbs: ["get","create","update","patch"]
+
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: registry-watcher
+  namespace: kube-system
+
+subjects:
+- kind: ServiceAccount
+  name: registry-watcher
+  namespace: kube-system
+
+roleRef:
+  kind: Role
+  name: registry-watcher
+  apiGroup: rbac.authorization.k8s.io
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: registry-watcher
+  namespace: kube-system
+
+spec:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: registry-watcher
+
+  template:
+    metadata:
+      labels:
+        app: registry-watcher
+
+    spec:
+      serviceAccountName: registry-watcher
+
+      containers:
+      - name: registry-watcher
+        image: localhost:5000/registry-watcher:v1
+        imagePullPolicy: IfNotPresent

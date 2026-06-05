@@ -1,0 +1,83 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    deployment.kubernetes.io/revision: "70"
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{},"name":"hybrid-scheduler5","namespace":"kube-system"},"spec":{"replicas":1,"selector":{"matchLabels":{"app":"hybrid-scheduler5"}},"template":{"metadata":{"labels":{"app":"hybrid-scheduler5"}},"spec":{"containers":[{"args":["--config=/etc/kubernetes/config/config.yaml"],"command":["/bin/kube-scheduler"],"image":"localhost:5000/scheduler-plugins/kube-scheduler:hybridmerged-v7","imagePullPolicy":"IfNotPresent","name":"kube-scheduler","volumeMounts":[{"mountPath":"/etc/kubernetes/config","name":"config-volume"}]}],"nodeSelector":{"node-role.kubernetes.io/control-plane":""},"serviceAccountName":"hybrid-scheduler5","tolerations":[{"effect":"NoSchedule","key":"node-role.kubernetes.io/control-plane","operator":"Exists"}],"volumes":[{"configMap":{"name":"hybrid-scheduler5-config"},"name":"config-volume"}]}}}}
+  creationTimestamp: "2026-05-28T06:30:53Z"
+  generation: 79
+  name: hybrid-scheduler5
+  namespace: kube-system
+  resourceVersion: "661078"
+  uid: 116bef93-90a8-4b7f-a26f-4a91814139f6
+spec:
+  progressDeadlineSeconds: 600
+  replicas: 1
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      app: hybrid-scheduler5
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      annotations:
+        kubectl.kubernetes.io/restartedAt: "2026-06-01T22:03:12+05:30"
+      labels:
+        app: hybrid-scheduler5
+    spec:
+      containers:
+      - args:
+        - --config=/etc/kubernetes/config/config.yaml
+        command:
+        - /bin/kube-scheduler
+        image: localhost:5000/scheduler-plugins/kube-scheduler:hybridmerged-v7
+        imagePullPolicy: IfNotPresent
+        name: kube-scheduler
+        resources: {}
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+        volumeMounts:
+        - mountPath: /etc/kubernetes/config
+          name: config-volume
+      dnsPolicy: ClusterFirst
+      nodeSelector:
+        node-role.kubernetes.io/control-plane: ""
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      serviceAccount: hybrid-scheduler5
+      serviceAccountName: hybrid-scheduler5
+      terminationGracePeriodSeconds: 30
+      tolerations:
+      - effect: NoSchedule
+        key: node-role.kubernetes.io/control-plane
+        operator: Exists
+      volumes:
+      - configMap:
+          defaultMode: 420
+          name: hybrid-scheduler5-config
+        name: config-volume
+status:
+  availableReplicas: 1
+  conditions:
+  - lastTransitionTime: "2026-05-30T10:39:22Z"
+    lastUpdateTime: "2026-05-30T10:39:22Z"
+    message: Deployment has minimum availability.
+    reason: MinimumReplicasAvailable
+    status: "True"
+    type: Available
+  - lastTransitionTime: "2026-05-29T18:47:30Z"
+    lastUpdateTime: "2026-06-01T16:33:14Z"
+    message: ReplicaSet "hybrid-scheduler5-f676df5bc" has successfully progressed.
+    reason: NewReplicaSetAvailable
+    status: "True"
+    type: Progressing
+  observedGeneration: 79
+  readyReplicas: 1
+  replicas: 1
+  updatedReplicas: 1

@@ -1,0 +1,32 @@
+apiVersion: v1
+data:
+  traffic.json: |-
+    {
+      "productpage-v1": {
+        "reviews-v3": 2237572.0,
+        "reviews-v1": 2254596.0,
+        "reviews-v2": 2240288.0,
+        "details-v1": 6732304.0
+      },
+      "reviews-v3": {
+        "ratings-v1": 2237490.0
+      },
+      "istio-ingressgateway": {
+        "productpage-v1": 1062.0,
+        "unknown": 1.0,
+        "productpage-netmarks-test": 486.0
+      },
+      "reviews-v2": {
+        "ratings-v1": 2240220.0
+      }
+    }
+kind: ConfigMap
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","data":{"traffic.json":"{\n  \"productpage-v1\": {\n    \"reviews-v3\": 2237572.0,\n    \"reviews-v1\": 2254596.0,\n    \"reviews-v2\": 2240288.0,\n    \"details-v1\": 6732304.0\n  },\n  \"reviews-v3\": {\n    \"ratings-v1\": 2237490.0\n  },\n  \"istio-ingressgateway\": {\n    \"productpage-v1\": 1062.0,\n    \"unknown\": 1.0,\n    \"productpage-netmarks-test\": 486.0\n  },\n  \"reviews-v2\": {\n    \"ratings-v1\": 2240220.0\n  }\n}"},"kind":"ConfigMap","metadata":{"annotations":{},"name":"netmarks-traffic-cache","namespace":"kube-system"}}
+  creationTimestamp: "2026-05-28T12:45:16Z"
+  name: netmarks-traffic-cache
+  namespace: kube-system
+  resourceVersion: "216610"
+  uid: 002416b1-8726-46d9-b589-418d1ffd0967

@@ -1,0 +1,13 @@
+NAME                          READY   STATUS    RESTARTS   AGE     IP             NODE                         NOMINATED NODE   READINESS GATES
+nginx-layer-dc5594d7c-7dtjv   1/1     Running   0          4m51s   10.244.1.84    playground-cluster-worker4   <none>           <none>
+nginx-layer-dc5594d7c-cgqgf   1/1     Running   0          4m51s   10.244.3.164   playground-cluster-worker2   <none>           <none>
+nginx-layer-dc5594d7c-k4dx4   1/1     Running   0          4m51s   10.244.1.83    playground-cluster-worker4   <none>           <none>
+nginx-layer-dc5594d7c-kl88d   1/1     Running   0          4m51s   10.244.4.75    playground-cluster-worker3   <none>           <none>
+nginx-layer-dc5594d7c-kx964   1/1     Running   0          4m51s   10.244.3.162   playground-cluster-worker2   <none>           <none>
+nginx-layer-dc5594d7c-l9t7t   1/1     Running   0          4m51s   10.244.5.73    playground-cluster-worker5   <none>           <none>
+nginx-layer-dc5594d7c-lkflb   1/1     Running   0          4m51s   10.244.1.85    playground-cluster-worker4   <none>           <none>
+nginx-layer-dc5594d7c-p26j6   1/1     Running   0          4m51s   10.244.4.74    playground-cluster-worker3   <none>           <none>
+nginx-layer-dc5594d7c-ph24r   1/1     Running   0          4m51s   10.244.5.71    playground-cluster-worker5   <none>           <none>
+nginx-layer-dc5594d7c-q9dhm   1/1     Running   0          4m51s   10.244.3.163   playground-cluster-worker2   <none>           <none>
+nginx-layer-dc5594d7c-sc562   1/1     Running   0          4m51s   10.244.5.72    playground-cluster-worker5   <none>           <none>
+nginx-layer-dc5594d7c-vpsvh   1/1     Running   0          4m51s   10.244.4.76    playground-cluster-worker3   <none>           <none>

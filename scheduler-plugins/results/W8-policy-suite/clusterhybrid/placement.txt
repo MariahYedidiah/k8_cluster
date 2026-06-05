@@ -1,0 +1,20 @@
+NAME                                   READY   STATUS    RESTARTS   AGE   IP             NODE                         NOMINATED NODE   READINESS GATES
+w8-node-affinity                       1/1     Running   0          20s   10.244.3.204   playground-cluster-worker2   <none>           <none>
+w8-pod-affinity-76f8c48794-885vc       1/1     Running   0          20s   10.244.5.32    playground-cluster-worker5   <none>           <none>
+w8-pod-affinity-76f8c48794-sn7gm       1/1     Running   0          20s   10.244.5.33    playground-cluster-worker5   <none>           <none>
+w8-pod-affinity-76f8c48794-w7jf8       1/1     Running   0          20s   10.244.5.34    playground-cluster-worker5   <none>           <none>
+w8-pod-affinity-76f8c48794-wvsr6       1/1     Running   0          20s   10.244.5.35    playground-cluster-worker5   <none>           <none>
+w8-pod-antiaffinity-6cbc84c7f4-4b7zb   1/1     Running   0          20s   10.244.3.205   playground-cluster-worker2   <none>           <none>
+w8-pod-antiaffinity-6cbc84c7f4-6kfn8   1/1     Running   0          20s   10.244.3.206   playground-cluster-worker2   <none>           <none>
+w8-pod-antiaffinity-6cbc84c7f4-bdk2l   1/1     Running   0          20s   10.244.1.26    playground-cluster-worker4   <none>           <none>
+w8-pod-antiaffinity-6cbc84c7f4-kz266   1/1     Running   0          20s   10.244.5.36    playground-cluster-worker5   <none>           <none>
+w8-pod-antiaffinity-6cbc84c7f4-sj8j8   1/1     Running   0          20s   10.244.4.249   playground-cluster-worker3   <none>           <none>
+w8-pod-antiaffinity-6cbc84c7f4-x7x2p   1/1     Running   0          20s   10.244.1.23    playground-cluster-worker4   <none>           <none>
+w8-taint-intolerant                    1/1     Running   0          20s   10.244.1.24    playground-cluster-worker4   <none>           <none>
+w8-taint-tolerant                      1/1     Running   0          20s   10.244.1.25    playground-cluster-worker4   <none>           <none>
+w8-topology-7cb649dff-2bdhn            1/1     Running   0          19s   10.244.3.208   playground-cluster-worker2   <none>           <none>
+w8-topology-7cb649dff-65hsb            1/1     Running   0          20s   10.244.1.27    playground-cluster-worker4   <none>           <none>
+w8-topology-7cb649dff-lcw9z            1/1     Running   0          20s   10.244.4.250   playground-cluster-worker3   <none>           <none>
+w8-topology-7cb649dff-ltrwz            1/1     Running   0          20s   10.244.5.37    playground-cluster-worker5   <none>           <none>
+w8-topology-7cb649dff-rpvlv            1/1     Running   0          19s   10.244.5.38    playground-cluster-worker5   <none>           <none>
+w8-topology-7cb649dff-tb5sj            1/1     Running   0          19s   10.244.3.207   playground-cluster-worker2   <none>           <none>

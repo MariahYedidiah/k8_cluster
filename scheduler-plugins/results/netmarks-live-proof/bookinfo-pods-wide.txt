@@ -1,0 +1,8 @@
+NAME                              READY   STATUS    RESTARTS   AGE     IP             NODE                         NOMINATED NODE   READINESS GATES
+details-v1-764c46cfdb-fcl7l       2/2     Running   0          179m    10.244.1.51    playground-cluster-worker4   <none>           <none>
+netmarks-live-productpage-test    2/2     Running   0          2m15s   10.244.6.110   playground-cluster-worker6   <none>           <none>
+productpage-v1-85664dccbc-kfwth   2/2     Running   0          179m    10.244.4.36    playground-cluster-worker3   <none>           <none>
+ratings-v1-779fdc7f86-bwh92       2/2     Running   0          179m    10.244.5.39    playground-cluster-worker5   <none>           <none>
+reviews-v1-85964f9f98-tsctt       2/2     Running   0          179m    10.244.3.132   playground-cluster-worker2   <none>           <none>
+reviews-v2-6f7fbdc6fd-gpj76       2/2     Running   0          179m    10.244.1.52    playground-cluster-worker4   <none>           <none>
+reviews-v3-689b477554-49wpf       2/2     Running   0          172m    10.244.5.41    playground-cluster-worker5   <none>           <none>

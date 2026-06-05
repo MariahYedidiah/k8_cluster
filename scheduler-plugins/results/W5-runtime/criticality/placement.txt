@@ -1,0 +1,9 @@
+NAME               READY   STATUS    RESTARTS   AGE   IP             NODE                         NOMINATED NODE   READINESS GATES
+w5-criticality-1   1/1     Running   0          1s    10.244.5.211   playground-cluster-worker5   <none>           <none>
+w5-criticality-2   1/1     Running   0          1s    10.244.5.212   playground-cluster-worker5   <none>           <none>
+w5-criticality-3   1/1     Running   0          1s    10.244.5.213   playground-cluster-worker5   <none>           <none>
+w5-criticality-4   1/1     Running   0          1s    10.244.5.214   playground-cluster-worker5   <none>           <none>
+w5-criticality-5   1/1     Running   0          1s    10.244.5.215   playground-cluster-worker5   <none>           <none>
+w5-criticality-6   1/1     Running   0          1s    10.244.5.216   playground-cluster-worker5   <none>           <none>
+w5-criticality-7   1/1     Running   0          1s    10.244.5.217   playground-cluster-worker5   <none>           <none>
+w5-criticality-8   1/1     Running   0          1s    10.244.5.218   playground-cluster-worker5   <none>           <none>

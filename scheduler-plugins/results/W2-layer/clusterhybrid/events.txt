@@ -1,0 +1,1258 @@
+Name:             layer-cached-6959f5b95d-4mlmk
+Namespace:        layer-eval
+Priority:         0
+Service Account:  default
+Node:             playground-cluster-worker2/172.21.0.2
+Start Time:       Fri, 05 Jun 2026 14:08:34 +0530
+Labels:           app=layer-cached
+                  pod-template-hash=6959f5b95d
+                  topology.kubernetes.io/zone=zone-a
+Annotations:      <none>
+Status:           Running
+IP:               10.244.3.181
+IPs:
+  IP:           10.244.3.181
+Controlled By:  ReplicaSet/layer-cached-6959f5b95d
+Containers:
+  cached-image:
+    Container ID:  containerd://304c15cd2c47c47da90cbca21be6ac11fc1067ad786b1414871d34d803fc1ce9
+    Image:         localhost:5000/netmarks-collector:v1
+    Image ID:      localhost:5000/netmarks-collector@sha256:e9716b5981ace94bb41895f02850b2c14ea992095c07c67bbad7ee90bab55930
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      sleep
+      3600
+    State:          Running
+      Started:      Fri, 05 Jun 2026 14:08:35 +0530
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-zcx49 (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-zcx49:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:             layer-cached-6959f5b95d-7ltrb
+Namespace:        layer-eval
+Priority:         0
+Service Account:  default
+Node:             playground-cluster-worker4/172.21.0.5
+Start Time:       Fri, 05 Jun 2026 14:08:34 +0530
+Labels:           app=layer-cached
+                  pod-template-hash=6959f5b95d
+                  topology.kubernetes.io/zone=zone-b
+Annotations:      <none>
+Status:           Running
+IP:               10.244.1.218
+IPs:
+  IP:           10.244.1.218
+Controlled By:  ReplicaSet/layer-cached-6959f5b95d
+Containers:
+  cached-image:
+    Container ID:  containerd://ca84ac725e5761229e8bbbe17191199e43096dfca08e09f4294049407e75724a
+    Image:         localhost:5000/netmarks-collector:v1
+    Image ID:      localhost:5000/netmarks-collector@sha256:e9716b5981ace94bb41895f02850b2c14ea992095c07c67bbad7ee90bab55930
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      sleep
+      3600
+    State:          Running
+      Started:      Fri, 05 Jun 2026 14:08:35 +0530
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-4j6fd (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-4j6fd:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:             layer-cached-6959f5b95d-knzbq
+Namespace:        layer-eval
+Priority:         0
+Service Account:  default
+Node:             playground-cluster-worker4/172.21.0.5
+Start Time:       Fri, 05 Jun 2026 14:08:34 +0530
+Labels:           app=layer-cached
+                  pod-template-hash=6959f5b95d
+                  topology.kubernetes.io/zone=zone-b
+Annotations:      <none>
+Status:           Running
+IP:               10.244.1.217
+IPs:
+  IP:           10.244.1.217
+Controlled By:  ReplicaSet/layer-cached-6959f5b95d
+Containers:
+  cached-image:
+    Container ID:  containerd://3d5a056df704b7d972d74761693138bcd5ed4da91f08e35b04469a56634b3213
+    Image:         localhost:5000/netmarks-collector:v1
+    Image ID:      localhost:5000/netmarks-collector@sha256:e9716b5981ace94bb41895f02850b2c14ea992095c07c67bbad7ee90bab55930
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      sleep
+      3600
+    State:          Running
+      Started:      Fri, 05 Jun 2026 14:08:35 +0530
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-qf86p (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-qf86p:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:             layer-cached-6959f5b95d-nkt59
+Namespace:        layer-eval
+Priority:         0
+Service Account:  default
+Node:             playground-cluster-worker4/172.21.0.5
+Start Time:       Fri, 05 Jun 2026 14:08:34 +0530
+Labels:           app=layer-cached
+                  pod-template-hash=6959f5b95d
+                  topology.kubernetes.io/zone=zone-b
+Annotations:      <none>
+Status:           Running
+IP:               10.244.1.215
+IPs:
+  IP:           10.244.1.215
+Controlled By:  ReplicaSet/layer-cached-6959f5b95d
+Containers:
+  cached-image:
+    Container ID:  containerd://67b1f534da8ef8193b0d12ab3ebd5e31902128875fbeee649e408bff52a603ec
+    Image:         localhost:5000/netmarks-collector:v1
+    Image ID:      localhost:5000/netmarks-collector@sha256:e9716b5981ace94bb41895f02850b2c14ea992095c07c67bbad7ee90bab55930
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      sleep
+      3600
+    State:          Running
+      Started:      Fri, 05 Jun 2026 14:08:35 +0530
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-9jwbx (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-9jwbx:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:             layer-cached-6959f5b95d-rvbnr
+Namespace:        layer-eval
+Priority:         0
+Service Account:  default
+Node:             playground-cluster-worker4/172.21.0.5
+Start Time:       Fri, 05 Jun 2026 14:08:34 +0530
+Labels:           app=layer-cached
+                  pod-template-hash=6959f5b95d
+                  topology.kubernetes.io/zone=zone-b
+Annotations:      <none>
+Status:           Running
+IP:               10.244.1.216
+IPs:
+  IP:           10.244.1.216
+Controlled By:  ReplicaSet/layer-cached-6959f5b95d
+Containers:
+  cached-image:
+    Container ID:  containerd://bac7ffb1bda29620522368cda0cfd925abb734d586a4cb6097d29aec33f285fb
+    Image:         localhost:5000/netmarks-collector:v1
+    Image ID:      localhost:5000/netmarks-collector@sha256:e9716b5981ace94bb41895f02850b2c14ea992095c07c67bbad7ee90bab55930
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      sleep
+      3600
+    State:          Running
+      Started:      Fri, 05 Jun 2026 14:08:35 +0530
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-7smnn (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-7smnn:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:             layer-cached-6959f5b95d-s2xwz
+Namespace:        layer-eval
+Priority:         0
+Service Account:  default
+Node:             playground-cluster-worker3/172.21.0.3
+Start Time:       Fri, 05 Jun 2026 14:08:34 +0530
+Labels:           app=layer-cached
+                  pod-template-hash=6959f5b95d
+                  topology.kubernetes.io/zone=zone-a
+Annotations:      <none>
+Status:           Running
+IP:               10.244.4.228
+IPs:
+  IP:           10.244.4.228
+Controlled By:  ReplicaSet/layer-cached-6959f5b95d
+Containers:
+  cached-image:
+    Container ID:  containerd://60b9ee079e86501508c514247440cb4144a3b677625e15f64f8cca9c4c51ca1f
+    Image:         localhost:5000/netmarks-collector:v1
+    Image ID:      localhost:5000/netmarks-collector@sha256:e9716b5981ace94bb41895f02850b2c14ea992095c07c67bbad7ee90bab55930
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      sleep
+      3600
+    State:          Running
+      Started:      Fri, 05 Jun 2026 14:08:35 +0530
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-wdq4z (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-wdq4z:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:                      layer-cached-6b75bd44f7-2s7ds
+Namespace:                 layer-eval
+Priority:                  0
+Service Account:           default
+Node:                      playground-cluster-worker2/172.21.0.2
+Start Time:                Fri, 05 Jun 2026 14:08:14 +0530
+Labels:                    app=layer-cached
+                           pod-template-hash=6b75bd44f7
+                           topology.kubernetes.io/zone=zone-a
+Annotations:               <none>
+Status:                    Terminating (lasts <invalid>)
+Termination Grace Period:  30s
+IP:                        10.244.3.179
+IPs:
+  IP:           10.244.3.179
+Controlled By:  ReplicaSet/layer-cached-6b75bd44f7
+Containers:
+  cached-image:
+    Container ID:  containerd://90f846bec5be539a3bba85395ffac3cdc11263cfca2cc87e58e34257127bbcf8
+    Image:         localhost:5000/netmarks-collector:v1
+    Image ID:      localhost:5000/netmarks-collector@sha256:e9716b5981ace94bb41895f02850b2c14ea992095c07c67bbad7ee90bab55930
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      sleep
+      3600
+    State:          Running
+      Started:      Fri, 05 Jun 2026 14:08:15 +0530
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-6dqgn (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-6dqgn:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:                      layer-cached-6b75bd44f7-2zzhg
+Namespace:                 layer-eval
+Priority:                  0
+Service Account:           default
+Node:                      playground-cluster-worker4/172.21.0.5
+Start Time:                Fri, 05 Jun 2026 14:08:14 +0530
+Labels:                    app=layer-cached
+                           pod-template-hash=6b75bd44f7
+                           topology.kubernetes.io/zone=zone-b
+Annotations:               <none>
+Status:                    Terminating (lasts <invalid>)
+Termination Grace Period:  30s
+IP:                        10.244.1.211
+IPs:
+  IP:           10.244.1.211
+Controlled By:  ReplicaSet/layer-cached-6b75bd44f7
+Containers:
+  cached-image:
+    Container ID:  containerd://3b63fe50a54fa4ee8037adacd6777acc38e14b22477eadcea642609191e5850b
+    Image:         localhost:5000/netmarks-collector:v1
+    Image ID:      localhost:5000/netmarks-collector@sha256:e9716b5981ace94bb41895f02850b2c14ea992095c07c67bbad7ee90bab55930
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      sleep
+      3600
+    State:          Running
+      Started:      Fri, 05 Jun 2026 14:08:15 +0530
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-mn69m (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-mn69m:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:                      layer-cached-6b75bd44f7-64q6n
+Namespace:                 layer-eval
+Priority:                  0
+Service Account:           default
+Node:                      playground-cluster-worker5/172.21.0.8
+Start Time:                Fri, 05 Jun 2026 14:08:14 +0530
+Labels:                    app=layer-cached
+                           pod-template-hash=6b75bd44f7
+                           topology.kubernetes.io/zone=zone-b
+Annotations:               <none>
+Status:                    Terminating (lasts <invalid>)
+Termination Grace Period:  30s
+IP:                        10.244.5.180
+IPs:
+  IP:           10.244.5.180
+Controlled By:  ReplicaSet/layer-cached-6b75bd44f7
+Containers:
+  cached-image:
+    Container ID:  containerd://6f9f2c73b903cdec700b29f85f293fde7c366bf247671934710d120ef9031a05
+    Image:         localhost:5000/netmarks-collector:v1
+    Image ID:      localhost:5000/netmarks-collector@sha256:e9716b5981ace94bb41895f02850b2c14ea992095c07c67bbad7ee90bab55930
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      sleep
+      3600
+    State:          Running
+      Started:      Fri, 05 Jun 2026 14:08:15 +0530
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-47kn4 (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-47kn4:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:                      layer-cached-6b75bd44f7-9mqpv
+Namespace:                 layer-eval
+Priority:                  0
+Service Account:           default
+Node:                      playground-cluster-worker3/172.21.0.3
+Start Time:                Fri, 05 Jun 2026 14:08:14 +0530
+Labels:                    app=layer-cached
+                           pod-template-hash=6b75bd44f7
+                           topology.kubernetes.io/zone=zone-a
+Annotations:               <none>
+Status:                    Terminating (lasts <invalid>)
+Termination Grace Period:  30s
+IP:                        10.244.4.223
+IPs:
+  IP:           10.244.4.223
+Controlled By:  ReplicaSet/layer-cached-6b75bd44f7
+Containers:
+  cached-image:
+    Container ID:  containerd://736d79fee3c84ed55449d5bc67435a37faad1cd0ba98fff31b2d3e7c8ef51c7e
+    Image:         localhost:5000/netmarks-collector:v1
+    Image ID:      localhost:5000/netmarks-collector@sha256:e9716b5981ace94bb41895f02850b2c14ea992095c07c67bbad7ee90bab55930
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      sleep
+      3600
+    State:          Running
+      Started:      Fri, 05 Jun 2026 14:08:15 +0530
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-68kbp (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-68kbp:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:                      layer-cached-6b75bd44f7-qmnzm
+Namespace:                 layer-eval
+Priority:                  0
+Service Account:           default
+Node:                      playground-cluster-worker3/172.21.0.3
+Start Time:                Fri, 05 Jun 2026 14:08:14 +0530
+Labels:                    app=layer-cached
+                           pod-template-hash=6b75bd44f7
+                           topology.kubernetes.io/zone=zone-a
+Annotations:               <none>
+Status:                    Terminating (lasts <invalid>)
+Termination Grace Period:  30s
+IP:                        10.244.4.224
+IPs:
+  IP:           10.244.4.224
+Controlled By:  ReplicaSet/layer-cached-6b75bd44f7
+Containers:
+  cached-image:
+    Container ID:  containerd://d7b0c2be44c848e4c5cc3a9d8ec00f07a55c3fcf83ebf88bd8c7123877af1525
+    Image:         localhost:5000/netmarks-collector:v1
+    Image ID:      localhost:5000/netmarks-collector@sha256:e9716b5981ace94bb41895f02850b2c14ea992095c07c67bbad7ee90bab55930
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      sleep
+      3600
+    State:          Running
+      Started:      Fri, 05 Jun 2026 14:08:15 +0530
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-dqdnj (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-dqdnj:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:                      layer-cached-6b75bd44f7-vhbx6
+Namespace:                 layer-eval
+Priority:                  0
+Service Account:           default
+Node:                      playground-cluster-worker4/172.21.0.5
+Start Time:                Fri, 05 Jun 2026 14:08:14 +0530
+Labels:                    app=layer-cached
+                           pod-template-hash=6b75bd44f7
+                           topology.kubernetes.io/zone=zone-b
+Annotations:               <none>
+Status:                    Terminating (lasts <invalid>)
+Termination Grace Period:  30s
+IP:                        10.244.1.213
+IPs:
+  IP:           10.244.1.213
+Controlled By:  ReplicaSet/layer-cached-6b75bd44f7
+Containers:
+  cached-image:
+    Container ID:  containerd://7a6341a93dd04c44a4fd2f1907cf065d58d70956d3ba404ea3d5c05ee3fdeca0
+    Image:         localhost:5000/netmarks-collector:v1
+    Image ID:      localhost:5000/netmarks-collector@sha256:e9716b5981ace94bb41895f02850b2c14ea992095c07c67bbad7ee90bab55930
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      sleep
+      3600
+    State:          Running
+      Started:      Fri, 05 Jun 2026 14:08:15 +0530
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-pq7qh (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-pq7qh:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:                      layer-nginx-5f657fdd74-2gmc8
+Namespace:                 layer-eval
+Priority:                  0
+Service Account:           default
+Node:                      playground-cluster-worker4/172.21.0.5
+Start Time:                Fri, 05 Jun 2026 14:08:14 +0530
+Labels:                    app=layer-nginx
+                           pod-template-hash=5f657fdd74
+                           topology.kubernetes.io/zone=zone-b
+Annotations:               <none>
+Status:                    Terminating (lasts <invalid>)
+Termination Grace Period:  30s
+IP:                        10.244.1.214
+IPs:
+  IP:           10.244.1.214
+Controlled By:  ReplicaSet/layer-nginx-5f657fdd74
+Containers:
+  nginx:
+    Container ID:  containerd://20640f511c56951de1bc9c54c96dc47b47a0a25dd0722391c62a5e6400e9340f
+    Image:         nginx:1.25
+    Image ID:      docker.io/library/nginx@sha256:a484819eb60211f5299034ac80f6a681b06f89e65866ce91f356ed7c72af059c
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      sleep
+      3600
+    State:          Running
+      Started:      Fri, 05 Jun 2026 14:08:15 +0530
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-7lds2 (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-7lds2:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:                      layer-nginx-5f657fdd74-dj4zk
+Namespace:                 layer-eval
+Priority:                  0
+Service Account:           default
+Node:                      playground-cluster-worker4/172.21.0.5
+Start Time:                Fri, 05 Jun 2026 14:08:14 +0530
+Labels:                    app=layer-nginx
+                           pod-template-hash=5f657fdd74
+                           topology.kubernetes.io/zone=zone-b
+Annotations:               <none>
+Status:                    Terminating (lasts <invalid>)
+Termination Grace Period:  30s
+IP:                        10.244.1.212
+IPs:
+  IP:           10.244.1.212
+Controlled By:  ReplicaSet/layer-nginx-5f657fdd74
+Containers:
+  nginx:
+    Container ID:  containerd://7a03f115b0896a258e8c1be083e334c85397dc4ae66a254b4ee7e1c59c2abc75
+    Image:         nginx:1.25
+    Image ID:      docker.io/library/nginx@sha256:a484819eb60211f5299034ac80f6a681b06f89e65866ce91f356ed7c72af059c
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      sleep
+      3600
+    State:          Running
+      Started:      Fri, 05 Jun 2026 14:08:15 +0530
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-wgw9v (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-wgw9v:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:                      layer-nginx-5f657fdd74-fb7jr
+Namespace:                 layer-eval
+Priority:                  0
+Service Account:           default
+Node:                      playground-cluster-worker3/172.21.0.3
+Start Time:                Fri, 05 Jun 2026 14:08:14 +0530
+Labels:                    app=layer-nginx
+                           pod-template-hash=5f657fdd74
+                           topology.kubernetes.io/zone=zone-a
+Annotations:               <none>
+Status:                    Terminating (lasts <invalid>)
+Termination Grace Period:  30s
+IP:                        10.244.4.225
+IPs:
+  IP:           10.244.4.225
+Controlled By:  ReplicaSet/layer-nginx-5f657fdd74
+Containers:
+  nginx:
+    Container ID:  containerd://78e2ac463dc1004a4e7a5d0fa1354b603d9524b02de110c1754c2d6808325bd3
+    Image:         nginx:1.25
+    Image ID:      docker.io/library/nginx@sha256:a484819eb60211f5299034ac80f6a681b06f89e65866ce91f356ed7c72af059c
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      sleep
+      3600
+    State:          Running
+      Started:      Fri, 05 Jun 2026 14:08:15 +0530
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-vdzfn (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-vdzfn:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:                      layer-nginx-5f657fdd74-n5zwp
+Namespace:                 layer-eval
+Priority:                  0
+Service Account:           default
+Node:                      playground-cluster-worker2/172.21.0.2
+Start Time:                Fri, 05 Jun 2026 14:08:14 +0530
+Labels:                    app=layer-nginx
+                           pod-template-hash=5f657fdd74
+                           topology.kubernetes.io/zone=zone-a
+Annotations:               <none>
+Status:                    Terminating (lasts <invalid>)
+Termination Grace Period:  30s
+IP:                        10.244.3.180
+IPs:
+  IP:           10.244.3.180
+Controlled By:  ReplicaSet/layer-nginx-5f657fdd74
+Containers:
+  nginx:
+    Container ID:  containerd://d6db213fe4df2d25372063908ce014d1ccb0566c869bc4db19581dcb05d13c61
+    Image:         nginx:1.25
+    Image ID:      docker.io/library/nginx@sha256:a484819eb60211f5299034ac80f6a681b06f89e65866ce91f356ed7c72af059c
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      sleep
+      3600
+    State:          Running
+      Started:      Fri, 05 Jun 2026 14:08:15 +0530
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-pl4pp (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-pl4pp:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:                      layer-nginx-5f657fdd74-sdbfs
+Namespace:                 layer-eval
+Priority:                  0
+Service Account:           default
+Node:                      playground-cluster-worker3/172.21.0.3
+Start Time:                Fri, 05 Jun 2026 14:08:14 +0530
+Labels:                    app=layer-nginx
+                           pod-template-hash=5f657fdd74
+                           topology.kubernetes.io/zone=zone-a
+Annotations:               <none>
+Status:                    Terminating (lasts <invalid>)
+Termination Grace Period:  30s
+IP:                        10.244.4.226
+IPs:
+  IP:           10.244.4.226
+Controlled By:  ReplicaSet/layer-nginx-5f657fdd74
+Containers:
+  nginx:
+    Container ID:  containerd://d7f651b94e193b2c5994c25e568f4f1a90b5cd8c8ccf288da7ccc09d07578a99
+    Image:         nginx:1.25
+    Image ID:      docker.io/library/nginx@sha256:a484819eb60211f5299034ac80f6a681b06f89e65866ce91f356ed7c72af059c
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      sleep
+      3600
+    State:          Running
+      Started:      Fri, 05 Jun 2026 14:08:15 +0530
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-vrf46 (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-vrf46:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:                      layer-nginx-5f657fdd74-x67f6
+Namespace:                 layer-eval
+Priority:                  0
+Service Account:           default
+Node:                      playground-cluster-worker5/172.21.0.8
+Start Time:                Fri, 05 Jun 2026 14:08:14 +0530
+Labels:                    app=layer-nginx
+                           pod-template-hash=5f657fdd74
+                           topology.kubernetes.io/zone=zone-b
+Annotations:               <none>
+Status:                    Terminating (lasts <invalid>)
+Termination Grace Period:  30s
+IP:                        10.244.5.181
+IPs:
+  IP:           10.244.5.181
+Controlled By:  ReplicaSet/layer-nginx-5f657fdd74
+Containers:
+  nginx:
+    Container ID:  containerd://b03f33bc1ea896ef0742c124cd7e9023d5aed316bed77be4470ad7e3c351607d
+    Image:         nginx:1.25
+    Image ID:      docker.io/library/nginx@sha256:a484819eb60211f5299034ac80f6a681b06f89e65866ce91f356ed7c72af059c
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      sleep
+      3600
+    State:          Running
+      Started:      Fri, 05 Jun 2026 14:08:15 +0530
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-rsvd2 (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-rsvd2:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:             layer-nginx-76b8dc6f45-62jjs
+Namespace:        layer-eval
+Priority:         0
+Service Account:  default
+Node:             playground-cluster-worker4/172.21.0.5
+Start Time:       Fri, 05 Jun 2026 14:08:34 +0530
+Labels:           app=layer-nginx
+                  pod-template-hash=76b8dc6f45
+                  topology.kubernetes.io/zone=zone-b
+Annotations:      <none>
+Status:           Running
+IP:               10.244.1.219
+IPs:
+  IP:           10.244.1.219
+Controlled By:  ReplicaSet/layer-nginx-76b8dc6f45
+Containers:
+  nginx:
+    Container ID:  containerd://5b4a22e7b92c0813be04b2420791e535b2e318f2e96fa85d1a2e037d15c30951
+    Image:         nginx:1.25
+    Image ID:      docker.io/library/nginx@sha256:a484819eb60211f5299034ac80f6a681b06f89e65866ce91f356ed7c72af059c
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      sleep
+      3600
+    State:          Running
+      Started:      Fri, 05 Jun 2026 14:08:35 +0530
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-q245b (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-q245b:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:             layer-nginx-76b8dc6f45-8rg46
+Namespace:        layer-eval
+Priority:         0
+Service Account:  default
+Node:             playground-cluster-worker4/172.21.0.5
+Start Time:       Fri, 05 Jun 2026 14:08:34 +0530
+Labels:           app=layer-nginx
+                  pod-template-hash=76b8dc6f45
+                  topology.kubernetes.io/zone=zone-b
+Annotations:      <none>
+Status:           Running
+IP:               10.244.1.220
+IPs:
+  IP:           10.244.1.220
+Controlled By:  ReplicaSet/layer-nginx-76b8dc6f45
+Containers:
+  nginx:
+    Container ID:  containerd://abcea88b35b351bc85ed0e97e24628fbace047e9455a7438bf436565efd8d413
+    Image:         nginx:1.25
+    Image ID:      docker.io/library/nginx@sha256:a484819eb60211f5299034ac80f6a681b06f89e65866ce91f356ed7c72af059c
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      sleep
+      3600
+    State:          Running
+      Started:      Fri, 05 Jun 2026 14:08:35 +0530
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-qzhlg (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-qzhlg:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:             layer-nginx-76b8dc6f45-bkt2f
+Namespace:        layer-eval
+Priority:         0
+Service Account:  default
+Node:             playground-cluster-worker3/172.21.0.3
+Start Time:       Fri, 05 Jun 2026 14:08:34 +0530
+Labels:           app=layer-nginx
+                  pod-template-hash=76b8dc6f45
+                  topology.kubernetes.io/zone=zone-a
+Annotations:      <none>
+Status:           Running
+IP:               10.244.4.229
+IPs:
+  IP:           10.244.4.229
+Controlled By:  ReplicaSet/layer-nginx-76b8dc6f45
+Containers:
+  nginx:
+    Container ID:  containerd://7cb99570872b6cca82f923ef07a54809f6813b592eb52ce391c4ff067e880d3b
+    Image:         nginx:1.25
+    Image ID:      docker.io/library/nginx@sha256:a484819eb60211f5299034ac80f6a681b06f89e65866ce91f356ed7c72af059c
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      sleep
+      3600
+    State:          Running
+      Started:      Fri, 05 Jun 2026 14:08:35 +0530
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-ttmf9 (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-ttmf9:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:             layer-nginx-76b8dc6f45-fnmr6
+Namespace:        layer-eval
+Priority:         0
+Service Account:  default
+Node:             playground-cluster-worker5/172.21.0.8
+Start Time:       Fri, 05 Jun 2026 14:08:34 +0530
+Labels:           app=layer-nginx
+                  pod-template-hash=76b8dc6f45
+                  topology.kubernetes.io/zone=zone-b
+Annotations:      <none>
+Status:           Running
+IP:               10.244.5.182
+IPs:
+  IP:           10.244.5.182
+Controlled By:  ReplicaSet/layer-nginx-76b8dc6f45
+Containers:
+  nginx:
+    Container ID:  containerd://dc6f448f55b40b7bff6c2442f0482aadb994bdfb8cfd3b9be799ba42d30c2b2a
+    Image:         nginx:1.25
+    Image ID:      docker.io/library/nginx@sha256:a484819eb60211f5299034ac80f6a681b06f89e65866ce91f356ed7c72af059c
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      sleep
+      3600
+    State:          Running
+      Started:      Fri, 05 Jun 2026 14:08:35 +0530
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-gfs4q (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-gfs4q:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:             layer-nginx-76b8dc6f45-pts49
+Namespace:        layer-eval
+Priority:         0
+Service Account:  default
+Node:             playground-cluster-worker2/172.21.0.2
+Start Time:       Fri, 05 Jun 2026 14:08:34 +0530
+Labels:           app=layer-nginx
+                  pod-template-hash=76b8dc6f45
+                  topology.kubernetes.io/zone=zone-a
+Annotations:      <none>
+Status:           Running
+IP:               10.244.3.182
+IPs:
+  IP:           10.244.3.182
+Controlled By:  ReplicaSet/layer-nginx-76b8dc6f45
+Containers:
+  nginx:
+    Container ID:  containerd://762a66def06aaa0f53613f19f9ed233bbce25cdd659aab10527ec620868cbf5c
+    Image:         nginx:1.25
+    Image ID:      docker.io/library/nginx@sha256:a484819eb60211f5299034ac80f6a681b06f89e65866ce91f356ed7c72af059c
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      sleep
+      3600
+    State:          Running
+      Started:      Fri, 05 Jun 2026 14:08:35 +0530
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-nm6xm (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-nm6xm:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:             layer-nginx-76b8dc6f45-wxlf2
+Namespace:        layer-eval
+Priority:         0
+Service Account:  default
+Node:             playground-cluster-worker3/172.21.0.3
+Start Time:       Fri, 05 Jun 2026 14:08:34 +0530
+Labels:           app=layer-nginx
+                  pod-template-hash=76b8dc6f45
+                  topology.kubernetes.io/zone=zone-a
+Annotations:      <none>
+Status:           Running
+IP:               10.244.4.227
+IPs:
+  IP:           10.244.4.227
+Controlled By:  ReplicaSet/layer-nginx-76b8dc6f45
+Containers:
+  nginx:
+    Container ID:  containerd://d9d1ddc30840af653c0fead19a4ea4a7eac7473de3a24980fe17fec359e02e86
+    Image:         nginx:1.25
+    Image ID:      docker.io/library/nginx@sha256:a484819eb60211f5299034ac80f6a681b06f89e65866ce91f356ed7c72af059c
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      sleep
+      3600
+    State:          Running
+      Started:      Fri, 05 Jun 2026 14:08:35 +0530
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-9b84d (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-9b84d:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s

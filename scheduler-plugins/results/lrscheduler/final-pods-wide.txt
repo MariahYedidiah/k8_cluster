@@ -1,0 +1,46 @@
+NAMESPACE            NAME                                                       READY   STATUS    RESTARTS         AGE     IP            NODE                               NOMINATED NODE   READINESS GATES
+default              details-v1-6cc9db646f-45nf7                                2/2     Running   2 (4h21m ago)    6d3h    10.244.3.18   playground-cluster-worker2         <none>           <none>
+default              netmarks-test                                              2/2     Running   2 (4h21m ago)    4d3h    10.244.1.3    playground-cluster-worker          <none>           <none>
+default              productpage-netmarks-test                                  2/2     Running   0                5m31s   10.244.3.19   playground-cluster-worker2         <none>           <none>
+default              productpage-v1-574c45789d-ksnkq                            2/2     Running   2 (4h21m ago)    6d3h    10.244.1.11   playground-cluster-worker          <none>           <none>
+default              ratings-v1-59d4b8b76f-sk6f8                                2/2     Running   2 (4h21m ago)    6d3h    10.244.3.6    playground-cluster-worker2         <none>           <none>
+default              reviews-v1-7bbc4c5497-dfxcj                                2/2     Running   5 (4h22m ago)    6d3h    10.244.1.13   playground-cluster-worker          <none>           <none>
+default              reviews-v2-7b5b4d5d65-cjmg4                                2/2     Running   2 (4h21m ago)    2d21h   10.244.1.6    playground-cluster-worker          <none>           <none>
+default              reviews-v2-7b5b4d5d65-l9kws                                2/2     Running   3 (4h21m ago)    6d3h    10.244.3.9    playground-cluster-worker2         <none>           <none>
+default              reviews-v2-7b5b4d5d65-st5j4                                2/2     Running   2 (4h21m ago)    2d21h   10.244.1.5    playground-cluster-worker          <none>           <none>
+default              reviews-v3-5bcf66d84f-s7bsh                                2/2     Running   3 (4h22m ago)    6d3h    10.244.3.7    playground-cluster-worker2         <none>           <none>
+default              test-current-affinity                                      2/2     Running   3 (4h21m ago)    2d9h    10.244.3.10   playground-cluster-worker2         <none>           <none>
+default              test-hybrid                                                2/2     Running   2 (4h21m ago)    5d12h   10.244.3.5    playground-cluster-worker2         <none>           <none>
+default              test-hybrid2                                               2/2     Running   2 (4h21m ago)    5d11h   10.244.3.8    playground-cluster-worker2         <none>           <none>
+default              test-hybrid3                                               2/2     Running   2 (4h21m ago)    4d12h   10.244.1.12   playground-cluster-worker          <none>           <none>
+default              test-nginx                                                 2/2     Running   0                19m     10.244.1.16   playground-cluster-worker          <none>           <none>
+default              test-nginx2                                                2/2     Running   2 (4h21m ago)    2d21h   10.244.1.4    playground-cluster-worker          <none>           <none>
+default              test-python                                                2/2     Running   33 (24m ago)     4d6h    10.244.3.14   playground-cluster-worker2         <none>           <none>
+default              test-redis                                                 2/2     Running   2 (4h21m ago)    4d6h    10.244.1.2    playground-cluster-worker          <none>           <none>
+default              test-v10-affinity                                          2/2     Running   1 (46h ago)      2d10h   10.244.3.15   playground-cluster-worker2         <none>           <none>
+default              test-v7-heavy                                              2/2     Running   2 (4h21m ago)    2d19h   10.244.3.17   playground-cluster-worker2         <none>           <none>
+default              test-v7-nginx                                              2/2     Running   2 (4h21m ago)    2d11h   10.244.3.16   playground-cluster-worker2         <none>           <none>
+default              test-v8-nginx                                              2/2     Running   2 (4h21m ago)    2d11h   10.244.3.13   playground-cluster-worker2         <none>           <none>
+default              test-v9-nginx                                              2/2     Running   2 (4h21m ago)    2d11h   10.244.3.11   playground-cluster-worker2         <none>           <none>
+istio-system         istio-egressgateway-9575f5c5d-wvpxr                        1/1     Running   2 (4h21m ago)    6d3h    10.244.1.9    playground-cluster-worker          <none>           <none>
+istio-system         istio-ingressgateway-74fccd996-9r959                       1/1     Running   3 (84m ago)      6d3h    10.244.3.2    playground-cluster-worker2         <none>           <none>
+istio-system         istiod-85fff6599c-4pxz8                                    1/1     Running   2 (4h21m ago)    6d3h    10.244.1.7    playground-cluster-worker          <none>           <none>
+istio-system         kiali-676c95d4f6-vn64h                                     1/1     Running   416 (84m ago)    6d3h    10.244.3.3    playground-cluster-worker2         <none>           <none>
+istio-system         prometheus-86b778b66d-xzr5c                                2/2     Running   26 (4h21m ago)   6d3h    10.244.1.8    playground-cluster-worker          <none>           <none>
+kube-system          coredns-66bc5c9577-6svlg                                   1/1     Running   5 (4h21m ago)    6d3h    10.244.0.4    playground-cluster-control-plane   <none>           <none>
+kube-system          coredns-66bc5c9577-mcsq7                                   1/1     Running   5 (4h21m ago)    6d3h    10.244.0.2    playground-cluster-control-plane   <none>           <none>
+kube-system          etcd-playground-cluster-control-plane                      1/1     Running   2 (4h21m ago)    46h     172.18.0.4    playground-cluster-control-plane   <none>           <none>
+kube-system          hybrid-scheduler5-f676df5bc-2t988                          1/1     Running   0                70m     10.244.0.11   playground-cluster-control-plane   <none>           <none>
+kube-system          kindnet-dt2vx                                              1/1     Running   2 (4h21m ago)    6d3h    172.18.0.2    playground-cluster-worker          <none>           <none>
+kube-system          kindnet-ltqd2                                              1/1     Running   3 (84m ago)      6d3h    172.18.0.3    playground-cluster-worker2         <none>           <none>
+kube-system          kindnet-nk2zp                                              1/1     Running   2 (4h21m ago)    6d3h    172.18.0.4    playground-cluster-control-plane   <none>           <none>
+kube-system          kube-apiserver-playground-cluster-control-plane            1/1     Running   2 (4h21m ago)    46h     172.18.0.4    playground-cluster-control-plane   <none>           <none>
+kube-system          kube-controller-manager-playground-cluster-control-plane   1/1     Running   39 (4h21m ago)   6d3h    172.18.0.4    playground-cluster-control-plane   <none>           <none>
+kube-system          kube-proxy-bvlnt                                           1/1     Running   4 (84m ago)      85m     172.18.0.3    playground-cluster-worker2         <none>           <none>
+kube-system          kube-proxy-cjmf9                                           1/1     Running   2 (4h21m ago)    6d3h    172.18.0.4    playground-cluster-control-plane   <none>           <none>
+kube-system          kube-proxy-mwtt9                                           1/1     Running   77 (4h21m ago)   6d3h    172.18.0.2    playground-cluster-worker          <none>           <none>
+kube-system          kube-scheduler-playground-cluster-control-plane            1/1     Running   37 (4h21m ago)   6d3h    172.18.0.4    playground-cluster-control-plane   <none>           <none>
+kube-system          node-cache-agent-44v26                                     1/1     Running   3 (84m ago)      4d7h    10.244.3.4    playground-cluster-worker2         <none>           <none>
+kube-system          node-cache-agent-ck25g                                     1/1     Running   2 (4h21m ago)    4d7h    10.244.1.10   playground-cluster-worker          <none>           <none>
+kube-system          registry-watcher-8c9ddc6-gwmnt                             1/1     Running   0                3h32m   10.244.1.14   playground-cluster-worker          <none>           <none>
+local-path-storage   local-path-provisioner-7b8c8ddbd6-rp4h7                    1/1     Running   4 (4h20m ago)    6d3h    10.244.0.3    playground-cluster-control-plane   <none>           <none>

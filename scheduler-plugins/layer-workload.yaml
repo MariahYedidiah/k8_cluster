@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-layer
+  namespace: layer-eval
+spec:
+  replicas: 12
+  selector:
+    matchLabels:
+      app: nginx-layer
+  template:
+    metadata:
+      labels:
+        app: nginx-layer
+    spec:
+      schedulerName: hybrid-scheduler5
+      containers:
+      - name: nginx
+        image: nginx:1.25

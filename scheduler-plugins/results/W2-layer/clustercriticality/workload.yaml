@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: layer-cached
+  namespace: layer-eval
+spec:
+  replicas: 6
+  selector:
+    matchLabels:
+      app: layer-cached
+  template:
+    metadata:
+      labels:
+        app: layer-cached
+    spec:
+      schedulerName: clustercriticality-scheduler
+      containers:
+      - name: cached-image
+        image: localhost:5000/netmarks-collector:v1
+        imagePullPolicy: IfNotPresent
+        command: ["sleep", "3600"]
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: layer-nginx
+  namespace: layer-eval
+spec:
+  replicas: 6
+  selector:
+    matchLabels:
+      app: layer-nginx
+  template:
+    metadata:
+      labels:
+        app: layer-nginx
+    spec:
+      schedulerName: clustercriticality-scheduler
+      containers:
+      - name: nginx
+        image: nginx:1.25
+        imagePullPolicy: IfNotPresent
+        command: ["sleep", "3600"]

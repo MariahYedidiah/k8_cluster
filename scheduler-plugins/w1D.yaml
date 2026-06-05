@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: toleration-test
+  namespace: sched-tests
+spec:
+  replicas: 6
+  selector:
+    matchLabels:
+      app: toleration-test
+  template:
+    metadata:
+      labels:
+        app: toleration-test
+    spec:
+      schedulerName: hybridmerged-scheduler
+      tolerations:
+      - key: "test"
+        operator: "Equal"
+        value: "reserved"
+        effect: "NoSchedule"
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.10

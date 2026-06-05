@@ -1,0 +1,2 @@
+NAME                             READY   STATUS    RESTARTS   AGE   IP             NODE                         NOMINATED NODE   READINESS GATES
+netmarks-live-productpage-test   2/2     Running   0          10s   10.244.5.117   playground-cluster-worker5   <none>           <none>

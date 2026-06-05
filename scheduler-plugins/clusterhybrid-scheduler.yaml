@@ -1,0 +1,118 @@
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: clusterhybrid-scheduler
+  namespace: kube-system
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: clusterhybrid-scheduler-extra
+rules:
+- apiGroups: [""]
+  resources: ["configmaps", "pods", "nodes", "namespaces"]
+  verbs: ["get", "list", "watch"]
+- apiGroups: ["storage.k8s.io"]
+  resources: ["storageclasses"]
+  verbs: ["get", "list", "watch"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: clusterhybrid-scheduler-main-binding
+subjects:
+- kind: ServiceAccount
+  name: clusterhybrid-scheduler
+  namespace: kube-system
+roleRef:
+  kind: ClusterRole
+  name: system:kube-scheduler
+  apiGroup: rbac.authorization.k8s.io
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: clusterhybrid-scheduler-extra-binding
+subjects:
+- kind: ServiceAccount
+  name: clusterhybrid-scheduler
+  namespace: kube-system
+roleRef:
+  kind: ClusterRole
+  name: clusterhybrid-scheduler-extra
+  apiGroup: rbac.authorization.k8s.io
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: clusterhybrid-scheduler-auth-reader
+  namespace: kube-system
+subjects:
+- kind: ServiceAccount
+  name: clusterhybrid-scheduler
+  namespace: kube-system
+roleRef:
+  kind: Role
+  name: extension-apiserver-authentication-reader
+  apiGroup: rbac.authorization.k8s.io
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: clusterhybrid-scheduler-config
+  namespace: kube-system
+data:
+  config.yaml: |
+    apiVersion: kubescheduler.config.k8s.io/v1
+    kind: KubeSchedulerConfiguration
+    leaderElection:
+      leaderElect: false
+
+    profiles:
+    - schedulerName: clusterhybrid-scheduler
+      plugins:
+        preScore:
+          enabled:
+          - name: ClusterHybrid
+        score:
+          enabled:
+          - name: ClusterHybrid
+            weight: 100
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: clusterhybrid-scheduler
+  namespace: kube-system
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: clusterhybrid-scheduler
+  template:
+    metadata:
+      labels:
+        app: clusterhybrid-scheduler
+    spec:
+      serviceAccountName: clusterhybrid-scheduler
+      nodeSelector:
+        node-role.kubernetes.io/control-plane: ""
+      tolerations:
+      - key: "node-role.kubernetes.io/control-plane"
+        operator: "Exists"
+        effect: "NoSchedule"
+      containers:
+      - name: kube-scheduler
+        image: localhost:5000/scheduler-plugins/kube-scheduler:netmarks-final-v1
+        imagePullPolicy: IfNotPresent
+        command:
+        - /bin/kube-scheduler
+        args:
+        - --config=/etc/kubernetes/config/config.yaml
+        volumeMounts:
+        - name: config-volume
+          mountPath: /etc/kubernetes/config
+      volumes:
+      - name: config-volume
+        configMap:
+          name: clusterhybrid-scheduler-config

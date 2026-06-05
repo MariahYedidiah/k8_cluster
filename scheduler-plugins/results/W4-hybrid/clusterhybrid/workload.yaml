@@ -1,0 +1,180 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hm-layer
+  namespace: hybrid-eval
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: hm-layer
+  template:
+    metadata:
+      labels:
+        app: hm-layer
+    spec:
+      schedulerName: clusterhybrid-scheduler
+      containers:
+      - name: cached
+        image: localhost:5000/netmarks-collector:v1
+        imagePullPolicy: IfNotPresent
+        command: ["sleep", "3600"]
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "128Mi"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hm-ratings
+  namespace: hybrid-eval
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: ratings
+      version: v1
+  template:
+    metadata:
+      labels:
+        app: ratings
+        version: v1
+    spec:
+      schedulerName: clusterhybrid-scheduler
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.10
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "64Mi"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hm-details
+  namespace: hybrid-eval
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: details
+      version: v1
+  template:
+    metadata:
+      labels:
+        app: details
+        version: v1
+    spec:
+      schedulerName: clusterhybrid-scheduler
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.10
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "64Mi"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hm-reviews
+  namespace: hybrid-eval
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: reviews
+      version: v1
+  template:
+    metadata:
+      labels:
+        app: reviews
+        version: v1
+    spec:
+      schedulerName: clusterhybrid-scheduler
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.10
+        resources:
+          requests:
+            cpu: "150m"
+            memory: "96Mi"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hm-productpage
+  namespace: hybrid-eval
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: productpage
+      version: v1
+  template:
+    metadata:
+      labels:
+        app: productpage
+        version: v1
+    spec:
+      schedulerName: clusterhybrid-scheduler
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.10
+        resources:
+          requests:
+            cpu: "300m"
+            memory: "256Mi"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hm-cpu
+  namespace: hybrid-eval
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: hm-cpu
+  template:
+    metadata:
+      labels:
+        app: hm-cpu
+    spec:
+      schedulerName: clusterhybrid-scheduler
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.10
+        resources:
+          requests:
+            cpu: "700m"
+            memory: "64Mi"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hm-topology
+  namespace: hybrid-eval
+spec:
+  replicas: 6
+  selector:
+    matchLabels:
+      app: hm-topology
+  template:
+    metadata:
+      labels:
+        app: hm-topology
+    spec:
+      schedulerName: clusterhybrid-scheduler
+      topologySpreadConstraints:
+      - maxSkew: 1
+        topologyKey: topology.kubernetes.io/zone
+        whenUnsatisfiable: ScheduleAnyway
+        labelSelector:
+          matchLabels:
+            app: hm-topology
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.10

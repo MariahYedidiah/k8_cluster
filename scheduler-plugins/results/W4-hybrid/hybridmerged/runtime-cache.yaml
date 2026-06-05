@@ -1,0 +1,50 @@
+apiVersion: v1
+data:
+  metrics.json: |-
+    {
+      "playground-cluster-control-plane": {
+        "cpu_percent": 2.83,
+        "memory_percent": 9.37,
+        "source": "metrics-api"
+      },
+      "playground-cluster-worker": {
+        "cpu_percent": 0.68,
+        "memory_percent": 2.39,
+        "source": "metrics-api"
+      },
+      "playground-cluster-worker2": {
+        "cpu_percent": 2.27,
+        "memory_percent": 4.97,
+        "source": "metrics-api"
+      },
+      "playground-cluster-worker3": {
+        "cpu_percent": 2.29,
+        "memory_percent": 8.41,
+        "source": "metrics-api"
+      },
+      "playground-cluster-worker4": {
+        "cpu_percent": 1.93,
+        "memory_percent": 6.7,
+        "source": "metrics-api"
+      },
+      "playground-cluster-worker5": {
+        "cpu_percent": 1.08,
+        "memory_percent": 5.51,
+        "source": "metrics-api"
+      },
+      "playground-cluster-worker6": {
+        "cpu_percent": 1.11,
+        "memory_percent": 8.25,
+        "source": "metrics-api"
+      }
+    }
+kind: ConfigMap
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","data":{"metrics.json":"{\n  \"playground-cluster-control-plane\": {\n    \"cpu_percent\": 2.83,\n    \"memory_percent\": 9.37,\n    \"source\": \"metrics-api\"\n  },\n  \"playground-cluster-worker\": {\n    \"cpu_percent\": 0.68,\n    \"memory_percent\": 2.39,\n    \"source\": \"metrics-api\"\n  },\n  \"playground-cluster-worker2\": {\n    \"cpu_percent\": 2.27,\n    \"memory_percent\": 4.97,\n    \"source\": \"metrics-api\"\n  },\n  \"playground-cluster-worker3\": {\n    \"cpu_percent\": 2.29,\n    \"memory_percent\": 8.41,\n    \"source\": \"metrics-api\"\n  },\n  \"playground-cluster-worker4\": {\n    \"cpu_percent\": 1.93,\n    \"memory_percent\": 6.7,\n    \"source\": \"metrics-api\"\n  },\n  \"playground-cluster-worker5\": {\n    \"cpu_percent\": 1.08,\n    \"memory_percent\": 5.51,\n    \"source\": \"metrics-api\"\n  },\n  \"playground-cluster-worker6\": {\n    \"cpu_percent\": 1.11,\n    \"memory_percent\": 8.25,\n    \"source\": \"metrics-api\"\n  }\n}"},"kind":"ConfigMap","metadata":{"annotations":{},"name":"runtime-node-metrics-cache","namespace":"kube-system"}}
+  creationTimestamp: "2026-06-03T05:37:03Z"
+  name: runtime-node-metrics-cache
+  namespace: kube-system
+  resourceVersion: "668608"
+  uid: 8c71636f-23de-42c3-8ea5-7a8ea901811d

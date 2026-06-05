@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: registry-watcher
+  namespace: kube-system
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: registry-watcher
+  template:
+    metadata:
+      labels:
+        app: registry-watcher
+    spec:
+      serviceAccountName: cache-writer
+      containers:
+      - name: watcher
+        image: localhost:5000/registry-watcher:v1
+        imagePullPolicy: Always
+        env:
+        - name: REGISTRY
+          value: "http://headache:5000"
+        - name: INTERVAL
+          value: "20"

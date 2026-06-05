@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: affinity-pods
+  namespace: sched-tests
+spec:
+  replicas: 6
+  selector:
+    matchLabels:
+      app: affinity-pods
+  template:
+    metadata:
+      labels:
+        app: affinity-pods
+    spec:
+      schedulerName: hybridmerged-scheduler
+      affinity:
+        podAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+          - weight: 100
+            podAffinityTerm:
+              labelSelector:
+                matchLabels:
+                  app: affinity-pods
+              topologyKey: kubernetes.io/hostname
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.10

@@ -1,0 +1,19 @@
+NAME                             READY   STATUS    RESTARTS   AGE   IP             NODE                         NOMINATED NODE   READINESS GATES
+hm-cpu-797f86cc9-g974k           1/1     Running   0          15s   10.244.3.193   playground-cluster-worker2   <none>           <none>
+hm-cpu-797f86cc9-kkzsz           1/1     Running   0          15s   10.244.5.118   playground-cluster-worker5   <none>           <none>
+hm-cpu-797f86cc9-kzdwq           1/1     Running   0          15s   10.244.4.122   playground-cluster-worker3   <none>           <none>
+hm-cpu-797f86cc9-r7lw4           1/1     Running   0          15s   10.244.1.120   playground-cluster-worker4   <none>           <none>
+hm-layer-768fbc7d99-2k82j        1/1     Running   0          15s   10.244.4.120   playground-cluster-worker3   <none>           <none>
+hm-layer-768fbc7d99-9nnpv        1/1     Running   0          15s   10.244.4.119   playground-cluster-worker3   <none>           <none>
+hm-layer-768fbc7d99-g8ls9        1/1     Running   0          15s   10.244.3.191   playground-cluster-worker2   <none>           <none>
+hm-layer-768fbc7d99-mh747        1/1     Running   0          15s   10.244.3.190   playground-cluster-worker2   <none>           <none>
+hm-productpage-cf644c565-f4lbl   1/1     Running   0          15s   10.244.1.121   playground-cluster-worker4   <none>           <none>
+hm-productpage-cf644c565-r68r2   1/1     Running   0          15s   10.244.1.119   playground-cluster-worker4   <none>           <none>
+hm-productpage-cf644c565-whv8r   1/1     Running   0          15s   10.244.3.192   playground-cluster-worker2   <none>           <none>
+hm-productpage-cf644c565-zc2rz   1/1     Running   0          15s   10.244.4.121   playground-cluster-worker3   <none>           <none>
+hm-topology-7bf5578dc7-dvzwc     1/1     Running   0          15s   10.244.3.195   playground-cluster-worker2   <none>           <none>
+hm-topology-7bf5578dc7-fr6ms     1/1     Running   0          15s   10.244.5.119   playground-cluster-worker5   <none>           <none>
+hm-topology-7bf5578dc7-k8f6r     1/1     Running   0          14s   10.244.3.194   playground-cluster-worker2   <none>           <none>
+hm-topology-7bf5578dc7-lgswx     1/1     Running   0          14s   10.244.4.123   playground-cluster-worker3   <none>           <none>
+hm-topology-7bf5578dc7-n22qs     1/1     Running   0          14s   10.244.5.121   playground-cluster-worker5   <none>           <none>
+hm-topology-7bf5578dc7-wvbbg     1/1     Running   0          15s   10.244.5.120   playground-cluster-worker5   <none>           <none>

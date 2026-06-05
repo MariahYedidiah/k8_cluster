@@ -1,0 +1,2 @@
+node-cache-agent-44v26                                     1/1     Running            2 (83m ago)     4d4h   10.244.3.11   playground-cluster-worker2         <none>           <none>
+node-cache-agent-ck25g                                     1/1     Running            2 (83m ago)     4d4h   10.244.1.10   playground-cluster-worker          <none>           <none>

@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: stress-worker6
+  namespace: sched-tests
+spec:
+  nodeName: playground-cluster-worker6
+  containers:
+  - name: stress
+    image: polinux/stress
+    command: ["stress"]
+    args: ["--cpu", "4", "--vm", "2", "--vm-bytes", "512M", "--timeout", "300s"]

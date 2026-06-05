@@ -1,0 +1,25 @@
+NAME                              READY   STATUS        RESTARTS   AGE     IP             NODE                         NOMINATED NODE   READINESS GATES
+layer-cached-67b8db6585-5s4nk     1/1     Running       0          15s     10.244.3.177   playground-cluster-worker2   <none>           <none>
+layer-cached-67b8db6585-76zsh     1/1     Running       0          15s     10.244.5.178   playground-cluster-worker5   <none>           <none>
+layer-cached-67b8db6585-9j266     1/1     Running       0          15s     10.244.4.219   playground-cluster-worker3   <none>           <none>
+layer-cached-67b8db6585-qq5cx     1/1     Running       0          15s     10.244.4.220   playground-cluster-worker3   <none>           <none>
+layer-cached-67b8db6585-rc45s     1/1     Running       0          15s     10.244.1.207   playground-cluster-worker4   <none>           <none>
+layer-cached-67b8db6585-xxpvh     1/1     Running       0          15s     10.244.1.209   playground-cluster-worker4   <none>           <none>
+layer-nginx-579cf995d4-2w45j      1/1     Running       0          15s     10.244.1.208   playground-cluster-worker4   <none>           <none>
+layer-nginx-579cf995d4-7rf45      1/1     Running       0          15s     10.244.4.222   playground-cluster-worker3   <none>           <none>
+layer-nginx-579cf995d4-n9rrr      1/1     Running       0          15s     10.244.1.210   playground-cluster-worker4   <none>           <none>
+layer-nginx-579cf995d4-qb7lv      1/1     Running       0          15s     10.244.4.221   playground-cluster-worker3   <none>           <none>
+layer-nginx-579cf995d4-r5pz9      1/1     Running       0          15s     10.244.3.178   playground-cluster-worker2   <none>           <none>
+layer-nginx-579cf995d4-sh4qb      1/1     Running       0          15s     10.244.5.179   playground-cluster-worker5   <none>           <none>
+layer-workload-7584d9c96b-5rzlq   1/1     Terminating   0          3m28s   10.244.5.177   playground-cluster-worker5   <none>           <none>
+layer-workload-7584d9c96b-6wskz   1/1     Terminating   0          3m28s   10.244.3.176   playground-cluster-worker2   <none>           <none>
+layer-workload-7584d9c96b-72cd5   1/1     Terminating   0          3m28s   10.244.3.174   playground-cluster-worker2   <none>           <none>
+layer-workload-7584d9c96b-crmsq   1/1     Terminating   0          3m28s   10.244.5.175   playground-cluster-worker5   <none>           <none>
+layer-workload-7584d9c96b-d9jc4   1/1     Terminating   0          3m28s   10.244.1.205   playground-cluster-worker4   <none>           <none>
+layer-workload-7584d9c96b-frmnr   1/1     Terminating   0          3m28s   10.244.4.216   playground-cluster-worker3   <none>           <none>
+layer-workload-7584d9c96b-kq824   1/1     Terminating   0          3m28s   10.244.3.175   playground-cluster-worker2   <none>           <none>
+layer-workload-7584d9c96b-mhblg   1/1     Terminating   0          3m28s   10.244.1.204   playground-cluster-worker4   <none>           <none>
+layer-workload-7584d9c96b-pjq52   1/1     Terminating   0          3m28s   10.244.1.206   playground-cluster-worker4   <none>           <none>
+layer-workload-7584d9c96b-qt6wk   1/1     Terminating   0          3m28s   10.244.4.218   playground-cluster-worker3   <none>           <none>
+layer-workload-7584d9c96b-sm696   1/1     Terminating   0          3m28s   10.244.4.217   playground-cluster-worker3   <none>           <none>
+layer-workload-7584d9c96b-smgkj   1/1     Terminating   0          3m28s   10.244.5.176   playground-cluster-worker5   <none>           <none>

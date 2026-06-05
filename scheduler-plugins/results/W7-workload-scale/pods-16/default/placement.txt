@@ -1,0 +1,17 @@
+NAME                READY   STATUS    RESTARTS   AGE   IP             NODE                         NOMINATED NODE   READINESS GATES
+w7-p16-default-1    1/1     Running   0          3s    10.244.5.107   playground-cluster-worker5   <none>           <none>
+w7-p16-default-10   1/1     Running   0          2s    10.244.5.116   playground-cluster-worker5   <none>           <none>
+w7-p16-default-11   1/1     Running   0          2s    10.244.5.117   playground-cluster-worker5   <none>           <none>
+w7-p16-default-12   1/1     Running   0          2s    10.244.5.118   playground-cluster-worker5   <none>           <none>
+w7-p16-default-13   1/1     Running   0          2s    10.244.5.119   playground-cluster-worker5   <none>           <none>
+w7-p16-default-14   1/1     Running   0          2s    10.244.3.157   playground-cluster-worker2   <none>           <none>
+w7-p16-default-15   1/1     Running   0          1s    10.244.5.120   playground-cluster-worker5   <none>           <none>
+w7-p16-default-16   1/1     Running   0          1s    10.244.5.121   playground-cluster-worker5   <none>           <none>
+w7-p16-default-2    1/1     Running   0          3s    10.244.5.108   playground-cluster-worker5   <none>           <none>
+w7-p16-default-3    1/1     Running   0          2s    10.244.5.109   playground-cluster-worker5   <none>           <none>
+w7-p16-default-4    1/1     Running   0          2s    10.244.5.110   playground-cluster-worker5   <none>           <none>
+w7-p16-default-5    1/1     Running   0          2s    10.244.5.111   playground-cluster-worker5   <none>           <none>
+w7-p16-default-6    1/1     Running   0          2s    10.244.5.112   playground-cluster-worker5   <none>           <none>
+w7-p16-default-7    1/1     Running   0          2s    10.244.5.113   playground-cluster-worker5   <none>           <none>
+w7-p16-default-8    1/1     Running   0          2s    10.244.5.114   playground-cluster-worker5   <none>           <none>
+w7-p16-default-9    1/1     Running   0          2s    10.244.5.115   playground-cluster-worker5   <none>           <none>

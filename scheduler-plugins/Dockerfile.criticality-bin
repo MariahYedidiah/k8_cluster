@@ -1,0 +1,6 @@
+FROM alpine:latest
+
+COPY bin/kube-scheduler /bin/kube-scheduler
+RUN chmod +x /bin/kube-scheduler
+
+ENTRYPOINT ["/bin/kube-scheduler"]

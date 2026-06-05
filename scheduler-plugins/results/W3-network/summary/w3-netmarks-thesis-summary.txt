@@ -1,0 +1,5 @@
+default: 0/0 scored pod-groups selected a highest-net-score node
+criticality: 4/4 scored pod-groups selected a highest-net-score node
+clustercriticality: 3/4 scored pod-groups selected a highest-net-score node
+clusterhybrid: 3/4 scored pod-groups selected a highest-net-score node
+hybridmerged: 4/4 scored pod-groups selected a highest-net-score node

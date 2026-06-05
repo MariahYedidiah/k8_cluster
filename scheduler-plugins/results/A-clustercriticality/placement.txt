@@ -1,0 +1,15 @@
+NAME                             READY   STATUS    RESTARTS   AGE   IP             NODE                         NOMINATED NODE   READINESS GATES
+affinity-test                    1/1     Running   0          10s   10.244.3.174   playground-cluster-worker2   <none>           <none>
+cpu-heavy                        1/1     Running   0          10s   10.244.1.94    playground-cluster-worker4   <none>           <none>
+memory-heavy                     1/1     Running   0          10s   10.244.1.95    playground-cluster-worker4   <none>           <none>
+qos-besteffort                   1/1     Running   0          10s   10.244.5.89    playground-cluster-worker5   <none>           <none>
+qos-guaranteed                   1/1     Running   0          10s   10.244.5.90    playground-cluster-worker5   <none>           <none>
+storage-heavy                    1/1     Running   0          10s   10.244.5.88    playground-cluster-worker5   <none>           <none>
+taint-intolerant                 1/1     Running   0          10s   10.244.4.90    playground-cluster-worker3   <none>           <none>
+taint-tolerant                   1/1     Running   0          10s   10.244.6.117   playground-cluster-worker6   <none>           <none>
+topology-test-68cfdf8596-4pq6p   1/1     Running   0          10s   10.244.4.91    playground-cluster-worker3   <none>           <none>
+topology-test-68cfdf8596-8q54r   1/1     Running   0          10s   10.244.5.93    playground-cluster-worker5   <none>           <none>
+topology-test-68cfdf8596-c4jrj   1/1     Running   0          10s   10.244.5.92    playground-cluster-worker5   <none>           <none>
+topology-test-68cfdf8596-cpn6n   1/1     Running   0          10s   10.244.5.91    playground-cluster-worker5   <none>           <none>
+topology-test-68cfdf8596-dn6qk   1/1     Running   0          10s   10.244.3.175   playground-cluster-worker2   <none>           <none>
+topology-test-68cfdf8596-dspbv   1/1     Running   0          10s   10.244.4.92    playground-cluster-worker3   <none>           <none>

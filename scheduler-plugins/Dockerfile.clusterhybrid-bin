@@ -1,0 +1,4 @@
+FROM gcr.io/distroless/static:nonroot
+WORKDIR /bin
+COPY bin/kube-scheduler /bin/kube-scheduler
+ENTRYPOINT ["/bin/kube-scheduler"]

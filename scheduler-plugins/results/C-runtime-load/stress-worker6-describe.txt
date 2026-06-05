@@ -1,0 +1,62 @@
+Name:             stress-worker6
+Namespace:        sched-tests
+Priority:         0
+Service Account:  default
+Node:             playground-cluster-worker6/172.21.0.2
+Start Time:       Thu, 04 Jun 2026 20:16:49 +0530
+Labels:           topology.kubernetes.io/zone=zone-b
+Annotations:      <none>
+Status:           Running
+IP:               10.244.6.121
+IPs:
+  IP:  10.244.6.121
+Containers:
+  stress:
+    Container ID:  containerd://1542f89698c4754979bd356a0f4e38fd0425a7342896869c56706e9f97e312ed
+    Image:         polinux/stress
+    Image ID:      docker.io/polinux/stress@sha256:b6144f84f9c15dac80deb48d3a646b55c7043ab1d83ea0a697c09097aaad21aa
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      stress
+    Args:
+      --cpu
+      4
+      --vm
+      2
+      --vm-bytes
+      512M
+      --timeout
+      300s
+    State:          Running
+      Started:      Thu, 04 Jun 2026 20:16:51 +0530
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-jnd6x (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-jnd6x:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason   Age   From     Message
+  ----    ------   ----  ----     -------
+  Normal  Pulling  89s   kubelet  spec.containers{stress}: Pulling image "polinux/stress"
+  Normal  Pulled   87s   kubelet  spec.containers{stress}: Successfully pulled image "polinux/stress" in 1.645s (1.645s including waiting). Image size: 4041495 bytes.
+  Normal  Created  87s   kubelet  spec.containers{stress}: Container created
+  Normal  Started  87s   kubelet  spec.containers{stress}: Container started

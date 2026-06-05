@@ -1,0 +1,3 @@
+clusterhybrid-nginx-1             2/2     Running            0                10s     10.244.3.20   playground-cluster-worker2   <none>           <none>
+clusterhybrid-nginx-2             1/2     PodInitializing    0                10s     10.244.3.21   playground-cluster-worker2   <none>           <none>
+clusterhybrid-redis-1             2/2     Running            0                10s     10.244.3.22   playground-cluster-worker2   <none>           <none>

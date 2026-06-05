@@ -1,0 +1,2 @@
+NAME         READY   STATUS    RESTARTS   AGE     IP            NODE                        NOMINATED NODE   READINESS GATES
+test-nginx   2/2     Running   0          2m32s   10.244.1.16   playground-cluster-worker   <none>           <none>

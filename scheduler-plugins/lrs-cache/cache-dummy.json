@@ -1,0 +1,17 @@
+{
+  "images": {
+    "nginx:latest": {
+      "total_size": 300,
+      "layers": [
+        {"layer": "L1", "size": 100},
+        {"layer": "L2", "size": 100},
+        {"layer": "L3", "size": 100}
+      ]
+    }
+  },
+  "nodes": {
+    "playground-cluster-worker": ["L1", "L2", "L3"],
+    "playground-cluster-worker2": [],
+    "playground-cluster-control-plane": []
+  }
+}

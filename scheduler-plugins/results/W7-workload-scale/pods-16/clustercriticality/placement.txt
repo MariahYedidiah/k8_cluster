@@ -1,0 +1,17 @@
+NAME                           READY   STATUS    RESTARTS   AGE   IP             NODE                         NOMINATED NODE   READINESS GATES
+w7-p16-clustercriticality-1    1/1     Running   0          3s    10.244.5.136   playground-cluster-worker5   <none>           <none>
+w7-p16-clustercriticality-10   1/1     Running   0          2s    10.244.5.145   playground-cluster-worker5   <none>           <none>
+w7-p16-clustercriticality-11   1/1     Running   0          2s    10.244.5.146   playground-cluster-worker5   <none>           <none>
+w7-p16-clustercriticality-12   1/1     Running   0          2s    10.244.5.147   playground-cluster-worker5   <none>           <none>
+w7-p16-clustercriticality-13   1/1     Running   0          2s    10.244.3.160   playground-cluster-worker2   <none>           <none>
+w7-p16-clustercriticality-14   1/1     Running   0          2s    10.244.3.161   playground-cluster-worker2   <none>           <none>
+w7-p16-clustercriticality-15   1/1     Running   0          2s    10.244.5.148   playground-cluster-worker5   <none>           <none>
+w7-p16-clustercriticality-16   1/1     Running   0          2s    10.244.5.149   playground-cluster-worker5   <none>           <none>
+w7-p16-clustercriticality-2    1/1     Running   0          3s    10.244.5.137   playground-cluster-worker5   <none>           <none>
+w7-p16-clustercriticality-3    1/1     Running   0          3s    10.244.5.138   playground-cluster-worker5   <none>           <none>
+w7-p16-clustercriticality-4    1/1     Running   0          3s    10.244.5.139   playground-cluster-worker5   <none>           <none>
+w7-p16-clustercriticality-5    1/1     Running   0          3s    10.244.5.140   playground-cluster-worker5   <none>           <none>
+w7-p16-clustercriticality-6    1/1     Running   0          3s    10.244.5.141   playground-cluster-worker5   <none>           <none>
+w7-p16-clustercriticality-7    1/1     Running   0          3s    10.244.5.142   playground-cluster-worker5   <none>           <none>
+w7-p16-clustercriticality-8    1/1     Running   0          3s    10.244.5.143   playground-cluster-worker5   <none>           <none>
+w7-p16-clustercriticality-9    1/1     Running   0          3s    10.244.5.144   playground-cluster-worker5   <none>           <none>

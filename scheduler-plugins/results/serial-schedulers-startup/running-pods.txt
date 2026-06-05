@@ -1,0 +1,4 @@
+clustercriticality-scheduler-7b8695964b-8mxtx              1/1     Running            0                6m32s
+clusterhybrid-scheduler-776b786bff-m5gh8                   1/1     Running            0                4m34s
+criticality-scheduler-8567665fbf-mgpq5                     1/1     Running            0                6m23s
+hybridmerged-scheduler-554bb5bcc9-p4lmr                    1/1     Running            0                4m12s

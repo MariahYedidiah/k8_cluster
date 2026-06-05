@@ -1,0 +1,6 @@
+NETMARKS scoring pod: test-v7-heavy workload: productpage-v1 node: playground-cluster-worker
+NETMARKS scoring pod: test-v7-heavy workload: productpage-v1 node: playground-cluster-worker2
+NETMARKS final score pod: test-v7-heavy workload: productpage-v1 node: playground-cluster-worker2 score: 100
+HYBRID_SCORE_DETAIL pod=test-v7-heavy node=playground-cluster-worker2 cpu_alloc_m=12000 cpu_used_m=310 cpu_pod_m=1000 cpu_after_m=1310 cpu_score=89 mem_alloc_bytes=15472680960 mem_used_bytes=673185792 mem_pod_bytes=536870912 mem_after_bytes=1210056704 mem_score=92 storage_alloc_bytes=144468889600 storage_used_bytes=104857600 storage_pod_bytes=524288000 storage_after_bytes=629145600 storage_score=99 balance_score=98 layer_score=0 net_score=100 final_score=67
+NETMARKS final score pod: test-v7-heavy workload: productpage-v1 node: playground-cluster-worker score: 67
+HYBRID_SCORE_DETAIL pod=test-v7-heavy node=playground-cluster-worker cpu_alloc_m=12000 cpu_used_m=200 cpu_pod_m=1000 cpu_after_m=1200 cpu_score=90 mem_alloc_bytes=15472680960 mem_used_bytes=534773760 mem_pod_bytes=536870912 mem_after_bytes=1071644672 mem_score=93 storage_alloc_bytes=144468889600 storage_used_bytes=0 storage_pod_bytes=524288000 storage_after_bytes=524288000 storage_score=99 balance_score=98 layer_score=0 net_score=67 final_score=58

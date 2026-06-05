@@ -1,0 +1,2 @@
+NAME                  READY   STATUS    RESTARTS   AGE     IP             NODE                         NOMINATED NODE   READINESS GATES
+lrs-live-image-test   2/2     Running   0          2m52s   10.244.3.139   playground-cluster-worker2   <none>           <none>

@@ -1,0 +1,91 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: cc-cpu-high
+  namespace: sched-tests
+  labels:
+    app: cc-cond
+    criticality: high
+spec:
+  schedulerName: clustercriticality-scheduler
+  containers:
+  - name: cpu
+    image: registry.k8s.io/pause:3.10
+    resources:
+      requests:
+        cpu: "700m"
+        memory: "64Mi"
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: cc-mem-high
+  namespace: sched-tests
+  labels:
+    app: cc-cond
+    criticality: high
+spec:
+  schedulerName: clustercriticality-scheduler
+  containers:
+  - name: mem
+    image: registry.k8s.io/pause:3.10
+    resources:
+      requests:
+        cpu: "100m"
+        memory: "700Mi"
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: cc-best-effort
+  namespace: sched-tests
+  labels:
+    app: cc-cond
+    criticality: low
+spec:
+  schedulerName: clustercriticality-scheduler
+  containers:
+  - name: be
+    image: registry.k8s.io/pause:3.10
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: cc-guaranteed
+  namespace: sched-tests
+  labels:
+    app: cc-cond
+    criticality: high
+spec:
+  schedulerName: clustercriticality-scheduler
+  containers:
+  - name: guaranteed
+    image: registry.k8s.io/pause:3.10
+    resources:
+      requests:
+        cpu: "200m"
+        memory: "128Mi"
+      limits:
+        cpu: "200m"
+        memory: "128Mi"
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: cc-topology
+  namespace: sched-tests
+  labels:
+    app: cc-topology
+    criticality: high
+spec:
+  schedulerName: clustercriticality-scheduler
+  topologySpreadConstraints:
+  - maxSkew: 1
+    topologyKey: topology.kubernetes.io/zone
+    whenUnsatisfiable: ScheduleAnyway
+    labelSelector:
+      matchLabels:
+        app: cc-topology
+  containers:
+  - name: pause
+    image: registry.k8s.io/pause:3.10

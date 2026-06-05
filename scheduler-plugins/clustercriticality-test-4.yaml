@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: clustercriticality-test-4
+spec:
+  schedulerName: clustercriticality-scheduler
+  containers:
+  - name: nginx
+    image: nginx

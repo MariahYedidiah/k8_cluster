@@ -1,0 +1,1 @@
+localhost:5000/scheduler-plugins/kube-scheduler:hybridmerged-v12-runtime-topology

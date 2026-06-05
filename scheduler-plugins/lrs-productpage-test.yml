@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: lrs-productpage-test
+  labels:
+    app: productpage
+    version: v1
+spec:
+  schedulerName: hybrid-scheduler4
+
+  containers:
+  - name: productpage
+    image: localhost:5000/istio/examples-bookinfo-productpage-v1:1.20.3
+
+    resources:
+      requests:
+        cpu: "10m"
+        memory: "40Mi"
+
+      limits:
+        cpu: "100m"
+        memory: "128Mi"
+

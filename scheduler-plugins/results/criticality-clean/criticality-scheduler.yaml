@@ -1,0 +1,115 @@
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: criticality-scheduler
+  namespace: kube-system
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: criticality-scheduler-extra
+rules:
+- apiGroups: [""]
+  resources: ["configmaps", "pods", "nodes", "namespaces"]
+  verbs: ["get", "list", "watch"]
+- apiGroups: ["storage.k8s.io"]
+  resources: ["storageclasses"]
+  verbs: ["get", "list", "watch"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: criticality-scheduler-main-binding
+subjects:
+- kind: ServiceAccount
+  name: criticality-scheduler
+  namespace: kube-system
+roleRef:
+  kind: ClusterRole
+  name: system:kube-scheduler
+  apiGroup: rbac.authorization.k8s.io
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: criticality-scheduler-extra-binding
+subjects:
+- kind: ServiceAccount
+  name: criticality-scheduler
+  namespace: kube-system
+roleRef:
+  kind: ClusterRole
+  name: criticality-scheduler-extra
+  apiGroup: rbac.authorization.k8s.io
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: criticality-scheduler-auth-reader
+  namespace: kube-system
+subjects:
+- kind: ServiceAccount
+  name: criticality-scheduler
+  namespace: kube-system
+roleRef:
+  kind: Role
+  name: extension-apiserver-authentication-reader
+  apiGroup: rbac.authorization.k8s.io
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: criticality-scheduler-config
+  namespace: kube-system
+data:
+  config.yaml: |
+    apiVersion: kubescheduler.config.k8s.io/v1
+    kind: KubeSchedulerConfiguration
+    leaderElection:
+      leaderElect: false
+
+    profiles:
+    - schedulerName: criticality-scheduler
+      plugins:
+        score:
+          enabled:
+          - name: CriticalityScore
+            weight: 100
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: criticality-scheduler
+  namespace: kube-system
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: criticality-scheduler
+  template:
+    metadata:
+      labels:
+        app: criticality-scheduler
+    spec:
+      serviceAccountName: criticality-scheduler
+      nodeSelector:
+        node-role.kubernetes.io/control-plane: ""
+      tolerations:
+      - key: "node-role.kubernetes.io/control-plane"
+        operator: "Exists"
+        effect: "NoSchedule"
+      containers:
+      - name: kube-scheduler
+        image: localhost:5000/scheduler-plugins/kube-scheduler:netmarks-final-v1
+        imagePullPolicy: IfNotPresent
+        command:
+        - /bin/kube-scheduler
+        args:
+        - --config=/etc/kubernetes/config/config.yaml
+        volumeMounts:
+        - name: config-volume
+          mountPath: /etc/kubernetes/config
+      volumes:
+      - name: config-volume
+        configMap:
+          name: criticality-scheduler-config

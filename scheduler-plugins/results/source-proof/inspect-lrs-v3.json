@@ -1,0 +1,50 @@
+[
+    {
+        "Id": "sha256:712c7b85130e8839dd28c6102cad26eb5f412066deae2db47663b95d3a9ba335",
+        "RepoTags": [
+            "localhost:5000/scheduler-plugins/kube-scheduler:lrs-v3"
+        ],
+        "RepoDigests": [
+            "localhost:5000/scheduler-plugins/kube-scheduler@sha256:712c7b85130e8839dd28c6102cad26eb5f412066deae2db47663b95d3a9ba335"
+        ],
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-05-28T10:02:55.620212739+05:30",
+        "Config": {
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            ],
+            "Entrypoint": [
+                "/bin/kube-scheduler"
+            ],
+            "WorkingDir": "/"
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 28614177,
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:29df493baa13de438d6d2ece3a8333032e0b7b9b9d8cce4ee82194da255f61e1",
+                "sha256:f57de5e14853458c5f6a597e574aea1921a6e60f1e99c3488e904a59ed513ecf",
+                "sha256:9c5806a95da7acc2883848122c71367efec11ad4f4e93595fc03a4cce91595c2",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-05-28T04:33:01.203702031Z"
+        },
+        "Descriptor": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:712c7b85130e8839dd28c6102cad26eb5f412066deae2db47663b95d3a9ba335",
+            "size": 856
+        },
+        "Identity": {
+            "Build": [
+                {
+                    "Ref": "bmbnn5zy7yvy6nal7csy7ga5a",
+                    "CreatedAt": "2026-05-28T10:03:02.033390081+05:30"
+                }
+            ]
+        }
+    }
+]

@@ -1,0 +1,91 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: criticality-scheduler-config
+  namespace: kube-system
+data:
+  config.yaml: |
+    apiVersion: kubescheduler.config.k8s.io/v1
+    kind: KubeSchedulerConfiguration
+    leaderElection:
+      leaderElect: false
+    profiles:
+    - schedulerName: criticality-scheduler
+      plugins:
+        preScore:
+          enabled:
+          - name: CriticalityScore
+        score:
+          enabled:
+          - name: CriticalityScore
+            weight: 100
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: clustercriticality-scheduler-config
+  namespace: kube-system
+data:
+  config.yaml: |
+    apiVersion: kubescheduler.config.k8s.io/v1
+    kind: KubeSchedulerConfiguration
+    leaderElection:
+      leaderElect: false
+    profiles:
+    - schedulerName: clustercriticality-scheduler
+      plugins:
+        preScore:
+          enabled:
+          - name: ClusterCriticality
+        score:
+          enabled:
+          - name: ClusterCriticality
+            weight: 100
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: clusterhybrid-scheduler-config
+  namespace: kube-system
+data:
+  config.yaml: |
+    apiVersion: kubescheduler.config.k8s.io/v1
+    kind: KubeSchedulerConfiguration
+    leaderElection:
+      leaderElect: false
+    profiles:
+    - schedulerName: clusterhybrid-scheduler
+      plugins:
+        preScore:
+          enabled:
+          - name: ClusterHybrid
+        score:
+          enabled:
+          - name: ClusterHybrid
+            weight: 100
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: hybrid-scheduler5-config
+  namespace: kube-system
+data:
+  config.yaml: |
+    apiVersion: kubescheduler.config.k8s.io/v1
+    kind: KubeSchedulerConfiguration
+    leaderElection:
+      leaderElect: false
+    profiles:
+    - schedulerName: hybrid-scheduler5
+      plugins:
+        preScore:
+          enabled:
+          - name: HybridMerged
+        score:
+          enabled:
+          - name: HybridScore
+            weight: 0
+          - name: NetMARKS
+            weight: 0
+          - name: HybridMerged
+            weight: 100

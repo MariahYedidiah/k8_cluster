@@ -1,0 +1,9 @@
+NAME                   READY   STATUS              RESTARTS   AGE   IP             NODE                         NOMINATED NODE   READINESS GATES
+w7-p8-hybridmerged-1   1/1     Running             0          2s    10.244.5.99    playground-cluster-worker5   <none>           <none>
+w7-p8-hybridmerged-2   1/1     Running             0          2s    10.244.5.100   playground-cluster-worker5   <none>           <none>
+w7-p8-hybridmerged-3   1/1     Running             0          1s    10.244.5.101   playground-cluster-worker5   <none>           <none>
+w7-p8-hybridmerged-4   1/1     Running             0          1s    10.244.5.102   playground-cluster-worker5   <none>           <none>
+w7-p8-hybridmerged-5   1/1     Running             0          1s    10.244.5.103   playground-cluster-worker5   <none>           <none>
+w7-p8-hybridmerged-6   0/1     ContainerCreating   0          1s    <none>         playground-cluster-worker5   <none>           <none>
+w7-p8-hybridmerged-7   0/1     ContainerCreating   0          1s    <none>         playground-cluster-worker5   <none>           <none>
+w7-p8-hybridmerged-8   0/1     ContainerCreating   0          1s    <none>         playground-cluster-worker5   <none>           <none>

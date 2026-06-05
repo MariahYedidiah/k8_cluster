@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: netmarks-live-productpage-test
+  namespace: bookinfo-net
+  labels:
+    app: productpage
+    version: v1
+spec:
+  schedulerName: netmarks-scheduler
+  containers:
+  - name: pause
+    image: registry.k8s.io/pause:3.10

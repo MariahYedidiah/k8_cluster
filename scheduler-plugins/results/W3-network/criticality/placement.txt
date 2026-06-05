@@ -1,0 +1,28 @@
+NAME                                   READY   STATUS      RESTARTS      AGE   IP             NODE                         NOMINATED NODE   READINESS GATES
+details-v1-764c46cfdb-fcl7l            2/2     Running     1 (19h ago)   26h   10.244.1.3     playground-cluster-worker4   <none>           <none>
+netmarks-live-productpage-test         2/2     Running     1 (19h ago)   19h   10.244.5.14    playground-cluster-worker5   <none>           <none>
+network-productpage-58699bd776-6bz4w   2/2     Running     0             78m   10.244.4.254   playground-cluster-worker3   <none>           <none>
+network-productpage-58699bd776-9dhsn   2/2     Running     0             78m   10.244.3.195   playground-cluster-worker2   <none>           <none>
+network-productpage-58699bd776-flfc9   2/2     Running     0             78m   10.244.5.201   playground-cluster-worker5   <none>           <none>
+network-productpage-58699bd776-q255w   2/2     Running     0             78m   10.244.1.239   playground-cluster-worker4   <none>           <none>
+network-productpage-58699bd776-s2896   2/2     Running     0             78m   10.244.1.240   playground-cluster-worker4   <none>           <none>
+network-productpage-58699bd776-t7mpl   2/2     Running     0             78m   10.244.4.2     playground-cluster-worker3   <none>           <none>
+productpage-v1-85664dccbc-kfwth        2/2     Running     1 (19h ago)   26h   10.244.4.9     playground-cluster-worker3   <none>           <none>
+ratings-v1-779fdc7f86-bwh92            2/2     Running     1 (19h ago)   26h   10.244.5.3     playground-cluster-worker5   <none>           <none>
+reviews-v1-85964f9f98-tsctt            2/2     Running     1 (19h ago)   26h   10.244.3.4     playground-cluster-worker2   <none>           <none>
+reviews-v2-6f7fbdc6fd-gpj76            2/2     Running     1 (19h ago)   26h   10.244.1.11    playground-cluster-worker4   <none>           <none>
+reviews-v3-689b477554-49wpf            2/2     Running     1 (19h ago)   26h   10.244.5.2     playground-cluster-worker5   <none>           <none>
+w3-details-744fc64447-5xcvf            2/2     Running     0             15s   10.244.4.72    playground-cluster-worker3   <none>           <none>
+w3-details-744fc64447-qj65x            2/2     Running     0             10s   10.244.5.5     playground-cluster-worker5   <none>           <none>
+w3-productpage-7dd6b5bb85-5whnm        2/2     Running     0             15s   10.244.3.246   playground-cluster-worker2   <none>           <none>
+w3-productpage-7dd6b5bb85-7pp79        2/2     Running     0             15s   10.244.3.244   playground-cluster-worker2   <none>           <none>
+w3-productpage-7dd6b5bb85-cnz88        2/2     Running     0             9s    10.244.3.249   playground-cluster-worker2   <none>           <none>
+w3-productpage-7dd6b5bb85-pkj72        2/2     Running     0             15s   10.244.3.245   playground-cluster-worker2   <none>           <none>
+w3-productpage-7dd6b5bb85-q7hjw        2/2     Running     0             9s    10.244.3.248   playground-cluster-worker2   <none>           <none>
+w3-productpage-7dd6b5bb85-vjb9c        2/2     Running     0             10s   10.244.3.247   playground-cluster-worker2   <none>           <none>
+w3-ratings-bc9b4589f-724mj             2/2     Running     0             11s   10.244.1.42    playground-cluster-worker4   <none>           <none>
+w3-ratings-bc9b4589f-f6z8p             2/2     Running     0             15s   10.244.4.71    playground-cluster-worker3   <none>           <none>
+w3-reviews-6dfc8687fb-8jh84            2/2     Running     0             15s   10.244.1.41    playground-cluster-worker4   <none>           <none>
+w3-reviews-6dfc8687fb-jj6wb            2/2     Running     0             10s   10.244.4.73    playground-cluster-worker3   <none>           <none>
+w3-reviews-6dfc8687fb-jlg4z            2/2     Running     0             5s    10.244.5.6     playground-cluster-worker5   <none>           <none>
+w3-reviews-76b5466c9d-cqg67            0/2     Completed   0             21s   10.244.5.4     playground-cluster-worker5   <none>           <none>

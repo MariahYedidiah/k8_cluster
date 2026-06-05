@@ -1,0 +1,1069 @@
+apiVersion: v1
+data:
+  cache.json: |-
+    {
+      "images": {
+        "localhost:5000/netmarks-collector:v1": {
+          "total_size": 69946638,
+          "layers": [
+            {
+              "layer": "sha256:8211d5969d2e6cabcd3775ba7882f8a4be2f00a910be9154dae5e9fddfddca94",
+              "size": 30782364
+            },
+            {
+              "layer": "sha256:8649771fee179d7c2590c94f533aaa5fceb70e36e25dec83672fe836d99577c5",
+              "size": 1293313
+            },
+            {
+              "layer": "sha256:797d495f2c68eb4664df918d39078ca04612d7ef47c57b5c784f7f6eedd42bf5",
+              "size": 14366167
+            },
+            {
+              "layer": "sha256:45006ceeeea9e2ca59a046b6f4ac9a212e4b27b3d8d6e7d348b03f0aaccdac99",
+              "size": 250
+            },
+            {
+              "layer": "sha256:a7a9858b89ab23a1b224b8d7bcd64251dd30313bdca9cd76bcc6f8dc4bda6cda",
+              "size": 5788772
+            },
+            {
+              "layer": "sha256:c86879f6b131351a699aef900311583b76ac2768c6d13a9a2d93d05ce7ddddb4",
+              "size": 17714574
+            },
+            {
+              "layer": "sha256:830696e8549204be335f76034f3d8a4bbfbcc6eb743242106bdbeb91ce94f81c",
+              "size": 1198
+            }
+          ]
+        },
+        "localhost:5000/nginx:latest": {
+          "total_size": 64101337,
+          "layers": [
+            {
+              "layer": "sha256:8211d5969d2e6cabcd3775ba7882f8a4be2f00a910be9154dae5e9fddfddca94",
+              "size": 30782364
+            },
+            {
+              "layer": "sha256:830625e1ac85a8c72dd41b1403ea8210c7441aba69b752537d9a8a1b93ac87af",
+              "size": 33314379
+            },
+            {
+              "layer": "sha256:5431d0092ffdcf1729150a2100fae1197ae414486b76bba246fe659a1b4a9b4e",
+              "size": 628
+            },
+            {
+              "layer": "sha256:b4a248c845e558f875ac57f77d4498bb33110085b63ec15e966d186a939c94a0",
+              "size": 955
+            },
+            {
+              "layer": "sha256:7f8b1a2b17d83cb2af2014ba3d9841933a83f729eefe67c5d73dd6a47263bbec",
+              "size": 404
+            },
+            {
+              "layer": "sha256:45381ecb0e2f57bc356fba7bca792013750edff8d0bf00c07ac2c7f1f0786aee",
+              "size": 1209
+            },
+            {
+              "layer": "sha256:13fd728be9eb1209aaccfb92774f28b57314202bfd8fde3c54179b84d60907d7",
+              "size": 1398
+            }
+          ]
+        },
+        "localhost:5000/node-cache-agent:v1": {
+          "total_size": 86564134,
+          "layers": [
+            {
+              "layer": "sha256:8211d5969d2e6cabcd3775ba7882f8a4be2f00a910be9154dae5e9fddfddca94",
+              "size": 30782364
+            },
+            {
+              "layer": "sha256:8649771fee179d7c2590c94f533aaa5fceb70e36e25dec83672fe836d99577c5",
+              "size": 1293313
+            },
+            {
+              "layer": "sha256:797d495f2c68eb4664df918d39078ca04612d7ef47c57b5c784f7f6eedd42bf5",
+              "size": 14366167
+            },
+            {
+              "layer": "sha256:45006ceeeea9e2ca59a046b6f4ac9a212e4b27b3d8d6e7d348b03f0aaccdac99",
+              "size": 250
+            },
+            {
+              "layer": "sha256:df32d56e24f0c1b96533033289d4f774197783544e40747c041aac83d9987d43",
+              "size": 22406832
+            },
+            {
+              "layer": "sha256:72cb7ff1aad59734568fd4ff9492d77960244af064e819d0fc48f6af4bc6cbb9",
+              "size": 17714574
+            },
+            {
+              "layer": "sha256:25e0b0947457410b81df605f36473f7de9dd19ada2118a4a597a00bae9c6c375",
+              "size": 634
+            }
+          ]
+        },
+        "localhost:5000/node-cache-agent:v2": {
+          "total_size": 30938956,
+          "layers": [
+            {
+              "layer": "sha256:6a0ac1617861a677b045b7ff88545213ec31c0ff08763195a70a4a5adda577bb",
+              "size": 3864189
+            },
+            {
+              "layer": "sha256:e0b07607e5bf2ca65e3c248031e53d26e940307851ab18d6b2e683dbf47531d2",
+              "size": 27074767
+            }
+          ]
+        },
+        "localhost:5000/python:3.11-slim": {
+          "total_size": 46442094,
+          "layers": [
+            {
+              "layer": "sha256:8211d5969d2e6cabcd3775ba7882f8a4be2f00a910be9154dae5e9fddfddca94",
+              "size": 30782364
+            },
+            {
+              "layer": "sha256:8649771fee179d7c2590c94f533aaa5fceb70e36e25dec83672fe836d99577c5",
+              "size": 1293313
+            },
+            {
+              "layer": "sha256:797d495f2c68eb4664df918d39078ca04612d7ef47c57b5c784f7f6eedd42bf5",
+              "size": 14366167
+            },
+            {
+              "layer": "sha256:45006ceeeea9e2ca59a046b6f4ac9a212e4b27b3d8d6e7d348b03f0aaccdac99",
+              "size": 250
+            }
+          ]
+        },
+        "localhost:5000/redis:7-alpine": {
+          "total_size": 16257719,
+          "layers": [
+            {
+              "layer": "sha256:897d797d2723cf0e318402f4d6f37d51b011517e5cf09246b22155f0fa90dc81",
+              "size": 3646875
+            },
+            {
+              "layer": "sha256:c14c7509f545010819719d4269d58b1358ff935984497f11d6067bdda0ee9261",
+              "size": 948
+            },
+            {
+              "layer": "sha256:f546396032e0b456fe98a8cc057041605fe93a1199309d197f8d4d2a980c1251",
+              "size": 194939
+            },
+            {
+              "layer": "sha256:a300455a02bb563a55e1b2d5c01726febb1368f9b12610435ed280cbb49efd54",
+              "size": 12414221
+            },
+            {
+              "layer": "sha256:941ebb020cf09742107c4f171a21092bcf889051d56e9566dae8824b43ca5cfb",
+              "size": 101
+            },
+            {
+              "layer": "sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1",
+              "size": 32
+            },
+            {
+              "layer": "sha256:677c7c5aa821a6fb78ee6f740df62e41b6ee7fef2e42cd8eb9cb69531bf5b0ba",
+              "size": 603
+            }
+          ]
+        },
+        "localhost:5000/registry-watcher:v1": {
+          "total_size": 69946588,
+          "layers": [
+            {
+              "layer": "sha256:8211d5969d2e6cabcd3775ba7882f8a4be2f00a910be9154dae5e9fddfddca94",
+              "size": 30782364
+            },
+            {
+              "layer": "sha256:8649771fee179d7c2590c94f533aaa5fceb70e36e25dec83672fe836d99577c5",
+              "size": 1293313
+            },
+            {
+              "layer": "sha256:797d495f2c68eb4664df918d39078ca04612d7ef47c57b5c784f7f6eedd42bf5",
+              "size": 14366167
+            },
+            {
+              "layer": "sha256:45006ceeeea9e2ca59a046b6f4ac9a212e4b27b3d8d6e7d348b03f0aaccdac99",
+              "size": 250
+            },
+            {
+              "layer": "sha256:a7a9858b89ab23a1b224b8d7bcd64251dd30313bdca9cd76bcc6f8dc4bda6cda",
+              "size": 5788772
+            },
+            {
+              "layer": "sha256:c86879f6b131351a699aef900311583b76ac2768c6d13a9a2d93d05ce7ddddb4",
+              "size": 17714574
+            },
+            {
+              "layer": "sha256:c17df43aa3d887c48f71da81f3b2d3adda5a38379a68d917af1b07e76663f3a4",
+              "size": 1148
+            }
+          ]
+        },
+        "localhost:5000/runtime-collector:v1": {
+          "total_size": 69946574,
+          "layers": [
+            {
+              "layer": "sha256:8211d5969d2e6cabcd3775ba7882f8a4be2f00a910be9154dae5e9fddfddca94",
+              "size": 30782364
+            },
+            {
+              "layer": "sha256:8649771fee179d7c2590c94f533aaa5fceb70e36e25dec83672fe836d99577c5",
+              "size": 1293313
+            },
+            {
+              "layer": "sha256:797d495f2c68eb4664df918d39078ca04612d7ef47c57b5c784f7f6eedd42bf5",
+              "size": 14366167
+            },
+            {
+              "layer": "sha256:45006ceeeea9e2ca59a046b6f4ac9a212e4b27b3d8d6e7d348b03f0aaccdac99",
+              "size": 250
+            },
+            {
+              "layer": "sha256:a7a9858b89ab23a1b224b8d7bcd64251dd30313bdca9cd76bcc6f8dc4bda6cda",
+              "size": 5788772
+            },
+            {
+              "layer": "sha256:c86879f6b131351a699aef900311583b76ac2768c6d13a9a2d93d05ce7ddddb4",
+              "size": 17714574
+            },
+            {
+              "layer": "sha256:d5a100b01e820eec68a765a443cae6ee909322c8e77e91d5c50e60bd84f9d956",
+              "size": 1134
+            }
+          ]
+        },
+        "localhost:5000/runtime-collector:v2": {
+          "total_size": 69946785,
+          "layers": [
+            {
+              "layer": "sha256:8211d5969d2e6cabcd3775ba7882f8a4be2f00a910be9154dae5e9fddfddca94",
+              "size": 30782364
+            },
+            {
+              "layer": "sha256:8649771fee179d7c2590c94f533aaa5fceb70e36e25dec83672fe836d99577c5",
+              "size": 1293313
+            },
+            {
+              "layer": "sha256:797d495f2c68eb4664df918d39078ca04612d7ef47c57b5c784f7f6eedd42bf5",
+              "size": 14366167
+            },
+            {
+              "layer": "sha256:45006ceeeea9e2ca59a046b6f4ac9a212e4b27b3d8d6e7d348b03f0aaccdac99",
+              "size": 250
+            },
+            {
+              "layer": "sha256:a7a9858b89ab23a1b224b8d7bcd64251dd30313bdca9cd76bcc6f8dc4bda6cda",
+              "size": 5788772
+            },
+            {
+              "layer": "sha256:c86879f6b131351a699aef900311583b76ac2768c6d13a9a2d93d05ce7ddddb4",
+              "size": 17714574
+            },
+            {
+              "layer": "sha256:5fdcd3ae38997797f58bdd9ee0e812033119841c3a3abff44261badbbe8bd2c4",
+              "size": 1345
+            }
+          ]
+        },
+        "localhost:5000/runtime-collector:v3": {
+          "total_size": 69947212,
+          "layers": [
+            {
+              "layer": "sha256:8211d5969d2e6cabcd3775ba7882f8a4be2f00a910be9154dae5e9fddfddca94",
+              "size": 30782364
+            },
+            {
+              "layer": "sha256:8649771fee179d7c2590c94f533aaa5fceb70e36e25dec83672fe836d99577c5",
+              "size": 1293313
+            },
+            {
+              "layer": "sha256:797d495f2c68eb4664df918d39078ca04612d7ef47c57b5c784f7f6eedd42bf5",
+              "size": 14366167
+            },
+            {
+              "layer": "sha256:45006ceeeea9e2ca59a046b6f4ac9a212e4b27b3d8d6e7d348b03f0aaccdac99",
+              "size": 250
+            },
+            {
+              "layer": "sha256:a7a9858b89ab23a1b224b8d7bcd64251dd30313bdca9cd76bcc6f8dc4bda6cda",
+              "size": 5788772
+            },
+            {
+              "layer": "sha256:c86879f6b131351a699aef900311583b76ac2768c6d13a9a2d93d05ce7ddddb4",
+              "size": 17714574
+            },
+            {
+              "layer": "sha256:ef1e9df24cc9e06beaf02aa78ad05bfd5cb9cfd4e0edc77f7aff710c3b6e38c1",
+              "size": 1772
+            }
+          ]
+        },
+        "localhost:5000/scheduler-plugins/kube-scheduler:unified-v1": {
+          "total_size": 23837679,
+          "layers": [
+            {
+              "layer": "sha256:1c193acf1cd1540d9a764e0f98ae55bd05563026d1139f5844f43668f10e27ed",
+              "size": 86390
+            },
+            {
+              "layer": "sha256:5b3013706a463509f05fabda3a5f854b1c5f3429561cf9374db6e6681da5493f",
+              "size": 12777
+            },
+            {
+              "layer": "sha256:8029962f461fbb244286e163b0b9888f6cdbed05bde2c1d35b797334e083d9c4",
+              "size": 295494
+            },
+            {
+              "layer": "sha256:9cd8e28f1c221ec42ab2a136b882dd0f6f81e0b583b6f9b1c9f7a611fd9658bb",
+              "size": 263810
+            },
+            {
+              "layer": "sha256:9d2753d762cc58b055d94d102989775221df5156b7bec5861353454c308ad197",
+              "size": 31908
+            },
+            {
+              "layer": "sha256:0f8b424aa0b96c1c388a5fd4d90735604459256336853082afb61733438872b5",
+              "size": 75
+            },
+            {
+              "layer": "sha256:d557676654e572af3e3173c90e7874644207fda32cd87e9d3d66b5d7b98a7b21",
+              "size": 193
+            },
+            {
+              "layer": "sha256:d82bc7a76a838c9a4a6025192429c2fed58f73742ef1fb9c8bb7b995fc3b7213",
+              "size": 130
+            },
+            {
+              "layer": "sha256:68e4cd60e60fed4486d5b4b40b079e57781e828d93d80a7411e8760dcccfbbf7",
+              "size": 168
+            },
+            {
+              "layer": "sha256:0783a66ae7492bb16937c7723c534e431404aa3ebbdcaaed65d264a95a266b9e",
+              "size": 84
+            },
+            {
+              "layer": "sha256:efae86a3fb38e05e6e2584bc2f48534a0d82f8d9e9a4163d04885d5c65423105",
+              "size": 358
+            },
+            {
+              "layer": "sha256:411e1c946a02ee44c9adc542515ae29ff58d65149a4a201cbd688297c9900ee4",
+              "size": 316
+            },
+            {
+              "layer": "sha256:77964957095d7872770920c8f55d28613e85f8e27aa0b157a440e0d635193fa9",
+              "size": 136427
+            },
+            {
+              "layer": "sha256:be0025cc3e49b31f0e770bdf30fd42c1443672873b3228d21e9a8ed4551fe43d",
+              "size": 23009549
+            }
+          ]
+        },
+        "localhost:5000/scheduler-plugins/kube-scheduler:version6": {
+          "total_size": 49397559,
+          "layers": [
+            {
+              "layer": "sha256:1c193acf1cd1540d9a764e0f98ae55bd05563026d1139f5844f43668f10e27ed",
+              "size": 86390
+            },
+            {
+              "layer": "sha256:5b3013706a463509f05fabda3a5f854b1c5f3429561cf9374db6e6681da5493f",
+              "size": 12777
+            },
+            {
+              "layer": "sha256:8029962f461fbb244286e163b0b9888f6cdbed05bde2c1d35b797334e083d9c4",
+              "size": 295494
+            },
+            {
+              "layer": "sha256:9cd8e28f1c221ec42ab2a136b882dd0f6f81e0b583b6f9b1c9f7a611fd9658bb",
+              "size": 263810
+            },
+            {
+              "layer": "sha256:9d2753d762cc58b055d94d102989775221df5156b7bec5861353454c308ad197",
+              "size": 31908
+            },
+            {
+              "layer": "sha256:0f8b424aa0b96c1c388a5fd4d90735604459256336853082afb61733438872b5",
+              "size": 75
+            },
+            {
+              "layer": "sha256:d557676654e572af3e3173c90e7874644207fda32cd87e9d3d66b5d7b98a7b21",
+              "size": 193
+            },
+            {
+              "layer": "sha256:d82bc7a76a838c9a4a6025192429c2fed58f73742ef1fb9c8bb7b995fc3b7213",
+              "size": 130
+            },
+            {
+              "layer": "sha256:68e4cd60e60fed4486d5b4b40b079e57781e828d93d80a7411e8760dcccfbbf7",
+              "size": 168
+            },
+            {
+              "layer": "sha256:0783a66ae7492bb16937c7723c534e431404aa3ebbdcaaed65d264a95a266b9e",
+              "size": 84
+            },
+            {
+              "layer": "sha256:efae86a3fb38e05e6e2584bc2f48534a0d82f8d9e9a4163d04885d5c65423105",
+              "size": 358
+            },
+            {
+              "layer": "sha256:411e1c946a02ee44c9adc542515ae29ff58d65149a4a201cbd688297c9900ee4",
+              "size": 316
+            },
+            {
+              "layer": "sha256:77964957095d7872770920c8f55d28613e85f8e27aa0b157a440e0d635193fa9",
+              "size": 136427
+            },
+            {
+              "layer": "sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1",
+              "size": 32
+            },
+            {
+              "layer": "sha256:252c2de9ec48e56065f71c0ede2c20bed6c08e7dafbae72560989c5f2ac8455d",
+              "size": 48569397
+            }
+          ]
+        },
+        "localhost:5000/scheduler-plugins/kube-scheduler:version5": {
+          "total_size": 49402335,
+          "layers": [
+            {
+              "layer": "sha256:1c193acf1cd1540d9a764e0f98ae55bd05563026d1139f5844f43668f10e27ed",
+              "size": 86390
+            },
+            {
+              "layer": "sha256:5b3013706a463509f05fabda3a5f854b1c5f3429561cf9374db6e6681da5493f",
+              "size": 12777
+            },
+            {
+              "layer": "sha256:8029962f461fbb244286e163b0b9888f6cdbed05bde2c1d35b797334e083d9c4",
+              "size": 295494
+            },
+            {
+              "layer": "sha256:9cd8e28f1c221ec42ab2a136b882dd0f6f81e0b583b6f9b1c9f7a611fd9658bb",
+              "size": 263810
+            },
+            {
+              "layer": "sha256:9d2753d762cc58b055d94d102989775221df5156b7bec5861353454c308ad197",
+              "size": 31908
+            },
+            {
+              "layer": "sha256:0f8b424aa0b96c1c388a5fd4d90735604459256336853082afb61733438872b5",
+              "size": 75
+            },
+            {
+              "layer": "sha256:d557676654e572af3e3173c90e7874644207fda32cd87e9d3d66b5d7b98a7b21",
+              "size": 193
+            },
+            {
+              "layer": "sha256:d82bc7a76a838c9a4a6025192429c2fed58f73742ef1fb9c8bb7b995fc3b7213",
+              "size": 130
+            },
+            {
+              "layer": "sha256:68e4cd60e60fed4486d5b4b40b079e57781e828d93d80a7411e8760dcccfbbf7",
+              "size": 168
+            },
+            {
+              "layer": "sha256:0783a66ae7492bb16937c7723c534e431404aa3ebbdcaaed65d264a95a266b9e",
+              "size": 84
+            },
+            {
+              "layer": "sha256:efae86a3fb38e05e6e2584bc2f48534a0d82f8d9e9a4163d04885d5c65423105",
+              "size": 358
+            },
+            {
+              "layer": "sha256:411e1c946a02ee44c9adc542515ae29ff58d65149a4a201cbd688297c9900ee4",
+              "size": 316
+            },
+            {
+              "layer": "sha256:77964957095d7872770920c8f55d28613e85f8e27aa0b157a440e0d635193fa9",
+              "size": 136427
+            },
+            {
+              "layer": "sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1",
+              "size": 32
+            },
+            {
+              "layer": "sha256:042e3156aff216ac84a2e158ef24e4e3c25ecf0a078819101c7707fe3c137ec0",
+              "size": 48574173
+            }
+          ]
+        },
+        "localhost:5000/scheduler-plugins/kube-scheduler:v0.0.1": {
+          "total_size": 49408575,
+          "layers": [
+            {
+              "layer": "sha256:1c193acf1cd1540d9a764e0f98ae55bd05563026d1139f5844f43668f10e27ed",
+              "size": 86390
+            },
+            {
+              "layer": "sha256:5b3013706a463509f05fabda3a5f854b1c5f3429561cf9374db6e6681da5493f",
+              "size": 12777
+            },
+            {
+              "layer": "sha256:8029962f461fbb244286e163b0b9888f6cdbed05bde2c1d35b797334e083d9c4",
+              "size": 295494
+            },
+            {
+              "layer": "sha256:9cd8e28f1c221ec42ab2a136b882dd0f6f81e0b583b6f9b1c9f7a611fd9658bb",
+              "size": 263810
+            },
+            {
+              "layer": "sha256:9d2753d762cc58b055d94d102989775221df5156b7bec5861353454c308ad197",
+              "size": 31908
+            },
+            {
+              "layer": "sha256:0f8b424aa0b96c1c388a5fd4d90735604459256336853082afb61733438872b5",
+              "size": 75
+            },
+            {
+              "layer": "sha256:d557676654e572af3e3173c90e7874644207fda32cd87e9d3d66b5d7b98a7b21",
+              "size": 193
+            },
+            {
+              "layer": "sha256:d82bc7a76a838c9a4a6025192429c2fed58f73742ef1fb9c8bb7b995fc3b7213",
+              "size": 130
+            },
+            {
+              "layer": "sha256:68e4cd60e60fed4486d5b4b40b079e57781e828d93d80a7411e8760dcccfbbf7",
+              "size": 168
+            },
+            {
+              "layer": "sha256:0783a66ae7492bb16937c7723c534e431404aa3ebbdcaaed65d264a95a266b9e",
+              "size": 84
+            },
+            {
+              "layer": "sha256:efae86a3fb38e05e6e2584bc2f48534a0d82f8d9e9a4163d04885d5c65423105",
+              "size": 358
+            },
+            {
+              "layer": "sha256:411e1c946a02ee44c9adc542515ae29ff58d65149a4a201cbd688297c9900ee4",
+              "size": 316
+            },
+            {
+              "layer": "sha256:77964957095d7872770920c8f55d28613e85f8e27aa0b157a440e0d635193fa9",
+              "size": 136427
+            },
+            {
+              "layer": "sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1",
+              "size": 32
+            },
+            {
+              "layer": "sha256:6b0ecf564b5650ae98f34e60c2e9347722f131b68b802403e62cb133ba773564",
+              "size": 48580413
+            }
+          ]
+        },
+        "localhost:5000/scheduler-plugins/kube-scheduler:netmarks-fix-v1": {
+          "total_size": 23841028,
+          "layers": [
+            {
+              "layer": "sha256:1c193acf1cd1540d9a764e0f98ae55bd05563026d1139f5844f43668f10e27ed",
+              "size": 86390
+            },
+            {
+              "layer": "sha256:5b3013706a463509f05fabda3a5f854b1c5f3429561cf9374db6e6681da5493f",
+              "size": 12777
+            },
+            {
+              "layer": "sha256:8029962f461fbb244286e163b0b9888f6cdbed05bde2c1d35b797334e083d9c4",
+              "size": 295494
+            },
+            {
+              "layer": "sha256:9cd8e28f1c221ec42ab2a136b882dd0f6f81e0b583b6f9b1c9f7a611fd9658bb",
+              "size": 263810
+            },
+            {
+              "layer": "sha256:9d2753d762cc58b055d94d102989775221df5156b7bec5861353454c308ad197",
+              "size": 31908
+            },
+            {
+              "layer": "sha256:0f8b424aa0b96c1c388a5fd4d90735604459256336853082afb61733438872b5",
+              "size": 75
+            },
+            {
+              "layer": "sha256:d557676654e572af3e3173c90e7874644207fda32cd87e9d3d66b5d7b98a7b21",
+              "size": 193
+            },
+            {
+              "layer": "sha256:d82bc7a76a838c9a4a6025192429c2fed58f73742ef1fb9c8bb7b995fc3b7213",
+              "size": 130
+            },
+            {
+              "layer": "sha256:68e4cd60e60fed4486d5b4b40b079e57781e828d93d80a7411e8760dcccfbbf7",
+              "size": 168
+            },
+            {
+              "layer": "sha256:0783a66ae7492bb16937c7723c534e431404aa3ebbdcaaed65d264a95a266b9e",
+              "size": 84
+            },
+            {
+              "layer": "sha256:efae86a3fb38e05e6e2584bc2f48534a0d82f8d9e9a4163d04885d5c65423105",
+              "size": 358
+            },
+            {
+              "layer": "sha256:411e1c946a02ee44c9adc542515ae29ff58d65149a4a201cbd688297c9900ee4",
+              "size": 316
+            },
+            {
+              "layer": "sha256:77964957095d7872770920c8f55d28613e85f8e27aa0b157a440e0d635193fa9",
+              "size": 136427
+            },
+            {
+              "layer": "sha256:75fc71501671142b6142fd8f33fbe5be0a5811553d33322e7a0b32487f374672",
+              "size": 23012898
+            }
+          ]
+        },
+        "localhost:5000/scheduler-plugins/kube-scheduler:version3": {
+          "total_size": 49409986,
+          "layers": [
+            {
+              "layer": "sha256:1c193acf1cd1540d9a764e0f98ae55bd05563026d1139f5844f43668f10e27ed",
+              "size": 86390
+            },
+            {
+              "layer": "sha256:5b3013706a463509f05fabda3a5f854b1c5f3429561cf9374db6e6681da5493f",
+              "size": 12777
+            },
+            {
+              "layer": "sha256:8029962f461fbb244286e163b0b9888f6cdbed05bde2c1d35b797334e083d9c4",
+              "size": 295494
+            },
+            {
+              "layer": "sha256:9cd8e28f1c221ec42ab2a136b882dd0f6f81e0b583b6f9b1c9f7a611fd9658bb",
+              "size": 263810
+            },
+            {
+              "layer": "sha256:9d2753d762cc58b055d94d102989775221df5156b7bec5861353454c308ad197",
+              "size": 31908
+            },
+            {
+              "layer": "sha256:0f8b424aa0b96c1c388a5fd4d90735604459256336853082afb61733438872b5",
+              "size": 75
+            },
+            {
+              "layer": "sha256:d557676654e572af3e3173c90e7874644207fda32cd87e9d3d66b5d7b98a7b21",
+              "size": 193
+            },
+            {
+              "layer": "sha256:d82bc7a76a838c9a4a6025192429c2fed58f73742ef1fb9c8bb7b995fc3b7213",
+              "size": 130
+            },
+            {
+              "layer": "sha256:68e4cd60e60fed4486d5b4b40b079e57781e828d93d80a7411e8760dcccfbbf7",
+              "size": 168
+            },
+            {
+              "layer": "sha256:0783a66ae7492bb16937c7723c534e431404aa3ebbdcaaed65d264a95a266b9e",
+              "size": 84
+            },
+            {
+              "layer": "sha256:efae86a3fb38e05e6e2584bc2f48534a0d82f8d9e9a4163d04885d5c65423105",
+              "size": 358
+            },
+            {
+              "layer": "sha256:411e1c946a02ee44c9adc542515ae29ff58d65149a4a201cbd688297c9900ee4",
+              "size": 316
+            },
+            {
+              "layer": "sha256:77964957095d7872770920c8f55d28613e85f8e27aa0b157a440e0d635193fa9",
+              "size": 136427
+            },
+            {
+              "layer": "sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1",
+              "size": 32
+            },
+            {
+              "layer": "sha256:c7306a2ec94fcfa70084454064a94cae1344565a6be2bcb94f3be795a98eafb1",
+              "size": 48581824
+            }
+          ]
+        },
+        "localhost:5000/scheduler-plugins/kube-scheduler:version10": {
+          "total_size": 23837666,
+          "layers": [
+            {
+              "layer": "sha256:1c193acf1cd1540d9a764e0f98ae55bd05563026d1139f5844f43668f10e27ed",
+              "size": 86390
+            },
+            {
+              "layer": "sha256:5b3013706a463509f05fabda3a5f854b1c5f3429561cf9374db6e6681da5493f",
+              "size": 12777
+            },
+            {
+              "layer": "sha256:8029962f461fbb244286e163b0b9888f6cdbed05bde2c1d35b797334e083d9c4",
+              "size": 295494
+            },
+            {
+              "layer": "sha256:9cd8e28f1c221ec42ab2a136b882dd0f6f81e0b583b6f9b1c9f7a611fd9658bb",
+              "size": 263810
+            },
+            {
+              "layer": "sha256:9d2753d762cc58b055d94d102989775221df5156b7bec5861353454c308ad197",
+              "size": 31908
+            },
+            {
+              "layer": "sha256:0f8b424aa0b96c1c388a5fd4d90735604459256336853082afb61733438872b5",
+              "size": 75
+            },
+            {
+              "layer": "sha256:d557676654e572af3e3173c90e7874644207fda32cd87e9d3d66b5d7b98a7b21",
+              "size": 193
+            },
+            {
+              "layer": "sha256:d82bc7a76a838c9a4a6025192429c2fed58f73742ef1fb9c8bb7b995fc3b7213",
+              "size": 130
+            },
+            {
+              "layer": "sha256:68e4cd60e60fed4486d5b4b40b079e57781e828d93d80a7411e8760dcccfbbf7",
+              "size": 168
+            },
+            {
+              "layer": "sha256:0783a66ae7492bb16937c7723c534e431404aa3ebbdcaaed65d264a95a266b9e",
+              "size": 84
+            },
+            {
+              "layer": "sha256:efae86a3fb38e05e6e2584bc2f48534a0d82f8d9e9a4163d04885d5c65423105",
+              "size": 358
+            },
+            {
+              "layer": "sha256:411e1c946a02ee44c9adc542515ae29ff58d65149a4a201cbd688297c9900ee4",
+              "size": 316
+            },
+            {
+              "layer": "sha256:77964957095d7872770920c8f55d28613e85f8e27aa0b157a440e0d635193fa9",
+              "size": 136427
+            },
+            {
+              "layer": "sha256:62c7dcdee5ceae1ae01dfed2190c246ffb132024c200aaca0f3d0fd28ec482cd",
+              "size": 23009536
+            }
+          ]
+        },
+        "localhost:5000/scheduler-plugins/kube-scheduler:version7": {
+          "total_size": 49397559,
+          "layers": [
+            {
+              "layer": "sha256:1c193acf1cd1540d9a764e0f98ae55bd05563026d1139f5844f43668f10e27ed",
+              "size": 86390
+            },
+            {
+              "layer": "sha256:5b3013706a463509f05fabda3a5f854b1c5f3429561cf9374db6e6681da5493f",
+              "size": 12777
+            },
+            {
+              "layer": "sha256:8029962f461fbb244286e163b0b9888f6cdbed05bde2c1d35b797334e083d9c4",
+              "size": 295494
+            },
+            {
+              "layer": "sha256:9cd8e28f1c221ec42ab2a136b882dd0f6f81e0b583b6f9b1c9f7a611fd9658bb",
+              "size": 263810
+            },
+            {
+              "layer": "sha256:9d2753d762cc58b055d94d102989775221df5156b7bec5861353454c308ad197",
+              "size": 31908
+            },
+            {
+              "layer": "sha256:0f8b424aa0b96c1c388a5fd4d90735604459256336853082afb61733438872b5",
+              "size": 75
+            },
+            {
+              "layer": "sha256:d557676654e572af3e3173c90e7874644207fda32cd87e9d3d66b5d7b98a7b21",
+              "size": 193
+            },
+            {
+              "layer": "sha256:d82bc7a76a838c9a4a6025192429c2fed58f73742ef1fb9c8bb7b995fc3b7213",
+              "size": 130
+            },
+            {
+              "layer": "sha256:68e4cd60e60fed4486d5b4b40b079e57781e828d93d80a7411e8760dcccfbbf7",
+              "size": 168
+            },
+            {
+              "layer": "sha256:0783a66ae7492bb16937c7723c534e431404aa3ebbdcaaed65d264a95a266b9e",
+              "size": 84
+            },
+            {
+              "layer": "sha256:efae86a3fb38e05e6e2584bc2f48534a0d82f8d9e9a4163d04885d5c65423105",
+              "size": 358
+            },
+            {
+              "layer": "sha256:411e1c946a02ee44c9adc542515ae29ff58d65149a4a201cbd688297c9900ee4",
+              "size": 316
+            },
+            {
+              "layer": "sha256:77964957095d7872770920c8f55d28613e85f8e27aa0b157a440e0d635193fa9",
+              "size": 136427
+            },
+            {
+              "layer": "sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1",
+              "size": 32
+            },
+            {
+              "layer": "sha256:252c2de9ec48e56065f71c0ede2c20bed6c08e7dafbae72560989c5f2ac8455d",
+              "size": 48569397
+            }
+          ]
+        },
+        "localhost:5000/scheduler-plugins/kube-scheduler:version9": {
+          "total_size": 52927273,
+          "layers": [
+            {
+              "layer": "sha256:6a0ac1617861a677b045b7ff88545213ec31c0ff08763195a70a4a5adda577bb",
+              "size": 3864189
+            },
+            {
+              "layer": "sha256:ac305fcf7606ded66847776ce5624932eb9f03a9244e684bca9db43e61fc8baa",
+              "size": 24527816
+            },
+            {
+              "layer": "sha256:d2756a4f655e6ac509a643f361dea54958e83d5b09dd06b26bbf9ac624e2670f",
+              "size": 7389
+            },
+            {
+              "layer": "sha256:ae8f5d7e340b38b210a79a52027f903b1b7aa9680c4f3031a4997921630d3e61",
+              "size": 24527879
+            }
+          ]
+        },
+        "localhost:5000/scheduler-plugins/kube-scheduler:v0.0.0": {
+          "total_size": 23828679,
+          "layers": [
+            {
+              "layer": "sha256:1c193acf1cd1540d9a764e0f98ae55bd05563026d1139f5844f43668f10e27ed",
+              "size": 86390
+            },
+            {
+              "layer": "sha256:5b3013706a463509f05fabda3a5f854b1c5f3429561cf9374db6e6681da5493f",
+              "size": 12777
+            },
+            {
+              "layer": "sha256:8029962f461fbb244286e163b0b9888f6cdbed05bde2c1d35b797334e083d9c4",
+              "size": 295494
+            },
+            {
+              "layer": "sha256:9cd8e28f1c221ec42ab2a136b882dd0f6f81e0b583b6f9b1c9f7a611fd9658bb",
+              "size": 263810
+            },
+            {
+              "layer": "sha256:9d2753d762cc58b055d94d102989775221df5156b7bec5861353454c308ad197",
+              "size": 31908
+            },
+            {
+              "layer": "sha256:0f8b424aa0b96c1c388a5fd4d90735604459256336853082afb61733438872b5",
+              "size": 75
+            },
+            {
+              "layer": "sha256:d557676654e572af3e3173c90e7874644207fda32cd87e9d3d66b5d7b98a7b21",
+              "size": 193
+            },
+            {
+              "layer": "sha256:d82bc7a76a838c9a4a6025192429c2fed58f73742ef1fb9c8bb7b995fc3b7213",
+              "size": 130
+            },
+            {
+              "layer": "sha256:68e4cd60e60fed4486d5b4b40b079e57781e828d93d80a7411e8760dcccfbbf7",
+              "size": 168
+            },
+            {
+              "layer": "sha256:0783a66ae7492bb16937c7723c534e431404aa3ebbdcaaed65d264a95a266b9e",
+              "size": 84
+            },
+            {
+              "layer": "sha256:efae86a3fb38e05e6e2584bc2f48534a0d82f8d9e9a4163d04885d5c65423105",
+              "size": 358
+            },
+            {
+              "layer": "sha256:411e1c946a02ee44c9adc542515ae29ff58d65149a4a201cbd688297c9900ee4",
+              "size": 316
+            },
+            {
+              "layer": "sha256:77964957095d7872770920c8f55d28613e85f8e27aa0b157a440e0d635193fa9",
+              "size": 136427
+            },
+            {
+              "layer": "sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1",
+              "size": 32
+            },
+            {
+              "layer": "sha256:c13821f4a50999da46caffe44bba3bbab11b9e67b73f32c4aa63271cd962c7a9",
+              "size": 23000517
+            }
+          ]
+        },
+        "localhost:5000/scheduler-plugins/kube-scheduler:version4": {
+          "total_size": 49410379,
+          "layers": [
+            {
+              "layer": "sha256:1c193acf1cd1540d9a764e0f98ae55bd05563026d1139f5844f43668f10e27ed",
+              "size": 86390
+            },
+            {
+              "layer": "sha256:5b3013706a463509f05fabda3a5f854b1c5f3429561cf9374db6e6681da5493f",
+              "size": 12777
+            },
+            {
+              "layer": "sha256:8029962f461fbb244286e163b0b9888f6cdbed05bde2c1d35b797334e083d9c4",
+              "size": 295494
+            },
+            {
+              "layer": "sha256:9cd8e28f1c221ec42ab2a136b882dd0f6f81e0b583b6f9b1c9f7a611fd9658bb",
+              "size": 263810
+            },
+            {
+              "layer": "sha256:9d2753d762cc58b055d94d102989775221df5156b7bec5861353454c308ad197",
+              "size": 31908
+            },
+            {
+              "layer": "sha256:0f8b424aa0b96c1c388a5fd4d90735604459256336853082afb61733438872b5",
+              "size": 75
+            },
+            {
+              "layer": "sha256:d557676654e572af3e3173c90e7874644207fda32cd87e9d3d66b5d7b98a7b21",
+              "size": 193
+            },
+            {
+              "layer": "sha256:d82bc7a76a838c9a4a6025192429c2fed58f73742ef1fb9c8bb7b995fc3b7213",
+              "size": 130
+            },
+            {
+              "layer": "sha256:68e4cd60e60fed4486d5b4b40b079e57781e828d93d80a7411e8760dcccfbbf7",
+              "size": 168
+            },
+            {
+              "layer": "sha256:0783a66ae7492bb16937c7723c534e431404aa3ebbdcaaed65d264a95a266b9e",
+              "size": 84
+            },
+            {
+              "layer": "sha256:efae86a3fb38e05e6e2584bc2f48534a0d82f8d9e9a4163d04885d5c65423105",
+              "size": 358
+            },
+            {
+              "layer": "sha256:411e1c946a02ee44c9adc542515ae29ff58d65149a4a201cbd688297c9900ee4",
+              "size": 316
+            },
+            {
+              "layer": "sha256:77964957095d7872770920c8f55d28613e85f8e27aa0b157a440e0d635193fa9",
+              "size": 136427
+            },
+            {
+              "layer": "sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1",
+              "size": 32
+            },
+            {
+              "layer": "sha256:d1a41e602b02a19beb724d4077450c3c604d406c4da2ba060f1b42144dcf8d9c",
+              "size": 48582217
+            }
+          ]
+        },
+        "localhost:5000/scheduler-plugins/kube-scheduler:version8": {
+          "total_size": 52927273,
+          "layers": [
+            {
+              "layer": "sha256:6a0ac1617861a677b045b7ff88545213ec31c0ff08763195a70a4a5adda577bb",
+              "size": 3864189
+            },
+            {
+              "layer": "sha256:ac305fcf7606ded66847776ce5624932eb9f03a9244e684bca9db43e61fc8baa",
+              "size": 24527816
+            },
+            {
+              "layer": "sha256:d2756a4f655e6ac509a643f361dea54958e83d5b09dd06b26bbf9ac624e2670f",
+              "size": 7389
+            },
+            {
+              "layer": "sha256:ae8f5d7e340b38b210a79a52027f903b1b7aa9680c4f3031a4997921630d3e61",
+              "size": 24527879
+            }
+          ]
+        },
+        "localhost:5000/scheduler-plugins/kube-scheduler:netmarks-final-v1": {
+          "total_size": 23838215,
+          "layers": [
+            {
+              "layer": "sha256:1c193acf1cd1540d9a764e0f98ae55bd05563026d1139f5844f43668f10e27ed",
+              "size": 86390
+            },
+            {
+              "layer": "sha256:5b3013706a463509f05fabda3a5f854b1c5f3429561cf9374db6e6681da5493f",
+              "size": 12777
+            },
+            {
+              "layer": "sha256:8029962f461fbb244286e163b0b9888f6cdbed05bde2c1d35b797334e083d9c4",
+              "size": 295494
+            },
+            {
+              "layer": "sha256:9cd8e28f1c221ec42ab2a136b882dd0f6f81e0b583b6f9b1c9f7a611fd9658bb",
+              "size": 263810
+            },
+            {
+              "layer": "sha256:9d2753d762cc58b055d94d102989775221df5156b7bec5861353454c308ad197",
+              "size": 31908
+            },
+            {
+              "layer": "sha256:0f8b424aa0b96c1c388a5fd4d90735604459256336853082afb61733438872b5",
+              "size": 75
+            },
+            {
+              "layer": "sha256:d557676654e572af3e3173c90e7874644207fda32cd87e9d3d66b5d7b98a7b21",
+              "size": 193
+            },
+            {
+              "layer": "sha256:d82bc7a76a838c9a4a6025192429c2fed58f73742ef1fb9c8bb7b995fc3b7213",
+              "size": 130
+            },
+            {
+              "layer": "sha256:68e4cd60e60fed4486d5b4b40b079e57781e828d93d80a7411e8760dcccfbbf7",
+              "size": 168
+            },
+            {
+              "layer": "sha256:0783a66ae7492bb16937c7723c534e431404aa3ebbdcaaed65d264a95a266b9e",
+              "size": 84
+            },
+            {
+              "layer": "sha256:efae86a3fb38e05e6e2584bc2f48534a0d82f8d9e9a4163d04885d5c65423105",
+              "size": 358
+            },
+            {
+              "layer": "sha256:411e1c946a02ee44c9adc542515ae29ff58d65149a4a201cbd688297c9900ee4",
+              "size": 316
+            },
+            {
+              "layer": "sha256:77964957095d7872770920c8f55d28613e85f8e27aa0b157a440e0d635193fa9",
+              "size": 136427
+            },
+            {
+              "layer": "sha256:4c024c3e30d17c5877ca02f4ba91f384cec194d3abd4a8d91b7215dd96b92c0d",
+              "size": 23010085
+            }
+          ]
+        },
+        "localhost:5000/stress:latest": {
+          "total_size": 4038205,
+          "layers": [
+            {
+              "layer": "sha256:63bc94deeb2884fd684a72d356164664538ee55cd82a9e65afe300a432092744",
+              "size": 2801746
+            },
+            {
+              "layer": "sha256:8d43371bad93504d09422b0aadb993110ae5313aead99b2796e64124f456eda6",
+              "size": 1236459
+            }
+          ]
+        }
+      }
+    }
+kind: ConfigMap
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","data":{"cache.json":"{\n  \"images\": {\n    \"localhost:5000/netmarks-collector:v1\": {\n      \"total_size\": 69946638,\n      \"layers\": [\n        {\n          \"layer\": \"sha256:8211d5969d2e6cabcd3775ba7882f8a4be2f00a910be9154dae5e9fddfddca94\",\n          \"size\": 30782364\n        },\n        {\n          \"layer\": \"sha256:8649771fee179d7c2590c94f533aaa5fceb70e36e25dec83672fe836d99577c5\",\n          \"size\": 1293313\n        },\n        {\n          \"layer\": \"sha256:797d495f2c68eb4664df918d39078ca04612d7ef47c57b5c784f7f6eedd42bf5\",\n          \"size\": 14366167\n        },\n        {\n          \"layer\": \"sha256:45006ceeeea9e2ca59a046b6f4ac9a212e4b27b3d8d6e7d348b03f0aaccdac99\",\n          \"size\": 250\n        },\n        {\n          \"layer\": \"sha256:a7a9858b89ab23a1b224b8d7bcd64251dd30313bdca9cd76bcc6f8dc4bda6cda\",\n          \"size\": 5788772\n        },\n        {\n          \"layer\": \"sha256:c86879f6b131351a699aef900311583b76ac2768c6d13a9a2d93d05ce7ddddb4\",\n          \"size\": 17714574\n        },\n        {\n          \"layer\": \"sha256:830696e8549204be335f76034f3d8a4bbfbcc6eb743242106bdbeb91ce94f81c\",\n          \"size\": 1198\n        }\n      ]\n    },\n    \"localhost:5000/nginx:latest\": {\n      \"total_size\": 64101337,\n      \"layers\": [\n        {\n          \"layer\": \"sha256:8211d5969d2e6cabcd3775ba7882f8a4be2f00a910be9154dae5e9fddfddca94\",\n          \"size\": 30782364\n        },\n        {\n          \"layer\": \"sha256:830625e1ac85a8c72dd41b1403ea8210c7441aba69b752537d9a8a1b93ac87af\",\n          \"size\": 33314379\n        },\n        {\n          \"layer\": \"sha256:5431d0092ffdcf1729150a2100fae1197ae414486b76bba246fe659a1b4a9b4e\",\n          \"size\": 628\n        },\n        {\n          \"layer\": \"sha256:b4a248c845e558f875ac57f77d4498bb33110085b63ec15e966d186a939c94a0\",\n          \"size\": 955\n        },\n        {\n          \"layer\": \"sha256:7f8b1a2b17d83cb2af2014ba3d9841933a83f729eefe67c5d73dd6a47263bbec\",\n          \"size\": 404\n        },\n        {\n          \"layer\": \"sha256:45381ecb0e2f57bc356fba7bca792013750edff8d0bf00c07ac2c7f1f0786aee\",\n          \"size\": 1209\n        },\n        {\n          \"layer\": \"sha256:13fd728be9eb1209aaccfb92774f28b57314202bfd8fde3c54179b84d60907d7\",\n          \"size\": 1398\n        }\n      ]\n    },\n    \"localhost:5000/node-cache-agent:v1\": {\n      \"total_size\": 86564134,\n      \"layers\": [\n        {\n          \"layer\": \"sha256:8211d5969d2e6cabcd3775ba7882f8a4be2f00a910be9154dae5e9fddfddca94\",\n          \"size\": 30782364\n        },\n        {\n          \"layer\": \"sha256:8649771fee179d7c2590c94f533aaa5fceb70e36e25dec83672fe836d99577c5\",\n          \"size\": 1293313\n        },\n        {\n          \"layer\": \"sha256:797d495f2c68eb4664df918d39078ca04612d7ef47c57b5c784f7f6eedd42bf5\",\n          \"size\": 14366167\n        },\n        {\n          \"layer\": \"sha256:45006ceeeea9e2ca59a046b6f4ac9a212e4b27b3d8d6e7d348b03f0aaccdac99\",\n          \"size\": 250\n        },\n        {\n          \"layer\": \"sha256:df32d56e24f0c1b96533033289d4f774197783544e40747c041aac83d9987d43\",\n          \"size\": 22406832\n        },\n        {\n          \"layer\": \"sha256:72cb7ff1aad59734568fd4ff9492d77960244af064e819d0fc48f6af4bc6cbb9\",\n          \"size\": 17714574\n        },\n        {\n          \"layer\": \"sha256:25e0b0947457410b81df605f36473f7de9dd19ada2118a4a597a00bae9c6c375\",\n          \"size\": 634\n        }\n      ]\n    },\n    \"localhost:5000/node-cache-agent:v2\": {\n      \"total_size\": 30938956,\n      \"layers\": [\n        {\n          \"layer\": \"sha256:6a0ac1617861a677b045b7ff88545213ec31c0ff08763195a70a4a5adda577bb\",\n          \"size\": 3864189\n        },\n        {\n          \"layer\": \"sha256:e0b07607e5bf2ca65e3c248031e53d26e940307851ab18d6b2e683dbf47531d2\",\n          \"size\": 27074767\n        }\n      ]\n    },\n    \"localhost:5000/python:3.11-slim\": {\n      \"total_size\": 46442094,\n      \"layers\": [\n        {\n          \"layer\": \"sha256:8211d5969d2e6cabcd3775ba7882f8a4be2f00a910be9154dae5e9fddfddca94\",\n          \"size\": 30782364\n        },\n        {\n          \"layer\": \"sha256:8649771fee179d7c2590c94f533aaa5fceb70e36e25dec83672fe836d99577c5\",\n          \"size\": 1293313\n        },\n        {\n          \"layer\": \"sha256:797d495f2c68eb4664df918d39078ca04612d7ef47c57b5c784f7f6eedd42bf5\",\n          \"size\": 14366167\n        },\n        {\n          \"layer\": \"sha256:45006ceeeea9e2ca59a046b6f4ac9a212e4b27b3d8d6e7d348b03f0aaccdac99\",\n          \"size\": 250\n        }\n      ]\n    },\n    \"localhost:5000/redis:7-alpine\": {\n      \"total_size\": 16257719,\n      \"layers\": [\n        {\n          \"layer\": \"sha256:897d797d2723cf0e318402f4d6f37d51b011517e5cf09246b22155f0fa90dc81\",\n          \"size\": 3646875\n        },\n        {\n          \"layer\": \"sha256:c14c7509f545010819719d4269d58b1358ff935984497f11d6067bdda0ee9261\",\n          \"size\": 948\n        },\n        {\n          \"layer\": \"sha256:f546396032e0b456fe98a8cc057041605fe93a1199309d197f8d4d2a980c1251\",\n          \"size\": 194939\n        },\n        {\n          \"layer\": \"sha256:a300455a02bb563a55e1b2d5c01726febb1368f9b12610435ed280cbb49efd54\",\n          \"size\": 12414221\n        },\n        {\n          \"layer\": \"sha256:941ebb020cf09742107c4f171a21092bcf889051d56e9566dae8824b43ca5cfb\",\n          \"size\": 101\n        },\n        {\n          \"layer\": \"sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1\",\n          \"size\": 32\n        },\n        {\n          \"layer\": \"sha256:677c7c5aa821a6fb78ee6f740df62e41b6ee7fef2e42cd8eb9cb69531bf5b0ba\",\n          \"size\": 603\n        }\n      ]\n    },\n    \"localhost:5000/registry-watcher:v1\": {\n      \"total_size\": 69946588,\n      \"layers\": [\n        {\n          \"layer\": \"sha256:8211d5969d2e6cabcd3775ba7882f8a4be2f00a910be9154dae5e9fddfddca94\",\n          \"size\": 30782364\n        },\n        {\n          \"layer\": \"sha256:8649771fee179d7c2590c94f533aaa5fceb70e36e25dec83672fe836d99577c5\",\n          \"size\": 1293313\n        },\n        {\n          \"layer\": \"sha256:797d495f2c68eb4664df918d39078ca04612d7ef47c57b5c784f7f6eedd42bf5\",\n          \"size\": 14366167\n        },\n        {\n          \"layer\": \"sha256:45006ceeeea9e2ca59a046b6f4ac9a212e4b27b3d8d6e7d348b03f0aaccdac99\",\n          \"size\": 250\n        },\n        {\n          \"layer\": \"sha256:a7a9858b89ab23a1b224b8d7bcd64251dd30313bdca9cd76bcc6f8dc4bda6cda\",\n          \"size\": 5788772\n        },\n        {\n          \"layer\": \"sha256:c86879f6b131351a699aef900311583b76ac2768c6d13a9a2d93d05ce7ddddb4\",\n          \"size\": 17714574\n        },\n        {\n          \"layer\": \"sha256:c17df43aa3d887c48f71da81f3b2d3adda5a38379a68d917af1b07e76663f3a4\",\n          \"size\": 1148\n        }\n      ]\n    },\n    \"localhost:5000/runtime-collector:v1\": {\n      \"total_size\": 69946574,\n      \"layers\": [\n        {\n          \"layer\": \"sha256:8211d5969d2e6cabcd3775ba7882f8a4be2f00a910be9154dae5e9fddfddca94\",\n          \"size\": 30782364\n        },\n        {\n          \"layer\": \"sha256:8649771fee179d7c2590c94f533aaa5fceb70e36e25dec83672fe836d99577c5\",\n          \"size\": 1293313\n        },\n        {\n          \"layer\": \"sha256:797d495f2c68eb4664df918d39078ca04612d7ef47c57b5c784f7f6eedd42bf5\",\n          \"size\": 14366167\n        },\n        {\n          \"layer\": \"sha256:45006ceeeea9e2ca59a046b6f4ac9a212e4b27b3d8d6e7d348b03f0aaccdac99\",\n          \"size\": 250\n        },\n        {\n          \"layer\": \"sha256:a7a9858b89ab23a1b224b8d7bcd64251dd30313bdca9cd76bcc6f8dc4bda6cda\",\n          \"size\": 5788772\n        },\n        {\n          \"layer\": \"sha256:c86879f6b131351a699aef900311583b76ac2768c6d13a9a2d93d05ce7ddddb4\",\n          \"size\": 17714574\n        },\n        {\n          \"layer\": \"sha256:d5a100b01e820eec68a765a443cae6ee909322c8e77e91d5c50e60bd84f9d956\",\n          \"size\": 1134\n        }\n      ]\n    },\n    \"localhost:5000/runtime-collector:v2\": {\n      \"total_size\": 69946785,\n      \"layers\": [\n        {\n          \"layer\": \"sha256:8211d5969d2e6cabcd3775ba7882f8a4be2f00a910be9154dae5e9fddfddca94\",\n          \"size\": 30782364\n        },\n        {\n          \"layer\": \"sha256:8649771fee179d7c2590c94f533aaa5fceb70e36e25dec83672fe836d99577c5\",\n          \"size\": 1293313\n        },\n        {\n          \"layer\": \"sha256:797d495f2c68eb4664df918d39078ca04612d7ef47c57b5c784f7f6eedd42bf5\",\n          \"size\": 14366167\n        },\n        {\n          \"layer\": \"sha256:45006ceeeea9e2ca59a046b6f4ac9a212e4b27b3d8d6e7d348b03f0aaccdac99\",\n          \"size\": 250\n        },\n        {\n          \"layer\": \"sha256:a7a9858b89ab23a1b224b8d7bcd64251dd30313bdca9cd76bcc6f8dc4bda6cda\",\n          \"size\": 5788772\n        },\n        {\n          \"layer\": \"sha256:c86879f6b131351a699aef900311583b76ac2768c6d13a9a2d93d05ce7ddddb4\",\n          \"size\": 17714574\n        },\n        {\n          \"layer\": \"sha256:5fdcd3ae38997797f58bdd9ee0e812033119841c3a3abff44261badbbe8bd2c4\",\n          \"size\": 1345\n        }\n      ]\n    },\n    \"localhost:5000/runtime-collector:v3\": {\n      \"total_size\": 69947212,\n      \"layers\": [\n        {\n          \"layer\": \"sha256:8211d5969d2e6cabcd3775ba7882f8a4be2f00a910be9154dae5e9fddfddca94\",\n          \"size\": 30782364\n        },\n        {\n          \"layer\": \"sha256:8649771fee179d7c2590c94f533aaa5fceb70e36e25dec83672fe836d99577c5\",\n          \"size\": 1293313\n        },\n        {\n          \"layer\": \"sha256:797d495f2c68eb4664df918d39078ca04612d7ef47c57b5c784f7f6eedd42bf5\",\n          \"size\": 14366167\n        },\n        {\n          \"layer\": \"sha256:45006ceeeea9e2ca59a046b6f4ac9a212e4b27b3d8d6e7d348b03f0aaccdac99\",\n          \"size\": 250\n        },\n        {\n          \"layer\": \"sha256:a7a9858b89ab23a1b224b8d7bcd64251dd30313bdca9cd76bcc6f8dc4bda6cda\",\n          \"size\": 5788772\n        },\n        {\n          \"layer\": \"sha256:c86879f6b131351a699aef900311583b76ac2768c6d13a9a2d93d05ce7ddddb4\",\n          \"size\": 17714574\n        },\n        {\n          \"layer\": \"sha256:ef1e9df24cc9e06beaf02aa78ad05bfd5cb9cfd4e0edc77f7aff710c3b6e38c1\",\n          \"size\": 1772\n        }\n      ]\n    },\n    \"localhost:5000/scheduler-plugins/kube-scheduler:unified-v1\": {\n      \"total_size\": 23837679,\n      \"layers\": [\n        {\n          \"layer\": \"sha256:1c193acf1cd1540d9a764e0f98ae55bd05563026d1139f5844f43668f10e27ed\",\n          \"size\": 86390\n        },\n        {\n          \"layer\": \"sha256:5b3013706a463509f05fabda3a5f854b1c5f3429561cf9374db6e6681da5493f\",\n          \"size\": 12777\n        },\n        {\n          \"layer\": \"sha256:8029962f461fbb244286e163b0b9888f6cdbed05bde2c1d35b797334e083d9c4\",\n          \"size\": 295494\n        },\n        {\n          \"layer\": \"sha256:9cd8e28f1c221ec42ab2a136b882dd0f6f81e0b583b6f9b1c9f7a611fd9658bb\",\n          \"size\": 263810\n        },\n        {\n          \"layer\": \"sha256:9d2753d762cc58b055d94d102989775221df5156b7bec5861353454c308ad197\",\n          \"size\": 31908\n        },\n        {\n          \"layer\": \"sha256:0f8b424aa0b96c1c388a5fd4d90735604459256336853082afb61733438872b5\",\n          \"size\": 75\n        },\n        {\n          \"layer\": \"sha256:d557676654e572af3e3173c90e7874644207fda32cd87e9d3d66b5d7b98a7b21\",\n          \"size\": 193\n        },\n        {\n          \"layer\": \"sha256:d82bc7a76a838c9a4a6025192429c2fed58f73742ef1fb9c8bb7b995fc3b7213\",\n          \"size\": 130\n        },\n        {\n          \"layer\": \"sha256:68e4cd60e60fed4486d5b4b40b079e57781e828d93d80a7411e8760dcccfbbf7\",\n          \"size\": 168\n        },\n        {\n          \"layer\": \"sha256:0783a66ae7492bb16937c7723c534e431404aa3ebbdcaaed65d264a95a266b9e\",\n          \"size\": 84\n        },\n        {\n          \"layer\": \"sha256:efae86a3fb38e05e6e2584bc2f48534a0d82f8d9e9a4163d04885d5c65423105\",\n          \"size\": 358\n        },\n        {\n          \"layer\": \"sha256:411e1c946a02ee44c9adc542515ae29ff58d65149a4a201cbd688297c9900ee4\",\n          \"size\": 316\n        },\n        {\n          \"layer\": \"sha256:77964957095d7872770920c8f55d28613e85f8e27aa0b157a440e0d635193fa9\",\n          \"size\": 136427\n        },\n        {\n          \"layer\": \"sha256:be0025cc3e49b31f0e770bdf30fd42c1443672873b3228d21e9a8ed4551fe43d\",\n          \"size\": 23009549\n        }\n      ]\n    },\n    \"localhost:5000/scheduler-plugins/kube-scheduler:version6\": {\n      \"total_size\": 49397559,\n      \"layers\": [\n        {\n          \"layer\": \"sha256:1c193acf1cd1540d9a764e0f98ae55bd05563026d1139f5844f43668f10e27ed\",\n          \"size\": 86390\n        },\n        {\n          \"layer\": \"sha256:5b3013706a463509f05fabda3a5f854b1c5f3429561cf9374db6e6681da5493f\",\n          \"size\": 12777\n        },\n        {\n          \"layer\": \"sha256:8029962f461fbb244286e163b0b9888f6cdbed05bde2c1d35b797334e083d9c4\",\n          \"size\": 295494\n        },\n        {\n          \"layer\": \"sha256:9cd8e28f1c221ec42ab2a136b882dd0f6f81e0b583b6f9b1c9f7a611fd9658bb\",\n          \"size\": 263810\n        },\n        {\n          \"layer\": \"sha256:9d2753d762cc58b055d94d102989775221df5156b7bec5861353454c308ad197\",\n          \"size\": 31908\n        },\n        {\n          \"layer\": \"sha256:0f8b424aa0b96c1c388a5fd4d90735604459256336853082afb61733438872b5\",\n          \"size\": 75\n        },\n        {\n          \"layer\": \"sha256:d557676654e572af3e3173c90e7874644207fda32cd87e9d3d66b5d7b98a7b21\",\n          \"size\": 193\n        },\n        {\n          \"layer\": \"sha256:d82bc7a76a838c9a4a6025192429c2fed58f73742ef1fb9c8bb7b995fc3b7213\",\n          \"size\": 130\n        },\n        {\n          \"layer\": \"sha256:68e4cd60e60fed4486d5b4b40b079e57781e828d93d80a7411e8760dcccfbbf7\",\n          \"size\": 168\n        },\n        {\n          \"layer\": \"sha256:0783a66ae7492bb16937c7723c534e431404aa3ebbdcaaed65d264a95a266b9e\",\n          \"size\": 84\n        },\n        {\n          \"layer\": \"sha256:efae86a3fb38e05e6e2584bc2f48534a0d82f8d9e9a4163d04885d5c65423105\",\n          \"size\": 358\n        },\n        {\n          \"layer\": \"sha256:411e1c946a02ee44c9adc542515ae29ff58d65149a4a201cbd688297c9900ee4\",\n          \"size\": 316\n        },\n        {\n          \"layer\": \"sha256:77964957095d7872770920c8f55d28613e85f8e27aa0b157a440e0d635193fa9\",\n          \"size\": 136427\n        },\n        {\n          \"layer\": \"sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1\",\n          \"size\": 32\n        },\n        {\n          \"layer\": \"sha256:252c2de9ec48e56065f71c0ede2c20bed6c08e7dafbae72560989c5f2ac8455d\",\n          \"size\": 48569397\n        }\n      ]\n    },\n    \"localhost:5000/scheduler-plugins/kube-scheduler:version5\": {\n      \"total_size\": 49402335,\n      \"layers\": [\n        {\n          \"layer\": \"sha256:1c193acf1cd1540d9a764e0f98ae55bd05563026d1139f5844f43668f10e27ed\",\n          \"size\": 86390\n        },\n        {\n          \"layer\": \"sha256:5b3013706a463509f05fabda3a5f854b1c5f3429561cf9374db6e6681da5493f\",\n          \"size\": 12777\n        },\n        {\n          \"layer\": \"sha256:8029962f461fbb244286e163b0b9888f6cdbed05bde2c1d35b797334e083d9c4\",\n          \"size\": 295494\n        },\n        {\n          \"layer\": \"sha256:9cd8e28f1c221ec42ab2a136b882dd0f6f81e0b583b6f9b1c9f7a611fd9658bb\",\n          \"size\": 263810\n        },\n        {\n          \"layer\": \"sha256:9d2753d762cc58b055d94d102989775221df5156b7bec5861353454c308ad197\",\n          \"size\": 31908\n        },\n        {\n          \"layer\": \"sha256:0f8b424aa0b96c1c388a5fd4d90735604459256336853082afb61733438872b5\",\n          \"size\": 75\n        },\n        {\n          \"layer\": \"sha256:d557676654e572af3e3173c90e7874644207fda32cd87e9d3d66b5d7b98a7b21\",\n          \"size\": 193\n        },\n        {\n          \"layer\": \"sha256:d82bc7a76a838c9a4a6025192429c2fed58f73742ef1fb9c8bb7b995fc3b7213\",\n          \"size\": 130\n        },\n        {\n          \"layer\": \"sha256:68e4cd60e60fed4486d5b4b40b079e57781e828d93d80a7411e8760dcccfbbf7\",\n          \"size\": 168\n        },\n        {\n          \"layer\": \"sha256:0783a66ae7492bb16937c7723c534e431404aa3ebbdcaaed65d264a95a266b9e\",\n          \"size\": 84\n        },\n        {\n          \"layer\": \"sha256:efae86a3fb38e05e6e2584bc2f48534a0d82f8d9e9a4163d04885d5c65423105\",\n          \"size\": 358\n        },\n        {\n          \"layer\": \"sha256:411e1c946a02ee44c9adc542515ae29ff58d65149a4a201cbd688297c9900ee4\",\n          \"size\": 316\n        },\n        {\n          \"layer\": \"sha256:77964957095d7872770920c8f55d28613e85f8e27aa0b157a440e0d635193fa9\",\n          \"size\": 136427\n        },\n        {\n          \"layer\": \"sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1\",\n          \"size\": 32\n        },\n        {\n          \"layer\": \"sha256:042e3156aff216ac84a2e158ef24e4e3c25ecf0a078819101c7707fe3c137ec0\",\n          \"size\": 48574173\n        }\n      ]\n    },\n    \"localhost:5000/scheduler-plugins/kube-scheduler:v0.0.1\": {\n      \"total_size\": 49408575,\n      \"layers\": [\n        {\n          \"layer\": \"sha256:1c193acf1cd1540d9a764e0f98ae55bd05563026d1139f5844f43668f10e27ed\",\n          \"size\": 86390\n        },\n        {\n          \"layer\": \"sha256:5b3013706a463509f05fabda3a5f854b1c5f3429561cf9374db6e6681da5493f\",\n          \"size\": 12777\n        },\n        {\n          \"layer\": \"sha256:8029962f461fbb244286e163b0b9888f6cdbed05bde2c1d35b797334e083d9c4\",\n          \"size\": 295494\n        },\n        {\n          \"layer\": \"sha256:9cd8e28f1c221ec42ab2a136b882dd0f6f81e0b583b6f9b1c9f7a611fd9658bb\",\n          \"size\": 263810\n        },\n        {\n          \"layer\": \"sha256:9d2753d762cc58b055d94d102989775221df5156b7bec5861353454c308ad197\",\n          \"size\": 31908\n        },\n        {\n          \"layer\": \"sha256:0f8b424aa0b96c1c388a5fd4d90735604459256336853082afb61733438872b5\",\n          \"size\": 75\n        },\n        {\n          \"layer\": \"sha256:d557676654e572af3e3173c90e7874644207fda32cd87e9d3d66b5d7b98a7b21\",\n          \"size\": 193\n        },\n        {\n          \"layer\": \"sha256:d82bc7a76a838c9a4a6025192429c2fed58f73742ef1fb9c8bb7b995fc3b7213\",\n          \"size\": 130\n        },\n        {\n          \"layer\": \"sha256:68e4cd60e60fed4486d5b4b40b079e57781e828d93d80a7411e8760dcccfbbf7\",\n          \"size\": 168\n        },\n        {\n          \"layer\": \"sha256:0783a66ae7492bb16937c7723c534e431404aa3ebbdcaaed65d264a95a266b9e\",\n          \"size\": 84\n        },\n        {\n          \"layer\": \"sha256:efae86a3fb38e05e6e2584bc2f48534a0d82f8d9e9a4163d04885d5c65423105\",\n          \"size\": 358\n        },\n        {\n          \"layer\": \"sha256:411e1c946a02ee44c9adc542515ae29ff58d65149a4a201cbd688297c9900ee4\",\n          \"size\": 316\n        },\n        {\n          \"layer\": \"sha256:77964957095d7872770920c8f55d28613e85f8e27aa0b157a440e0d635193fa9\",\n          \"size\": 136427\n        },\n        {\n          \"layer\": \"sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1\",\n          \"size\": 32\n        },\n        {\n          \"layer\": \"sha256:6b0ecf564b5650ae98f34e60c2e9347722f131b68b802403e62cb133ba773564\",\n          \"size\": 48580413\n        }\n      ]\n    },\n    \"localhost:5000/scheduler-plugins/kube-scheduler:netmarks-fix-v1\": {\n      \"total_size\": 23841028,\n      \"layers\": [\n        {\n          \"layer\": \"sha256:1c193acf1cd1540d9a764e0f98ae55bd05563026d1139f5844f43668f10e27ed\",\n          \"size\": 86390\n        },\n        {\n          \"layer\": \"sha256:5b3013706a463509f05fabda3a5f854b1c5f3429561cf9374db6e6681da5493f\",\n          \"size\": 12777\n        },\n        {\n          \"layer\": \"sha256:8029962f461fbb244286e163b0b9888f6cdbed05bde2c1d35b797334e083d9c4\",\n          \"size\": 295494\n        },\n        {\n          \"layer\": \"sha256:9cd8e28f1c221ec42ab2a136b882dd0f6f81e0b583b6f9b1c9f7a611fd9658bb\",\n          \"size\": 263810\n        },\n        {\n          \"layer\": \"sha256:9d2753d762cc58b055d94d102989775221df5156b7bec5861353454c308ad197\",\n          \"size\": 31908\n        },\n        {\n          \"layer\": \"sha256:0f8b424aa0b96c1c388a5fd4d90735604459256336853082afb61733438872b5\",\n          \"size\": 75\n        },\n        {\n          \"layer\": \"sha256:d557676654e572af3e3173c90e7874644207fda32cd87e9d3d66b5d7b98a7b21\",\n          \"size\": 193\n        },\n        {\n          \"layer\": \"sha256:d82bc7a76a838c9a4a6025192429c2fed58f73742ef1fb9c8bb7b995fc3b7213\",\n          \"size\": 130\n        },\n        {\n          \"layer\": \"sha256:68e4cd60e60fed4486d5b4b40b079e57781e828d93d80a7411e8760dcccfbbf7\",\n          \"size\": 168\n        },\n        {\n          \"layer\": \"sha256:0783a66ae7492bb16937c7723c534e431404aa3ebbdcaaed65d264a95a266b9e\",\n          \"size\": 84\n        },\n        {\n          \"layer\": \"sha256:efae86a3fb38e05e6e2584bc2f48534a0d82f8d9e9a4163d04885d5c65423105\",\n          \"size\": 358\n        },\n        {\n          \"layer\": \"sha256:411e1c946a02ee44c9adc542515ae29ff58d65149a4a201cbd688297c9900ee4\",\n          \"size\": 316\n        },\n        {\n          \"layer\": \"sha256:77964957095d7872770920c8f55d28613e85f8e27aa0b157a440e0d635193fa9\",\n          \"size\": 136427\n        },\n        {\n          \"layer\": \"sha256:75fc71501671142b6142fd8f33fbe5be0a5811553d33322e7a0b32487f374672\",\n          \"size\": 23012898\n        }\n      ]\n    },\n    \"localhost:5000/scheduler-plugins/kube-scheduler:version3\": {\n      \"total_size\": 49409986,\n      \"layers\": [\n        {\n          \"layer\": \"sha256:1c193acf1cd1540d9a764e0f98ae55bd05563026d1139f5844f43668f10e27ed\",\n          \"size\": 86390\n        },\n        {\n          \"layer\": \"sha256:5b3013706a463509f05fabda3a5f854b1c5f3429561cf9374db6e6681da5493f\",\n          \"size\": 12777\n        },\n        {\n          \"layer\": \"sha256:8029962f461fbb244286e163b0b9888f6cdbed05bde2c1d35b797334e083d9c4\",\n          \"size\": 295494\n        },\n        {\n          \"layer\": \"sha256:9cd8e28f1c221ec42ab2a136b882dd0f6f81e0b583b6f9b1c9f7a611fd9658bb\",\n          \"size\": 263810\n        },\n        {\n          \"layer\": \"sha256:9d2753d762cc58b055d94d102989775221df5156b7bec5861353454c308ad197\",\n          \"size\": 31908\n        },\n        {\n          \"layer\": \"sha256:0f8b424aa0b96c1c388a5fd4d90735604459256336853082afb61733438872b5\",\n          \"size\": 75\n        },\n        {\n          \"layer\": \"sha256:d557676654e572af3e3173c90e7874644207fda32cd87e9d3d66b5d7b98a7b21\",\n          \"size\": 193\n        },\n        {\n          \"layer\": \"sha256:d82bc7a76a838c9a4a6025192429c2fed58f73742ef1fb9c8bb7b995fc3b7213\",\n          \"size\": 130\n        },\n        {\n          \"layer\": \"sha256:68e4cd60e60fed4486d5b4b40b079e57781e828d93d80a7411e8760dcccfbbf7\",\n          \"size\": 168\n        },\n        {\n          \"layer\": \"sha256:0783a66ae7492bb16937c7723c534e431404aa3ebbdcaaed65d264a95a266b9e\",\n          \"size\": 84\n        },\n        {\n          \"layer\": \"sha256:efae86a3fb38e05e6e2584bc2f48534a0d82f8d9e9a4163d04885d5c65423105\",\n          \"size\": 358\n        },\n        {\n          \"layer\": \"sha256:411e1c946a02ee44c9adc542515ae29ff58d65149a4a201cbd688297c9900ee4\",\n          \"size\": 316\n        },\n        {\n          \"layer\": \"sha256:77964957095d7872770920c8f55d28613e85f8e27aa0b157a440e0d635193fa9\",\n          \"size\": 136427\n        },\n        {\n          \"layer\": \"sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1\",\n          \"size\": 32\n        },\n        {\n          \"layer\": \"sha256:c7306a2ec94fcfa70084454064a94cae1344565a6be2bcb94f3be795a98eafb1\",\n          \"size\": 48581824\n        }\n      ]\n    },\n    \"localhost:5000/scheduler-plugins/kube-scheduler:version10\": {\n      \"total_size\": 23837666,\n      \"layers\": [\n        {\n          \"layer\": \"sha256:1c193acf1cd1540d9a764e0f98ae55bd05563026d1139f5844f43668f10e27ed\",\n          \"size\": 86390\n        },\n        {\n          \"layer\": \"sha256:5b3013706a463509f05fabda3a5f854b1c5f3429561cf9374db6e6681da5493f\",\n          \"size\": 12777\n        },\n        {\n          \"layer\": \"sha256:8029962f461fbb244286e163b0b9888f6cdbed05bde2c1d35b797334e083d9c4\",\n          \"size\": 295494\n        },\n        {\n          \"layer\": \"sha256:9cd8e28f1c221ec42ab2a136b882dd0f6f81e0b583b6f9b1c9f7a611fd9658bb\",\n          \"size\": 263810\n        },\n        {\n          \"layer\": \"sha256:9d2753d762cc58b055d94d102989775221df5156b7bec5861353454c308ad197\",\n          \"size\": 31908\n        },\n        {\n          \"layer\": \"sha256:0f8b424aa0b96c1c388a5fd4d90735604459256336853082afb61733438872b5\",\n          \"size\": 75\n        },\n        {\n          \"layer\": \"sha256:d557676654e572af3e3173c90e7874644207fda32cd87e9d3d66b5d7b98a7b21\",\n          \"size\": 193\n        },\n        {\n          \"layer\": \"sha256:d82bc7a76a838c9a4a6025192429c2fed58f73742ef1fb9c8bb7b995fc3b7213\",\n          \"size\": 130\n        },\n        {\n          \"layer\": \"sha256:68e4cd60e60fed4486d5b4b40b079e57781e828d93d80a7411e8760dcccfbbf7\",\n          \"size\": 168\n        },\n        {\n          \"layer\": \"sha256:0783a66ae7492bb16937c7723c534e431404aa3ebbdcaaed65d264a95a266b9e\",\n          \"size\": 84\n        },\n        {\n          \"layer\": \"sha256:efae86a3fb38e05e6e2584bc2f48534a0d82f8d9e9a4163d04885d5c65423105\",\n          \"size\": 358\n        },\n        {\n          \"layer\": \"sha256:411e1c946a02ee44c9adc542515ae29ff58d65149a4a201cbd688297c9900ee4\",\n          \"size\": 316\n        },\n        {\n          \"layer\": \"sha256:77964957095d7872770920c8f55d28613e85f8e27aa0b157a440e0d635193fa9\",\n          \"size\": 136427\n        },\n        {\n          \"layer\": \"sha256:62c7dcdee5ceae1ae01dfed2190c246ffb132024c200aaca0f3d0fd28ec482cd\",\n          \"size\": 23009536\n        }\n      ]\n    },\n    \"localhost:5000/scheduler-plugins/kube-scheduler:version7\": {\n      \"total_size\": 49397559,\n      \"layers\": [\n        {\n          \"layer\": \"sha256:1c193acf1cd1540d9a764e0f98ae55bd05563026d1139f5844f43668f10e27ed\",\n          \"size\": 86390\n        },\n        {\n          \"layer\": \"sha256:5b3013706a463509f05fabda3a5f854b1c5f3429561cf9374db6e6681da5493f\",\n          \"size\": 12777\n        },\n        {\n          \"layer\": \"sha256:8029962f461fbb244286e163b0b9888f6cdbed05bde2c1d35b797334e083d9c4\",\n          \"size\": 295494\n        },\n        {\n          \"layer\": \"sha256:9cd8e28f1c221ec42ab2a136b882dd0f6f81e0b583b6f9b1c9f7a611fd9658bb\",\n          \"size\": 263810\n        },\n        {\n          \"layer\": \"sha256:9d2753d762cc58b055d94d102989775221df5156b7bec5861353454c308ad197\",\n          \"size\": 31908\n        },\n        {\n          \"layer\": \"sha256:0f8b424aa0b96c1c388a5fd4d90735604459256336853082afb61733438872b5\",\n          \"size\": 75\n        },\n        {\n          \"layer\": \"sha256:d557676654e572af3e3173c90e7874644207fda32cd87e9d3d66b5d7b98a7b21\",\n          \"size\": 193\n        },\n        {\n          \"layer\": \"sha256:d82bc7a76a838c9a4a6025192429c2fed58f73742ef1fb9c8bb7b995fc3b7213\",\n          \"size\": 130\n        },\n        {\n          \"layer\": \"sha256:68e4cd60e60fed4486d5b4b40b079e57781e828d93d80a7411e8760dcccfbbf7\",\n          \"size\": 168\n        },\n        {\n          \"layer\": \"sha256:0783a66ae7492bb16937c7723c534e431404aa3ebbdcaaed65d264a95a266b9e\",\n          \"size\": 84\n        },\n        {\n          \"layer\": \"sha256:efae86a3fb38e05e6e2584bc2f48534a0d82f8d9e9a4163d04885d5c65423105\",\n          \"size\": 358\n        },\n        {\n          \"layer\": \"sha256:411e1c946a02ee44c9adc542515ae29ff58d65149a4a201cbd688297c9900ee4\",\n          \"size\": 316\n        },\n        {\n          \"layer\": \"sha256:77964957095d7872770920c8f55d28613e85f8e27aa0b157a440e0d635193fa9\",\n          \"size\": 136427\n        },\n        {\n          \"layer\": \"sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1\",\n          \"size\": 32\n        },\n        {\n          \"layer\": \"sha256:252c2de9ec48e56065f71c0ede2c20bed6c08e7dafbae72560989c5f2ac8455d\",\n          \"size\": 48569397\n        }\n      ]\n    },\n    \"localhost:5000/scheduler-plugins/kube-scheduler:version9\": {\n      \"total_size\": 52927273,\n      \"layers\": [\n        {\n          \"layer\": \"sha256:6a0ac1617861a677b045b7ff88545213ec31c0ff08763195a70a4a5adda577bb\",\n          \"size\": 3864189\n        },\n        {\n          \"layer\": \"sha256:ac305fcf7606ded66847776ce5624932eb9f03a9244e684bca9db43e61fc8baa\",\n          \"size\": 24527816\n        },\n        {\n          \"layer\": \"sha256:d2756a4f655e6ac509a643f361dea54958e83d5b09dd06b26bbf9ac624e2670f\",\n          \"size\": 7389\n        },\n        {\n          \"layer\": \"sha256:ae8f5d7e340b38b210a79a52027f903b1b7aa9680c4f3031a4997921630d3e61\",\n          \"size\": 24527879\n        }\n      ]\n    },\n    \"localhost:5000/scheduler-plugins/kube-scheduler:v0.0.0\": {\n      \"total_size\": 23828679,\n      \"layers\": [\n        {\n          \"layer\": \"sha256:1c193acf1cd1540d9a764e0f98ae55bd05563026d1139f5844f43668f10e27ed\",\n          \"size\": 86390\n        },\n        {\n          \"layer\": \"sha256:5b3013706a463509f05fabda3a5f854b1c5f3429561cf9374db6e6681da5493f\",\n          \"size\": 12777\n        },\n        {\n          \"layer\": \"sha256:8029962f461fbb244286e163b0b9888f6cdbed05bde2c1d35b797334e083d9c4\",\n          \"size\": 295494\n        },\n        {\n          \"layer\": \"sha256:9cd8e28f1c221ec42ab2a136b882dd0f6f81e0b583b6f9b1c9f7a611fd9658bb\",\n          \"size\": 263810\n        },\n        {\n          \"layer\": \"sha256:9d2753d762cc58b055d94d102989775221df5156b7bec5861353454c308ad197\",\n          \"size\": 31908\n        },\n        {\n          \"layer\": \"sha256:0f8b424aa0b96c1c388a5fd4d90735604459256336853082afb61733438872b5\",\n          \"size\": 75\n        },\n        {\n          \"layer\": \"sha256:d557676654e572af3e3173c90e7874644207fda32cd87e9d3d66b5d7b98a7b21\",\n          \"size\": 193\n        },\n        {\n          \"layer\": \"sha256:d82bc7a76a838c9a4a6025192429c2fed58f73742ef1fb9c8bb7b995fc3b7213\",\n          \"size\": 130\n        },\n        {\n          \"layer\": \"sha256:68e4cd60e60fed4486d5b4b40b079e57781e828d93d80a7411e8760dcccfbbf7\",\n          \"size\": 168\n        },\n        {\n          \"layer\": \"sha256:0783a66ae7492bb16937c7723c534e431404aa3ebbdcaaed65d264a95a266b9e\",\n          \"size\": 84\n        },\n        {\n          \"layer\": \"sha256:efae86a3fb38e05e6e2584bc2f48534a0d82f8d9e9a4163d04885d5c65423105\",\n          \"size\": 358\n        },\n        {\n          \"layer\": \"sha256:411e1c946a02ee44c9adc542515ae29ff58d65149a4a201cbd688297c9900ee4\",\n          \"size\": 316\n        },\n        {\n          \"layer\": \"sha256:77964957095d7872770920c8f55d28613e85f8e27aa0b157a440e0d635193fa9\",\n          \"size\": 136427\n        },\n        {\n          \"layer\": \"sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1\",\n          \"size\": 32\n        },\n        {\n          \"layer\": \"sha256:c13821f4a50999da46caffe44bba3bbab11b9e67b73f32c4aa63271cd962c7a9\",\n          \"size\": 23000517\n        }\n      ]\n    },\n    \"localhost:5000/scheduler-plugins/kube-scheduler:version4\": {\n      \"total_size\": 49410379,\n      \"layers\": [\n        {\n          \"layer\": \"sha256:1c193acf1cd1540d9a764e0f98ae55bd05563026d1139f5844f43668f10e27ed\",\n          \"size\": 86390\n        },\n        {\n          \"layer\": \"sha256:5b3013706a463509f05fabda3a5f854b1c5f3429561cf9374db6e6681da5493f\",\n          \"size\": 12777\n        },\n        {\n          \"layer\": \"sha256:8029962f461fbb244286e163b0b9888f6cdbed05bde2c1d35b797334e083d9c4\",\n          \"size\": 295494\n        },\n        {\n          \"layer\": \"sha256:9cd8e28f1c221ec42ab2a136b882dd0f6f81e0b583b6f9b1c9f7a611fd9658bb\",\n          \"size\": 263810\n        },\n        {\n          \"layer\": \"sha256:9d2753d762cc58b055d94d102989775221df5156b7bec5861353454c308ad197\",\n          \"size\": 31908\n        },\n        {\n          \"layer\": \"sha256:0f8b424aa0b96c1c388a5fd4d90735604459256336853082afb61733438872b5\",\n          \"size\": 75\n        },\n        {\n          \"layer\": \"sha256:d557676654e572af3e3173c90e7874644207fda32cd87e9d3d66b5d7b98a7b21\",\n          \"size\": 193\n        },\n        {\n          \"layer\": \"sha256:d82bc7a76a838c9a4a6025192429c2fed58f73742ef1fb9c8bb7b995fc3b7213\",\n          \"size\": 130\n        },\n        {\n          \"layer\": \"sha256:68e4cd60e60fed4486d5b4b40b079e57781e828d93d80a7411e8760dcccfbbf7\",\n          \"size\": 168\n        },\n        {\n          \"layer\": \"sha256:0783a66ae7492bb16937c7723c534e431404aa3ebbdcaaed65d264a95a266b9e\",\n          \"size\": 84\n        },\n        {\n          \"layer\": \"sha256:efae86a3fb38e05e6e2584bc2f48534a0d82f8d9e9a4163d04885d5c65423105\",\n          \"size\": 358\n        },\n        {\n          \"layer\": \"sha256:411e1c946a02ee44c9adc542515ae29ff58d65149a4a201cbd688297c9900ee4\",\n          \"size\": 316\n        },\n        {\n          \"layer\": \"sha256:77964957095d7872770920c8f55d28613e85f8e27aa0b157a440e0d635193fa9\",\n          \"size\": 136427\n        },\n        {\n          \"layer\": \"sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1\",\n          \"size\": 32\n        },\n        {\n          \"layer\": \"sha256:d1a41e602b02a19beb724d4077450c3c604d406c4da2ba060f1b42144dcf8d9c\",\n          \"size\": 48582217\n        }\n      ]\n    },\n    \"localhost:5000/scheduler-plugins/kube-scheduler:version8\": {\n      \"total_size\": 52927273,\n      \"layers\": [\n        {\n          \"layer\": \"sha256:6a0ac1617861a677b045b7ff88545213ec31c0ff08763195a70a4a5adda577bb\",\n          \"size\": 3864189\n        },\n        {\n          \"layer\": \"sha256:ac305fcf7606ded66847776ce5624932eb9f03a9244e684bca9db43e61fc8baa\",\n          \"size\": 24527816\n        },\n        {\n          \"layer\": \"sha256:d2756a4f655e6ac509a643f361dea54958e83d5b09dd06b26bbf9ac624e2670f\",\n          \"size\": 7389\n        },\n        {\n          \"layer\": \"sha256:ae8f5d7e340b38b210a79a52027f903b1b7aa9680c4f3031a4997921630d3e61\",\n          \"size\": 24527879\n        }\n      ]\n    },\n    \"localhost:5000/scheduler-plugins/kube-scheduler:netmarks-final-v1\": {\n      \"total_size\": 23838215,\n      \"layers\": [\n        {\n          \"layer\": \"sha256:1c193acf1cd1540d9a764e0f98ae55bd05563026d1139f5844f43668f10e27ed\",\n          \"size\": 86390\n        },\n        {\n          \"layer\": \"sha256:5b3013706a463509f05fabda3a5f854b1c5f3429561cf9374db6e6681da5493f\",\n          \"size\": 12777\n        },\n        {\n          \"layer\": \"sha256:8029962f461fbb244286e163b0b9888f6cdbed05bde2c1d35b797334e083d9c4\",\n          \"size\": 295494\n        },\n        {\n          \"layer\": \"sha256:9cd8e28f1c221ec42ab2a136b882dd0f6f81e0b583b6f9b1c9f7a611fd9658bb\",\n          \"size\": 263810\n        },\n        {\n          \"layer\": \"sha256:9d2753d762cc58b055d94d102989775221df5156b7bec5861353454c308ad197\",\n          \"size\": 31908\n        },\n        {\n          \"layer\": \"sha256:0f8b424aa0b96c1c388a5fd4d90735604459256336853082afb61733438872b5\",\n          \"size\": 75\n        },\n        {\n          \"layer\": \"sha256:d557676654e572af3e3173c90e7874644207fda32cd87e9d3d66b5d7b98a7b21\",\n          \"size\": 193\n        },\n        {\n          \"layer\": \"sha256:d82bc7a76a838c9a4a6025192429c2fed58f73742ef1fb9c8bb7b995fc3b7213\",\n          \"size\": 130\n        },\n        {\n          \"layer\": \"sha256:68e4cd60e60fed4486d5b4b40b079e57781e828d93d80a7411e8760dcccfbbf7\",\n          \"size\": 168\n        },\n        {\n          \"layer\": \"sha256:0783a66ae7492bb16937c7723c534e431404aa3ebbdcaaed65d264a95a266b9e\",\n          \"size\": 84\n        },\n        {\n          \"layer\": \"sha256:efae86a3fb38e05e6e2584bc2f48534a0d82f8d9e9a4163d04885d5c65423105\",\n          \"size\": 358\n        },\n        {\n          \"layer\": \"sha256:411e1c946a02ee44c9adc542515ae29ff58d65149a4a201cbd688297c9900ee4\",\n          \"size\": 316\n        },\n        {\n          \"layer\": \"sha256:77964957095d7872770920c8f55d28613e85f8e27aa0b157a440e0d635193fa9\",\n          \"size\": 136427\n        },\n        {\n          \"layer\": \"sha256:4c024c3e30d17c5877ca02f4ba91f384cec194d3abd4a8d91b7215dd96b92c0d\",\n          \"size\": 23010085\n        }\n      ]\n    },\n    \"localhost:5000/stress:latest\": {\n      \"total_size\": 4038205,\n      \"layers\": [\n        {\n          \"layer\": \"sha256:63bc94deeb2884fd684a72d356164664538ee55cd82a9e65afe300a432092744\",\n          \"size\": 2801746\n        },\n        {\n          \"layer\": \"sha256:8d43371bad93504d09422b0aadb993110ae5313aead99b2796e64124f456eda6\",\n          \"size\": 1236459\n        }\n      ]\n    }\n  }\n}"},"kind":"ConfigMap","metadata":{"annotations":{},"name":"lrs-image-cache","namespace":"kube-system"}}
+  creationTimestamp: "2026-06-03T05:37:03Z"
+  name: lrs-image-cache
+  namespace: kube-system
+  resourceVersion: "494487"
+  uid: c7440be2-254e-4ccc-9539-c5397a1e6463

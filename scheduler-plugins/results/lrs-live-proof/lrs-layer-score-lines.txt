@@ -1,0 +1,6 @@
+HYBRID_SCORE_DETAIL pod=lrs-live-image-test node=playground-cluster-worker image_count=1 layer_score=99 final_score=99
+HYBRID_SCORE_DETAIL pod=lrs-live-image-test node=playground-cluster-worker3 image_count=1 layer_score=99 final_score=99
+HYBRID_SCORE_DETAIL pod=lrs-live-image-test node=playground-cluster-worker5 image_count=1 layer_score=66 final_score=66
+HYBRID_SCORE_DETAIL pod=lrs-live-image-test node=playground-cluster-worker2 image_count=1 layer_score=100 final_score=100
+HYBRID_SCORE_DETAIL pod=lrs-live-image-test node=playground-cluster-worker6 image_count=1 layer_score=99 final_score=99
+HYBRID_SCORE_DETAIL pod=lrs-live-image-test node=playground-cluster-worker4 image_count=1 layer_score=66 final_score=66

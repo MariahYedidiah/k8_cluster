@@ -1,0 +1,26 @@
+NAME                              READY   STATUS    RESTARTS   AGE   IP             NODE                         NOMINATED NODE   READINESS GATES
+hm-cpu-6c7c98b7bd-22mvd           1/1     Running   0          15s   10.244.4.92    playground-cluster-worker3   <none>           <none>
+hm-cpu-6c7c98b7bd-46n7n           1/1     Running   0          15s   10.244.3.254   playground-cluster-worker2   <none>           <none>
+hm-cpu-6c7c98b7bd-fp65l           1/1     Running   0          15s   10.244.5.20    playground-cluster-worker5   <none>           <none>
+hm-cpu-6c7c98b7bd-l2djh           1/1     Running   0          15s   10.244.1.63    playground-cluster-worker4   <none>           <none>
+hm-details-7b7dc78f97-64h8g       1/1     Running   0          15s   10.244.5.17    playground-cluster-worker5   <none>           <none>
+hm-details-7b7dc78f97-qjzb7       1/1     Running   0          15s   10.244.3.252   playground-cluster-worker2   <none>           <none>
+hm-layer-656dfcdd9b-hmqwm         1/1     Running   0          15s   10.244.3.253   playground-cluster-worker2   <none>           <none>
+hm-layer-656dfcdd9b-l4sxh         1/1     Running   0          15s   10.244.5.16    playground-cluster-worker5   <none>           <none>
+hm-layer-656dfcdd9b-r7d9j         1/1     Running   0          15s   10.244.4.89    playground-cluster-worker3   <none>           <none>
+hm-layer-656dfcdd9b-t6t24         1/1     Running   0          15s   10.244.1.62    playground-cluster-worker4   <none>           <none>
+hm-productpage-659f8c765d-d9xhh   1/1     Running   0          15s   10.244.4.88    playground-cluster-worker3   <none>           <none>
+hm-productpage-659f8c765d-fcbwk   1/1     Running   0          15s   10.244.3.2     playground-cluster-worker2   <none>           <none>
+hm-productpage-659f8c765d-g4pbp   1/1     Running   0          15s   10.244.5.21    playground-cluster-worker5   <none>           <none>
+hm-productpage-659f8c765d-gtgbm   1/1     Running   0          15s   10.244.1.61    playground-cluster-worker4   <none>           <none>
+hm-ratings-5ff4d59d45-h2ht6       1/1     Running   0          15s   10.244.4.90    playground-cluster-worker3   <none>           <none>
+hm-ratings-5ff4d59d45-pz2lb       1/1     Running   0          15s   10.244.5.18    playground-cluster-worker5   <none>           <none>
+hm-reviews-855b4f88c5-f46gb       1/1     Running   0          15s   10.244.3.251   playground-cluster-worker2   <none>           <none>
+hm-reviews-855b4f88c5-grq2z       1/1     Running   0          15s   10.244.5.19    playground-cluster-worker5   <none>           <none>
+hm-reviews-855b4f88c5-mp5tp       1/1     Running   0          15s   10.244.4.91    playground-cluster-worker3   <none>           <none>
+hm-topology-5f6557cf68-2p2lm      1/1     Running   0          14s   10.244.5.24    playground-cluster-worker5   <none>           <none>
+hm-topology-5f6557cf68-wkl96      1/1     Running   0          15s   10.244.3.9     playground-cluster-worker2   <none>           <none>
+hm-topology-5f6557cf68-x865g      1/1     Running   0          15s   10.244.5.23    playground-cluster-worker5   <none>           <none>
+hm-topology-5f6557cf68-xrc28      1/1     Running   0          15s   10.244.5.22    playground-cluster-worker5   <none>           <none>
+hm-topology-5f6557cf68-xvkc4      1/1     Running   0          15s   10.244.3.8     playground-cluster-worker2   <none>           <none>
+hm-topology-5f6557cf68-xxj7v      1/1     Running   0          15s   10.244.3.7     playground-cluster-worker2   <none>           <none>

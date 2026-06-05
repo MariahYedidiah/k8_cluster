@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: layer-workload
+  namespace: layer-eval
+spec:
+  replicas: 12
+  selector:
+    matchLabels:
+      app: layer-workload
+  template:
+    metadata:
+      labels:
+        app: layer-workload
+    spec:
+      schedulerName: lrscheduler
+      containers:
+      - name: cached-image
+        image: localhost:5000/netmarks-collector:v1
+        imagePullPolicy: IfNotPresent
+        command: ["sleep", "3600"]

@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: topology-test
+  namespace: sched-tests
+spec:
+  replicas: 12
+  selector:
+    matchLabels:
+      app: topology-test
+  template:
+    metadata:
+      labels:
+        app: topology-test
+    spec:
+      schedulerName: hybridmerged-scheduler
+      topologySpreadConstraints:
+      - maxSkew: 1
+        topologyKey: kubernetes.io/hostname
+        whenUnsatisfiable: ScheduleAnyway
+        labelSelector:
+          matchLabels:
+            app: topology-test
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.10

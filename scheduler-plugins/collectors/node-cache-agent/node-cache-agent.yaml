@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: node-cache-agent
+  namespace: kube-system
+
+spec:
+  selector:
+    matchLabels:
+      app: node-cache-agent
+
+  template:
+    metadata:
+      labels:
+        app: node-cache-agent
+
+    spec:
+      serviceAccountName: cache-writer
+
+      hostPID: true
+
+      containers:
+      - name: agent
+
+        image: localhost:5000/node-cache-agent:v1
+
+        env:
+        - name: NODE_NAME
+          valueFrom:
+            fieldRef:
+              fieldPath: spec.nodeName
+
+        volumeMounts:
+        - name: containerd
+          mountPath: /run/containerd
+
+      volumes:
+      - name: containerd
+        hostPath:
+          path: /run/containerd

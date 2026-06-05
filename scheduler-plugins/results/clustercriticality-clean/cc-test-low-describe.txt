@@ -1,0 +1,207 @@
+Name:             cc-test-low
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             playground-cluster-worker5/172.21.0.3
+Start Time:       Thu, 04 Jun 2026 17:11:31 +0530
+Labels:           app=cc-test
+                  criticality=low
+                  security.istio.io/tlsMode=istio
+                  service.istio.io/canonical-name=cc-test
+                  service.istio.io/canonical-revision=latest
+                  topology.kubernetes.io/zone=zone-c
+Annotations:      istio.io/rev: default
+                  kubectl.kubernetes.io/default-container: pause
+                  kubectl.kubernetes.io/default-logs-container: pause
+                  prometheus.io/path: /stats/prometheus
+                  prometheus.io/port: 15020
+                  prometheus.io/scrape: true
+                  sidecar.istio.io/status:
+                    {"initContainers":["istio-init","istio-proxy"],"containers":null,"volumes":["workload-socket","credential-socket","workload-certs","istio-...
+Status:           Running
+IP:               10.244.5.49
+IPs:
+  IP:  10.244.5.49
+Init Containers:
+  istio-init:
+    Container ID:  containerd://98b891797aad90c96bbe26ac9defec9e51e6cfb5b8243e2ffa3f270167aeea11
+    Image:         registry.istio.io/release/proxyv2:1.30.0
+    Image ID:      registry.istio.io/release/proxyv2@sha256:180f7cf94fbafc3d49879e48eb180b4bb274d0c8993b7328c93a2e84378d766c
+    Port:          <none>
+    Host Port:     <none>
+    Args:
+      istio-iptables
+      -p
+      15001
+      -z
+      15006
+      -u
+      1337
+      -m
+      REDIRECT
+      -i
+      *
+      -x
+      
+      -b
+      *
+      -d
+      15090,15021,15020
+      --log_output_level=default:info
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Thu, 04 Jun 2026 17:11:32 +0530
+      Finished:     Thu, 04 Jun 2026 17:11:32 +0530
+    Ready:          True
+    Restart Count:  0
+    Limits:
+      cpu:     2
+      memory:  1Gi
+    Requests:
+      cpu:        10m
+      memory:     40Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-b5854 (ro)
+  istio-proxy:
+    Container ID:  containerd://af5a2fd390197cc5c8032480b883215b4d064a5fb6f112f2191726304b00ad88
+    Image:         registry.istio.io/release/proxyv2:1.30.0
+    Image ID:      registry.istio.io/release/proxyv2@sha256:180f7cf94fbafc3d49879e48eb180b4bb274d0c8993b7328c93a2e84378d766c
+    Port:          15090/TCP (http-envoy-prom)
+    Host Port:     0/TCP (http-envoy-prom)
+    Args:
+      proxy
+      sidecar
+      --domain
+      $(POD_NAMESPACE).svc.cluster.local
+      --proxyLogLevel=warning
+      --proxyComponentLogLevel=misc:error
+      --log_output_level=default:info
+    State:          Running
+      Started:      Thu, 04 Jun 2026 17:11:33 +0530
+    Ready:          True
+    Restart Count:  0
+    Limits:
+      cpu:     2
+      memory:  1Gi
+    Requests:
+      cpu:      10m
+      memory:   40Mi
+    Readiness:  http-get http://:15021/healthz/ready delay=0s timeout=3s period=15s #success=1 #failure=4
+    Startup:    http-get http://:15021/healthz/ready delay=0s timeout=3s period=1s #success=1 #failure=600
+    Environment:
+      PILOT_CERT_PROVIDER:           istiod
+      CA_ADDR:                       istiod.istio-system.svc:15012
+      POD_NAME:                      cc-test-low (v1:metadata.name)
+      POD_NAMESPACE:                 default (v1:metadata.namespace)
+      INSTANCE_IP:                    (v1:status.podIP)
+      SERVICE_ACCOUNT:                (v1:spec.serviceAccountName)
+      HOST_IP:                        (v1:status.hostIP)
+      ISTIO_CPU_LIMIT:               2 (limits.cpu)
+      PROXY_CONFIG:                  {}
+                                     
+      ISTIO_META_POD_PORTS:          [
+                                     ]
+      ISTIO_META_APP_CONTAINERS:     pause
+      GOMEMLIMIT:                    1073741824 (limits.memory)
+      GOMAXPROCS:                    2 (limits.cpu)
+      ISTIO_META_CLUSTER_ID:         Kubernetes
+      ISTIO_META_NODE_NAME:           (v1:spec.nodeName)
+      ISTIO_META_INTERCEPTION_MODE:  REDIRECT
+      ISTIO_META_WORKLOAD_NAME:      cc-test-low
+      ISTIO_META_OWNER:              kubernetes://apis/v1/namespaces/default/pods/cc-test-low
+      ISTIO_META_MESH_ID:            cluster.local
+      TRUST_DOMAIN:                  cluster.local
+    Mounts:
+      /etc/istio/pod from istio-podinfo (rw)
+      /etc/istio/proxy from istio-envoy (rw)
+      /var/lib/istio/data from istio-data (rw)
+      /var/run/secrets/credential-uds from credential-socket (rw)
+      /var/run/secrets/istio from istiod-ca-cert (rw)
+      /var/run/secrets/istio/crl from istio-ca-crl (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-b5854 (ro)
+      /var/run/secrets/tokens from istio-token (rw)
+      /var/run/secrets/workload-spiffe-credentials from workload-certs (rw)
+      /var/run/secrets/workload-spiffe-uds from workload-socket (rw)
+Containers:
+  pause:
+    Container ID:   containerd://b209acf0910fec8379bdb0c47aac2387abd7ae3c0c4aa3d9d3490a468d8c5078
+    Image:          registry.k8s.io/pause:3.10
+    Image ID:       sha256:873ed75102791e5b0b8a7fcd41606c92fcec98d56d05ead4ac5131650004c136
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Thu, 04 Jun 2026 17:11:35 +0530
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-b5854 (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  workload-socket:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  credential-socket:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  workload-certs:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  istio-envoy:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     Memory
+    SizeLimit:  <unset>
+  istio-data:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  istio-podinfo:
+    Type:  DownwardAPI (a volume populated by information about the pod)
+    Items:
+      metadata.labels -> labels
+      metadata.annotations -> annotations
+  istio-token:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  43200
+  istiod-ca-cert:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      istio-ca-root-cert
+    Optional:  false
+  istio-ca-crl:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      istio-ca-crl
+    Optional:  true
+  kube-api-access-b5854:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From                          Message
+  ----    ------     ----  ----                          -------
+  Normal  Scheduled  65s   clustercriticality-scheduler  Successfully assigned default/cc-test-low to playground-cluster-worker5
+  Normal  Pulled     65s   kubelet                       spec.initContainers{istio-init}: Container image "registry.istio.io/release/proxyv2:1.30.0" already present on machine and can be accessed by the pod
+  Normal  Created    65s   kubelet                       spec.initContainers{istio-init}: Container created
+  Normal  Started    65s   kubelet                       spec.initContainers{istio-init}: Container started
+  Normal  Pulled     64s   kubelet                       spec.initContainers{istio-proxy}: Container image "registry.istio.io/release/proxyv2:1.30.0" already present on machine and can be accessed by the pod
+  Normal  Created    64s   kubelet                       spec.initContainers{istio-proxy}: Container created
+  Normal  Started    64s   kubelet                       spec.initContainers{istio-proxy}: Container started
+  Normal  Pulled     62s   kubelet                       spec.containers{pause}: Container image "registry.k8s.io/pause:3.10" already present on machine and can be accessed by the pod
+  Normal  Created    62s   kubelet                       spec.containers{pause}: Container created
+  Normal  Started    62s   kubelet                       spec.containers{pause}: Container started

@@ -1,0 +1,3 @@
+NAME           READY   STATUS    RESTARTS   AGE   IP            NODE                         NOMINATED NODE   READINESS GATES
+cc-test-high   2/2     Running   0          66s   10.244.4.43   playground-cluster-worker3   <none>           <none>
+cc-test-low    2/2     Running   0          66s   10.244.5.49   playground-cluster-worker5   <none>           <none>

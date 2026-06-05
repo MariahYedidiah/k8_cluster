@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: lrs-live-image-test
+spec:
+  schedulerName: lrscheduler
+  containers:
+  - name: test
+    image: localhost:5000/netmarks-collector:v1
+    imagePullPolicy: IfNotPresent
+    command: ["sleep", "3600"]

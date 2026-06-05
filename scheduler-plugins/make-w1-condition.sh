@@ -1,0 +1,156 @@
+#!/bin/bash
+
+SCHED="$1"
+OUT="$2"
+
+mkdir -p "$OUT"
+
+cat > "$OUT/workload.yaml" <<YAML
+apiVersion: v1
+kind: Pod
+metadata:
+  name: cpu-heavy
+  namespace: sched-tests
+spec:
+  schedulerName: ${SCHED}
+  containers:
+  - name: pause
+    image: registry.k8s.io/pause:3.10
+    resources:
+      requests:
+        cpu: "900m"
+        memory: "64Mi"
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: memory-heavy
+  namespace: sched-tests
+spec:
+  schedulerName: ${SCHED}
+  containers:
+  - name: pause
+    image: registry.k8s.io/pause:3.10
+    resources:
+      requests:
+        cpu: "100m"
+        memory: "900Mi"
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: storage-heavy
+  namespace: sched-tests
+spec:
+  schedulerName: ${SCHED}
+  containers:
+  - name: pause
+    image: registry.k8s.io/pause:3.10
+    resources:
+      requests:
+        ephemeral-storage: "900Mi"
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: qos-besteffort
+  namespace: sched-tests
+spec:
+  schedulerName: ${SCHED}
+  containers:
+  - name: pause
+    image: registry.k8s.io/pause:3.10
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: qos-guaranteed
+  namespace: sched-tests
+spec:
+  schedulerName: ${SCHED}
+  containers:
+  - name: pause
+    image: registry.k8s.io/pause:3.10
+    resources:
+      requests:
+        cpu: "200m"
+        memory: "128Mi"
+      limits:
+        cpu: "200m"
+        memory: "128Mi"
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: affinity-test
+  namespace: sched-tests
+spec:
+  schedulerName: ${SCHED}
+  affinity:
+    nodeAffinity:
+      preferredDuringSchedulingIgnoredDuringExecution:
+      - weight: 100
+        preference:
+          matchExpressions:
+          - key: affinity-target
+            operator: In
+            values:
+            - "yes"
+  containers:
+  - name: pause
+    image: registry.k8s.io/pause:3.10
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: taint-intolerant
+  namespace: sched-tests
+spec:
+  schedulerName: ${SCHED}
+  containers:
+  - name: pause
+    image: registry.k8s.io/pause:3.10
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: taint-tolerant
+  namespace: sched-tests
+spec:
+  schedulerName: ${SCHED}
+  tolerations:
+  - key: "special"
+    operator: "Equal"
+    value: "avoid"
+    effect: "PreferNoSchedule"
+  containers:
+  - name: pause
+    image: registry.k8s.io/pause:3.10
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: topology-test
+  namespace: sched-tests
+spec:
+  replicas: 6
+  selector:
+    matchLabels:
+      app: topology-test
+  template:
+    metadata:
+      labels:
+        app: topology-test
+    spec:
+      schedulerName: ${SCHED}
+      topologySpreadConstraints:
+      - maxSkew: 1
+        topologyKey: topology.kubernetes.io/zone
+        whenUnsatisfiable: ScheduleAnyway
+        labelSelector:
+          matchLabels:
+            app: topology-test
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.10
+YAML

@@ -1,0 +1,21 @@
+FROM golang:1.26 AS builder
+
+WORKDIR /src
+
+COPY go.mod go.sum ./
+RUN go mod download
+
+COPY . .
+
+RUN CGO_ENABLED=0 GOOS=linux go build \
+    -o /registry-watcher \
+    ./cmd/registry-watcher
+
+FROM gcr.io/distroless/static:nonroot
+
+COPY --from=builder /registry-watcher /registry-watcher
+
+USER nonroot:nonroot
+
+ENTRYPOINT ["/registry-watcher"]
+

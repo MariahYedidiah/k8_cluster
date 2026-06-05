@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: crit-test-high
+  labels:
+    app: crit-test
+    criticality: high
+spec:
+  schedulerName: criticality-scheduler
+  containers:
+  - name: pause
+    image: registry.k8s.io/pause:3.10
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: crit-test-low
+  labels:
+    app: crit-test
+    criticality: low
+spec:
+  schedulerName: criticality-scheduler
+  containers:
+  - name: pause
+    image: registry.k8s.io/pause:3.10

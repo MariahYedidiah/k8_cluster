@@ -1,0 +1,110 @@
+#!/bin/bash
+SCHED="$1"
+OUT="$2"
+mkdir -p "$OUT"
+
+cat > "$OUT/workload.yaml" <<YAML
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: w3-ratings
+  namespace: bookinfo-net
+  labels:
+    test: w3-network
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: ratings
+      version: v1
+      test: w3-network
+  template:
+    metadata:
+      labels:
+        app: ratings
+        version: v1
+        test: w3-network
+    spec:
+      schedulerName: ${SCHED}
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.10
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: w3-details
+  namespace: bookinfo-net
+  labels:
+    test: w3-network
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: details
+      version: v1
+      test: w3-network
+  template:
+    metadata:
+      labels:
+        app: details
+        version: v1
+        test: w3-network
+    spec:
+      schedulerName: ${SCHED}
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.10
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: w3-reviews
+  namespace: bookinfo-net
+  labels:
+    test: w3-network
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: reviews
+      version: v1
+      test: w3-network
+  template:
+    metadata:
+      labels:
+        app: reviews
+        version: v1
+        test: w3-network
+    spec:
+      schedulerName: ${SCHED}
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.10
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: w3-productpage
+  namespace: bookinfo-net
+  labels:
+    test: w3-network
+spec:
+  replicas: 6
+  selector:
+    matchLabels:
+      app: productpage
+      version: v1
+      test: w3-network
+  template:
+    metadata:
+      labels:
+        app: productpage
+        version: v1
+        test: w3-network
+    spec:
+      schedulerName: ${SCHED}
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.10
+YAML

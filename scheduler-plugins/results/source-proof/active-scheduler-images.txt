@@ -1,0 +1,5 @@
+hybrid-scheduler    localhost:5000/scheduler-plugins/kube-scheduler:fixed-v1.34-v3
+hybrid-scheduler2   localhost:5000/scheduler-plugins/kube-scheduler:hybrid-v2
+hybrid-scheduler3   localhost:5000/scheduler-plugins/kube-scheduler:lrs-v3
+hybrid-scheduler4   localhost:5000/scheduler-plugins/kube-scheduler:lrs-v4
+hybrid-scheduler5   localhost:5000/scheduler-plugins/kube-scheduler:hybridmerged-v12-runtime-topology

@@ -1,0 +1,25 @@
+NAME                            READY   STATUS        RESTARTS   AGE   IP             NODE                         NOMINATED NODE   READINESS GATES
+layer-cached-6959f5b95d-4mlmk   1/1     Terminating   0          44s   10.244.3.181   playground-cluster-worker2   <none>           <none>
+layer-cached-6959f5b95d-7ltrb   1/1     Terminating   0          44s   10.244.1.218   playground-cluster-worker4   <none>           <none>
+layer-cached-6959f5b95d-knzbq   1/1     Terminating   0          44s   10.244.1.217   playground-cluster-worker4   <none>           <none>
+layer-cached-6959f5b95d-nkt59   1/1     Terminating   0          44s   10.244.1.215   playground-cluster-worker4   <none>           <none>
+layer-cached-6959f5b95d-rvbnr   1/1     Terminating   0          44s   10.244.1.216   playground-cluster-worker4   <none>           <none>
+layer-cached-6959f5b95d-s2xwz   1/1     Terminating   0          44s   10.244.4.228   playground-cluster-worker3   <none>           <none>
+layer-cached-7c6b6b7cb6-4q47r   1/1     Running       0          15s   10.244.3.183   playground-cluster-worker2   <none>           <none>
+layer-cached-7c6b6b7cb6-4wvpb   1/1     Running       0          15s   10.244.1.221   playground-cluster-worker4   <none>           <none>
+layer-cached-7c6b6b7cb6-7zj8g   1/1     Running       0          15s   10.244.4.232   playground-cluster-worker3   <none>           <none>
+layer-cached-7c6b6b7cb6-f8pt4   1/1     Running       0          15s   10.244.4.230   playground-cluster-worker3   <none>           <none>
+layer-cached-7c6b6b7cb6-kgbn8   1/1     Running       0          15s   10.244.5.184   playground-cluster-worker5   <none>           <none>
+layer-cached-7c6b6b7cb6-ld2zd   1/1     Running       0          15s   10.244.1.223   playground-cluster-worker4   <none>           <none>
+layer-nginx-75dcd6c59f-4mcf4    1/1     Running       0          15s   10.244.4.233   playground-cluster-worker3   <none>           <none>
+layer-nginx-75dcd6c59f-bdsgc    1/1     Running       0          15s   10.244.1.222   playground-cluster-worker4   <none>           <none>
+layer-nginx-75dcd6c59f-ddzsv    1/1     Running       0          15s   10.244.5.183   playground-cluster-worker5   <none>           <none>
+layer-nginx-75dcd6c59f-f6l59    1/1     Running       0          15s   10.244.3.184   playground-cluster-worker2   <none>           <none>
+layer-nginx-75dcd6c59f-m5c2j    1/1     Running       0          15s   10.244.4.231   playground-cluster-worker3   <none>           <none>
+layer-nginx-75dcd6c59f-rfskm    1/1     Running       0          15s   10.244.1.224   playground-cluster-worker4   <none>           <none>
+layer-nginx-76b8dc6f45-62jjs    1/1     Terminating   0          44s   10.244.1.219   playground-cluster-worker4   <none>           <none>
+layer-nginx-76b8dc6f45-8rg46    1/1     Terminating   0          44s   10.244.1.220   playground-cluster-worker4   <none>           <none>
+layer-nginx-76b8dc6f45-bkt2f    1/1     Terminating   0          44s   10.244.4.229   playground-cluster-worker3   <none>           <none>
+layer-nginx-76b8dc6f45-fnmr6    1/1     Terminating   0          44s   10.244.5.182   playground-cluster-worker5   <none>           <none>
+layer-nginx-76b8dc6f45-pts49    1/1     Terminating   0          44s   10.244.3.182   playground-cluster-worker2   <none>           <none>
+layer-nginx-76b8dc6f45-wxlf2    1/1     Terminating   0          44s   10.244.4.227   playground-cluster-worker3   <none>           <none>

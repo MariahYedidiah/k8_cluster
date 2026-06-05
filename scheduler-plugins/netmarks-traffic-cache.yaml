@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: netmarks-traffic-cache
+  namespace: kube-system
+data:
+  traffic.json: |
+    {
+      "productpage-v1": {
+        "details-v1": 9000000,
+        "reviews-v1": 7000000,
+        "ratings-v1": 5000000
+      }
+    }

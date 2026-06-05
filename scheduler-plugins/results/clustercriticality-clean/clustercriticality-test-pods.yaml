@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: cc-test-high
+  labels:
+    app: cc-test
+    criticality: high
+spec:
+  schedulerName: clustercriticality-scheduler
+  containers:
+  - name: pause
+    image: registry.k8s.io/pause:3.10
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: cc-test-low
+  labels:
+    app: cc-test
+    criticality: low
+spec:
+  schedulerName: clustercriticality-scheduler
+  containers:
+  - name: pause
+    image: registry.k8s.io/pause:3.10

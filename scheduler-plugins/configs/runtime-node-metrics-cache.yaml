@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: runtime-node-metrics-cache
+  namespace: kube-system
+data:
+  metrics.json: |
+    {
+      "playground-cluster-worker": {
+        "cpu_percent": 20,
+        "memory_percent": 30
+      },
+      "playground-cluster-worker2": {
+        "cpu_percent": 85,
+        "memory_percent": 40
+      }
+    }
